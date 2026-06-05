@@ -19,49 +19,103 @@
         a { color: #2563eb; text-decoration: none; }
         a:hover { text-decoration: underline; }
         p { margin: 8px 0; }
+        ul { margin: 8px 0 8px 20px; }
+        li { margin-bottom: 4px; }
         code {
             background: #f3f4f6;
             padding: 2px 6px;
             border-radius: 4px;
             font-size: 0.88em;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+            margin: 12px 0 20px;
+        }
+        th {
+            background: #f5f5f5;
+            text-align: left;
+            padding: 8px 12px;
+            border-bottom: 2px solid #ddd;
+        }
+        td { padding: 8px 12px; border-bottom: 1px solid #eee; vertical-align: top; }
     </style>
 </head>
 <body>
 
 <h1>Privacy Policy — Foldio</h1>
-<p class="updated">Last updated: May 2026</p>
+<p class="updated">Effective May 2026 · NoFriction Labs · <a href="mailto:NoFrictionLabs@gmail.com">NoFrictionLabs@gmail.com</a></p>
 
-<p>Foldio is a document scanning app built by NoFriction Labs. This policy explains how your data is handled — the short version: we don't collect any.</p>
+<p>Foldio does not collect, transmit, store, or share any personal data. Everything stays on your device.</p>
 
-<h2>Data We Collect</h2>
-<p><strong>None.</strong> Foldio has no user accounts, no analytics, no advertising, and no backend servers that receive your data.</p>
+<h2>What data Foldio accesses</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Data</th>
+            <th>Used for</th>
+            <th>Leaves your device?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Camera</td>
+            <td>Document scanning via Google ML Kit</td>
+            <td>No — ML Kit processes images on-device</td>
+        </tr>
+        <tr>
+            <td>Photos / files you select</td>
+            <td>Importing images or PDFs you explicitly choose</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>Documents you create</td>
+            <td>Stored in app-private internal storage</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>Purchase status</td>
+            <td>Verifying your one-time Pro purchase via Google Play</td>
+            <td>Only to Google Play (your existing Play account)</td>
+        </tr>
+    </tbody>
+</table>
 
-<h2>Your Documents</h2>
-<p>All scans, PDFs, and extracted text are stored locally on your device. We have no access to your files at any time.</p>
+<h2>What Foldio does NOT do</h2>
+<ul>
+    <li><strong>No account required.</strong> You never sign in.</li>
+    <li><strong>No cloud storage.</strong> Your documents never leave your device.</li>
+    <li><strong>No analytics.</strong> No crash reporting services, no usage tracking, no event logging.</li>
+    <li><strong>No advertising.</strong> No ad SDKs, no ad identifiers, no behavioural profiling.</li>
+    <li><strong>No third-party data sharing.</strong> The only external service Foldio communicates with is Google Play Billing, for verifying purchases you initiate.</li>
+    <li><strong>No background network access.</strong> Foldio has no background tasks that communicate over the network.</li>
+</ul>
 
-<h2>Optional Cloud Backup</h2>
-<p>You may optionally connect your personal Google Drive account. If you do, documents are uploaded directly from your device to your own Drive using OAuth 2.0 with the <code>drive.file</code> scope — the narrowest available, meaning Foldio can only see files it created, never anything else in your Drive.</p>
-<p>Foldio's servers are never involved. You can disconnect Google Drive at any time from Settings, which immediately revokes access.</p>
+<h2>Google ML Kit (document scanning)</h2>
+<p>Foldio uses <a href="https://developers.google.com/ml-kit/vision/doc-scanner">Google ML Kit Document Scanner</a> to provide the camera scanning UI. ML Kit runs entirely on-device. The camera feed and scanned images are processed locally and are never sent to Google's servers. ML Kit's use of your camera is governed by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
 
-<h2>Third-Party Services</h2>
-<p><strong>Google ML Kit</strong> — Document scanning and text recognition (OCR) run entirely on-device. No images or text leave your device during these operations. <a href="https://policies.google.com/privacy">Google Privacy Policy →</a></p>
-<p><strong>Google Drive</strong> — Only used if you explicitly connect it. Files transfer directly from your device to your account. <a href="https://policies.google.com/privacy">Google Privacy Policy →</a></p>
-<p><strong>Google Play Billing</strong> — In-app purchases are processed by Google Play. <a href="https://policies.google.com/privacy">Google Privacy Policy →</a></p>
+<h2>Google Play Billing</h2>
+<p>When you make a purchase, the transaction is handled by Google Play. Foldio communicates with Google Play's Billing SDK to verify that a purchase exists — this involves your Google account's purchase state, managed entirely by Google. Foldio never sees or stores your payment details. See <a href="https://payments.google.com/payments/apis-secure/u/0/get_legal_document?ldo=0&ldt=privacynotice">Google's Payments Privacy Notice</a>.</p>
 
-<h2>Permissions</h2>
-<p><strong>Camera</strong> — Used only by the ML Kit document scanner. Images are processed on-device and never transmitted.</p>
-<p><strong>Storage</strong> — Used to save and read your documents locally on the device.</p>
-<p><strong>Internet</strong> — Only used if you enable optional Google Drive backup.</p>
+<h2>Data stored on your device</h2>
+<p>All documents, scanned images, and app settings are stored in app-private internal storage (<code>/data/data/com.nofrictionlabs.foldio/</code>). This storage is:</p>
+<ul>
+    <li>Accessible only to Foldio (Android enforces this at the OS level).</li>
+    <li>Deleted automatically when you uninstall the app.</li>
+    <li>Never synced, backed up to external servers, or shared with other apps.</li>
+</ul>
 
 <h2>Children's Privacy</h2>
-<p>Foldio does not knowingly collect data from anyone under 13.</p>
-
-<h2>Contact</h2>
-<p>Questions or concerns: <a href="mailto:naorzadok@gmail.com">naorzadok@gmail.com</a></p>
+<p>Foldio does not knowingly collect data from anyone under 13. The app is a general-purpose document scanner intended for adults and is not directed at children. It contains no features, content, or advertising targeting minors.</p>
+<p>Because Foldio collects no personal data from any user regardless of age, there is no special data handling required for younger users. No account is created, no information is transmitted off-device, and no usage is tracked.</p>
+<p>If you are a parent or guardian and believe your child has somehow provided personal information through the app, please contact us at <a href="mailto:NoFrictionLabs@gmail.com">NoFrictionLabs@gmail.com</a> and we will address your concern promptly.</p>
 
 <h2>Changes to This Policy</h2>
-<p>If our practices change, this page will be updated and the date at the top will reflect the revision.</p>
+<p>If we ever change this policy in a material way, we will update the effective date above and note the change in the app's release notes. Given that Foldio collects no personal data, significant changes are unlikely.</p>
+
+<h2>Contact</h2>
+<p>Questions about this privacy policy? Email <a href="mailto:NoFrictionLabs@gmail.com">NoFrictionLabs@gmail.com</a>.</p>
 
 </body>
 </html>
