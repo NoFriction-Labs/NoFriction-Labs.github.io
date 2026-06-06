@@ -1,26 +1,428 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NoFriction Labs</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            max-width: 680px;
-            margin: 0 auto;
-            padding: 24px 16px;
-            color: #1a1a1a;
-        }
-        a { color: #2563eb; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foldio — Document Scanner for Android</title>
+  <meta name="description" content="Foldio is a document scanner for Android. No subscription, no account, no cloud. Scan, edit, and export to PDF. One-time $2.99 unlocks multi-page docs and PDF import." />
+  <meta name="keywords" content="document scanner android, pdf scanner, microsoft lens alternative, no subscription scanner, offline document scanner, foldio" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Foldio — Document Scanner for Android" />
+  <meta property="og:description" content="No subscription. No account. No cloud. Scan and export PDFs — everything stays on your device." />
+  <meta property="og:url" content="https://nofriction-labs.github.io/foldio/" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Foldio — Document Scanner for Android" />
+  <meta name="twitter:description" content="No subscription. No account. No cloud. One-time $2.99 unlocks multi-page docs." />
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Foldio",
+    "operatingSystem": "Android",
+    "applicationCategory": "UtilitiesApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Free with optional one-time Pro unlock"
+    },
+    "description": "Document scanner for Android. No subscription, no account, no cloud. Scan, edit, export to PDF. One-time Pro unlock adds library search, document merging, PDF import, and unlimited signatures.",
+    "author": {
+      "@type": "Organization",
+      "name": "NoFriction Labs"
+    },
+    "downloadUrl": "https://play.google.com/store/apps/details?id=com.nofrictionlabs.foldio",
+    "image": "https://nofriction-labs.github.io/assets/feature_graphic.png"
+  }
+  </script>
+
+  <style>
+    :root {
+      --green:       #2D6A4F;
+      --green-light: #52B788;
+      --green-pale:  #D8F3DC;
+      --white:       #FFFFFF;
+      --gray-100:    #F5F5F5;
+      --gray-400:    #9E9E9E;
+      --gray-800:    #212121;
+      --radius:      12px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--gray-800);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    a { color: var(--green); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Header ─────────────────────────────── */
+    header {
+      background: var(--green);
+      color: var(--white);
+      text-align: center;
+      padding: 64px 24px 56px;
+    }
+    .app-badge {
+      display: inline-block;
+      background: var(--green-light);
+      color: var(--white);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 100px;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+    header p {
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      opacity: 0.9;
+      max-width: 540px;
+      margin: 0 auto 32px;
+    }
+    .cta-row {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      display: inline-block;
+      background: var(--white);
+      color: var(--green);
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 14px 28px;
+      border-radius: var(--radius);
+      transition: opacity 0.15s;
+    }
+    .btn-primary:hover { opacity: 0.88; text-decoration: none; }
+    .btn-secondary {
+      display: inline-block;
+      background: transparent;
+      color: var(--white);
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 14px 28px;
+      border: 2px solid rgba(255,255,255,0.5);
+      border-radius: var(--radius);
+      transition: border-color 0.15s;
+    }
+    .btn-secondary:hover { border-color: var(--white); text-decoration: none; }
+
+    /* ── Sections ────────────────────────────── */
+    section {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 64px 24px;
+    }
+    section + section { padding-top: 0; }
+    h2 {
+      font-size: clamp(1.4rem, 3vw, 1.9rem);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+      color: var(--green);
+    }
+    .subtitle {
+      color: var(--gray-400);
+      margin-bottom: 32px;
+      font-size: 1.05rem;
+    }
+
+    /* ── Pricing table ───────────────────────── */
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.97rem;
+    }
+    .pricing-table th,
+    .pricing-table td {
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--gray-100);
+    }
+    .pricing-table th {
+      font-weight: 700;
+      color: var(--gray-400);
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .pricing-table th:not(:first-child),
+    .pricing-table td:not(:first-child) {
+      text-align: center;
+    }
+    .pricing-table td:last-child { color: var(--green); font-weight: 600; }
+    .check { color: var(--green-light); font-size: 1.1rem; }
+    .never { color: var(--gray-400); }
+
+    /* ── Feature grid ────────────────────────── */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .feature-card {
+      background: var(--gray-100);
+      border-radius: var(--radius);
+      padding: 24px;
+    }
+    .feature-icon { font-size: 1.6rem; margin-bottom: 12px; }
+    .feature-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
+    .feature-card p { font-size: 0.92rem; color: var(--gray-400); line-height: 1.5; }
+
+    /* ── Privacy callout ─────────────────────── */
+    .privacy-box {
+      background: var(--green-pale);
+      border-left: 4px solid var(--green);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+    }
+    .privacy-box h3 { font-weight: 700; color: var(--green); margin-bottom: 8px; }
+    .privacy-box ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 6px 24px;
+    }
+    .privacy-box li::before { content: "✓ "; color: var(--green); font-weight: 700; }
+    .privacy-box li { font-size: 0.95rem; color: var(--gray-800); }
+
+    /* ── Competitor table ────────────────────── */
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+    }
+    .compare-table th,
+    .compare-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--gray-100);
+    }
+    .compare-table th {
+      background: var(--gray-100);
+      font-weight: 700;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--gray-400);
+    }
+    .compare-table tr.highlight td:first-child { font-weight: 700; color: var(--green); }
+    .good { color: var(--green-light); font-weight: 600; }
+    .bad  { color: #C62828; }
+    .neutral { color: var(--gray-400); }
+
+    /* ── Footer ──────────────────────────────── */
+    footer {
+      background: var(--gray-100);
+      text-align: center;
+      padding: 40px 24px;
+      font-size: 0.88rem;
+      color: var(--gray-400);
+    }
+    footer a { color: var(--green); }
+    footer .footer-links { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin-top: 12px; }
+
+    @media (max-width: 540px) {
+      .pricing-table th:nth-child(2), .pricing-table td:nth-child(2) { display: none; }
+    }
+  </style>
 </head>
 <body>
-    <h1>NoFriction Labs</h1>
-    <p>We build simple, privacy-first mobile apps.</p>
-    <h2>Apps</h2>
+
+<!-- ── Hero ─────────────────────────────────────────────── -->
+<header>
+  <div class="app-badge">For Android</div>
+  <h1>Scan documents.<br>Keep them yours.</h1>
+  <p>No subscription. No account. No cloud. Your scans stay on your device — always.</p>
+  <div class="cta-row">
+    <a href="https://play.google.com/store/apps/details?id=com.nofrictionlabs.foldio" class="btn-primary">Download on Google Play</a>
+    <a href="https://nofriction-labs.github.io/privacy/foldio.html" class="btn-secondary">Privacy Policy</a>
+  </div>
+</header>
+
+<!-- ── Pricing ───────────────────────────────────────────── -->
+<section>
+  <h2>Simple pricing</h2>
+  <p class="subtitle">Free forever with no watermarks and no page cap. One-time Pro unlock adds power features.</p>
+
+  <table class="pricing-table">
+    <thead>
+      <tr>
+        <th>Feature</th>
+        <th>Free</th>
+        <th>Pro — one-time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Scan documents</td><td class="check">✓ Unlimited pages</td><td class="check">✓ Unlimited</td></tr>
+      <tr><td>Export to PDF (no watermark)</td><td class="check">✓</td><td class="check">✓</td></tr>
+      <tr><td>OCR — text recognition on every page</td><td class="check">✓</td><td class="check">✓</td></tr>
+      <tr><td>Crop, rotate, adjust color &amp; brightness</td><td class="check">✓</td><td class="check">✓</td></tr>
+      <tr><td>Folders &amp; Google Drive backup</td><td class="check">✓</td><td class="check">✓</td></tr>
+      <tr><td>Signatures &amp; annotations</td><td>Up to 2 each</td><td class="check">✓ Unlimited</td></tr>
+      <tr><td>Library-wide text search</td><td class="never">—</td><td class="check">✓</td></tr>
+      <tr><td>Document merging</td><td class="never">—</td><td class="check">✓</td></tr>
+      <tr><td>PDF import</td><td class="never">—</td><td class="check">✓</td></tr>
+      <tr><td>Ads</td><td class="never">Never</td><td class="never">Never</td></tr>
+      <tr><td>Account required</td><td class="never">Never</td><td class="never">Never</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ── Features ──────────────────────────────────────────── -->
+<section>
+  <h2>Built for everyday documents</h2>
+  <p class="subtitle">Everything you need, nothing you don't.</p>
+
+  <div class="feature-grid">
+    <div class="feature-card">
+      <div class="feature-icon">📄</div>
+      <h3>Smart scanning</h3>
+      <p>Google ML Kit auto-detects document edges, corrects perspective, and processes everything on-device.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">✏️</div>
+      <h3>Non-destructive editing</h3>
+      <p>Crop, rotate, brighten, or switch to grayscale — every edit can be undone months later. Original scan is never touched.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📦</div>
+      <h3>Multi-page PDFs</h3>
+      <p>Scan multi-page contracts, reports, books. Reorder or delete pages. Export as a single PDF.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔗</div>
+      <h3>Document merging</h3>
+      <p>Combine any two documents into one. Append pages from an existing PDF. Preserve all edits.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📥</div>
+      <h3>PDF import</h3>
+      <p>Bring in external PDFs and edit them like camera scans. Rasterized at 200 DPI for sharp text.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">✍️</div>
+      <h3>Electronic signatures</h3>
+      <p>Draw or place a saved signature on any page. Not a digital certificate — a real handwritten mark, embedded in the PDF.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">💬</div>
+      <h3>Text annotations</h3>
+      <p>Add text notes to any page. Useful for marking up contracts, invoices, or anything that needs a comment.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">✨</div>
+      <h3>Magic Enhance</h3>
+      <p>One tap auto-optimizes any page: grayscale + contrast boost. Works on ~90% of standard documents.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── Privacy ───────────────────────────────────────────── -->
+<section>
+  <h2>Private by design</h2>
+  <p class="subtitle">No data collected. No exceptions.</p>
+
+  <div class="privacy-box">
+    <h3>What Foldio never does</h3>
     <ul>
-        <li><strong>Foldio</strong> — PDF scanner &amp; document manager · <a href="privacy/foldio.html">Privacy Policy</a></li>
+      <li>Require an account</li>
+      <li>Upload your documents</li>
+      <li>Track your usage</li>
+      <li>Show you ads</li>
+      <li>Run analytics SDKs</li>
+      <li>Access the camera directly</li>
     </ul>
+  </div>
+
+  <p style="margin-top: 20px; color: var(--gray-400); font-size: 0.95rem;">
+    Camera access is handled entirely by Google ML Kit — Foldio never declares the camera permission. Documents are stored in app-private internal storage and deleted when you uninstall. <a href="https://nofriction-labs.github.io/privacy/foldio.html">Full privacy policy →</a>
+  </p>
+</section>
+
+<!-- ── Comparison ────────────────────────────────────────── -->
+<section>
+  <h2>The Microsoft Lens alternative</h2>
+  <p class="subtitle">Microsoft Lens retired in March 2026. Here's how the alternatives compare.</p>
+
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>App</th>
+        <th>Price</th>
+        <th>Account</th>
+        <th>Cloud</th>
+        <th>Offline</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="highlight">
+        <td>Foldio</td>
+        <td class="good">Free + $2.99 once</td>
+        <td class="good">No</td>
+        <td class="good">No</td>
+        <td class="good">Full</td>
+      </tr>
+      <tr>
+        <td>CamScanner</td>
+        <td class="bad">$4.99–$9.99/month</td>
+        <td class="bad">Required</td>
+        <td class="bad">Yes</td>
+        <td class="neutral">Limited</td>
+      </tr>
+      <tr>
+        <td>Adobe Scan</td>
+        <td class="bad">$9.99/month</td>
+        <td class="bad">Required</td>
+        <td class="bad">Yes</td>
+        <td class="neutral">Limited</td>
+      </tr>
+      <tr>
+        <td>TapScanner</td>
+        <td class="bad">$4.99/month</td>
+        <td class="bad">Required</td>
+        <td class="bad">Yes</td>
+        <td class="neutral">Limited</td>
+      </tr>
+      <tr>
+        <td>Microsoft Lens</td>
+        <td class="neutral">Retired</td>
+        <td class="bad">Required</td>
+        <td class="bad">OneDrive</td>
+        <td class="neutral">Limited</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ── Footer ───────────────────────────────────────────── -->
+<footer>
+  <p>Made by <strong>NoFriction Labs</strong> · <a href="mailto:NoFrictionLabs@gmail.com">NoFrictionLabs@gmail.com</a></p>
+  <div class="footer-links">
+    <a href="https://play.google.com/store/apps/details?id=com.nofrictionlabs.foldio">Google Play</a>
+    <a href="https://nofriction-labs.github.io/privacy/foldio.html">Privacy Policy</a>
+    <a href="mailto:NoFrictionLabs@gmail.com">Contact</a>
+  </div>
+</footer>
+
 </body>
 </html>
