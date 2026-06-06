@@ -5,14 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy — Foldio</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            max-width: 680px;
-            margin: 0 auto;
-            padding: 24px 16px 64px;
-            color: #1a1a1a;
-            line-height: 1.7;
-        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 680px; margin: 0 auto; padding: 24px 16px 64px; color: #1a1a1a; line-height: 1.7; }
         h1 { font-size: 1.6rem; margin-bottom: 4px; }
         h2 { font-size: 1.05rem; margin-top: 36px; margin-bottom: 8px; }
         .updated { color: #666; font-size: 0.9rem; margin-bottom: 32px; }
@@ -21,101 +14,57 @@
         p { margin: 8px 0; }
         ul { margin: 8px 0 8px 20px; }
         li { margin-bottom: 4px; }
-        code {
-            background: #f3f4f6;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-size: 0.88em;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 0.9rem;
-            margin: 12px 0 20px;
-        }
-        th {
-            background: #f5f5f5;
-            text-align: left;
-            padding: 8px 12px;
-            border-bottom: 2px solid #ddd;
-        }
+        code { background: #f3f4f6; padding: 2px 6px; border-radius: 4px; font-size: 0.88em; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.9rem; margin: 12px 0 20px; }
+        th { background: #f5f5f5; text-align: left; padding: 8px 12px; border-bottom: 2px solid #ddd; }
         td { padding: 8px 12px; border-bottom: 1px solid #eee; vertical-align: top; }
     </style>
 </head>
 <body>
-
 <h1>Privacy Policy — Foldio</h1>
 <p class="updated">Effective May 2026 · NoFriction Labs · <a href="mailto:NoFrictionLabs@gmail.com">NoFrictionLabs@gmail.com</a></p>
-
 <p>Foldio does not collect, transmit, store, or share any personal data. Everything stays on your device.</p>
-
 <h2>What data Foldio accesses</h2>
 <table>
-    <thead>
-        <tr>
-            <th>Data</th>
-            <th>Used for</th>
-            <th>Leaves your device?</th>
-        </tr>
-    </thead>
+    <thead><tr><th>Data</th><th>Used for</th><th>Leaves your device?</th></tr></thead>
     <tbody>
-        <tr>
-            <td>Camera</td>
-            <td>Document scanning via Google ML Kit</td>
-            <td>No — ML Kit processes images on-device</td>
-        </tr>
-        <tr>
-            <td>Photos / files you select</td>
-            <td>Importing images or PDFs you explicitly choose</td>
-            <td>No</td>
-        </tr>
-        <tr>
-            <td>Documents you create</td>
-            <td>Stored in app-private internal storage</td>
-            <td>No</td>
-        </tr>
-        <tr>
-            <td>Purchase status</td>
-            <td>Verifying your one-time Pro purchase via Google Play</td>
-            <td>Only to Google Play (your existing Play account)</td>
-        </tr>
+        <tr><td>Camera</td><td>Document scanning via Google ML Kit</td><td>No — ML Kit processes images on-device</td></tr>
+        <tr><td>Photos / files you select</td><td>Importing images or PDFs you explicitly choose</td><td>No</td></tr>
+        <tr><td>Documents you create</td><td>Stored in app-private internal storage</td><td>No</td></tr>
+        <tr><td>Purchase status</td><td>Verifying your one-time Pro purchase via Google Play</td><td>Only to Google Play (your existing Play account)</td></tr>
+        <tr><td>Google Drive (optional)</td><td>Backing up documents to your own Drive account if you enable it</td><td>Only to your personal Google Drive — Foldio servers are never involved</td></tr>
     </tbody>
 </table>
-
 <h2>What Foldio does NOT do</h2>
 <ul>
     <li><strong>No account required.</strong> You never sign in.</li>
-    <li><strong>No cloud storage.</strong> Your documents never leave your device.</li>
+    <li><strong>No cloud storage by default.</strong> Your documents stay on your device unless you explicitly connect Google Drive backup in Settings.</li>
     <li><strong>No analytics.</strong> No crash reporting services, no usage tracking, no event logging.</li>
     <li><strong>No advertising.</strong> No ad SDKs, no ad identifiers, no behavioural profiling.</li>
-    <li><strong>No third-party data sharing.</strong> The only external service Foldio communicates with is Google Play Billing, for verifying purchases you initiate.</li>
-    <li><strong>No background network access.</strong> Foldio has no background tasks that communicate over the network.</li>
+    <li><strong>No third-party data sharing.</strong> The only external services Foldio communicates with are Google Play Billing (purchases) and, if you enable it, your own Google Drive (BYOC backup).</li>
+    <li><strong>No background network access by default.</strong> Background network is used only if you explicitly connect Google Drive backup in Settings.</li>
 </ul>
-
 <h2>Google ML Kit (document scanning)</h2>
 <p>Foldio uses <a href="https://developers.google.com/ml-kit/vision/doc-scanner">Google ML Kit Document Scanner</a> to provide the camera scanning UI. ML Kit runs entirely on-device. The camera feed and scanned images are processed locally and are never sent to Google's servers. ML Kit's use of your camera is governed by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
-
 <h2>Google Play Billing</h2>
 <p>When you make a purchase, the transaction is handled by Google Play. Foldio communicates with Google Play's Billing SDK to verify that a purchase exists — this involves your Google account's purchase state, managed entirely by Google. Foldio never sees or stores your payment details. See <a href="https://payments.google.com/payments/apis-secure/u/0/get_legal_document?ldo=0&ldt=privacynotice">Google's Payments Privacy Notice</a>.</p>
-
+<h2>Optional Google Drive backup (BYOC)</h2>
+<p>Foldio offers an optional Bring Your Own Cloud backup feature. If you choose to enable it in Settings, you connect your own Google account and documents upload directly from your device to your personal Google Drive using the <code>drive.file</code> OAuth 2.0 scope — the narrowest available, meaning Foldio can only see files it created, never anything else in your Drive.</p>
+<p>Foldio's servers are never involved. The backup feature can be disconnected at any time from Settings, which immediately revokes access. If you never connect Google Drive, no network activity occurs.</p>
 <h2>Data stored on your device</h2>
 <p>All documents, scanned images, and app settings are stored in app-private internal storage (<code>/data/data/com.nofrictionlabs.foldio/</code>). This storage is:</p>
 <ul>
     <li>Accessible only to Foldio (Android enforces this at the OS level).</li>
     <li>Deleted automatically when you uninstall the app.</li>
-    <li>Never synced, backed up to external servers, or shared with other apps.</li>
+    <li>Never synced, backed up to external servers, or shared with other apps by default.</li>
 </ul>
-
 <h2>Children's Privacy</h2>
 <p>Foldio does not knowingly collect data from anyone under 13. The app is a general-purpose document scanner intended for adults and is not directed at children. It contains no features, content, or advertising targeting minors.</p>
-<p>Because Foldio collects no personal data from any user regardless of age, there is no special data handling required for younger users. No account is created, no information is transmitted off-device, and no usage is tracked.</p>
+<p>Because Foldio collects no personal data from any user regardless of age, there is no special data handling required for younger users. No account is created, no information is transmitted off-device by default, and no usage is tracked.</p>
 <p>If you are a parent or guardian and believe your child has somehow provided personal information through the app, please contact us at <a href="mailto:NoFrictionLabs@gmail.com">NoFrictionLabs@gmail.com</a> and we will address your concern promptly.</p>
-
 <h2>Changes to This Policy</h2>
 <p>If we ever change this policy in a material way, we will update the effective date above and note the change in the app's release notes. Given that Foldio collects no personal data, significant changes are unlikely.</p>
-
 <h2>Contact</h2>
 <p>Questions about this privacy policy? Email <a href="mailto:NoFrictionLabs@gmail.com">NoFrictionLabs@gmail.com</a>.</p>
-
 </body>
 </html>
