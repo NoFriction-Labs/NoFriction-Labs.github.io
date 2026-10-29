@@ -1,0 +1,166 @@
+{
+  "format": 1,
+  "id": "ch02-11",
+  "name": "Teal Stirs",
+  "ruleset": "base@3",
+  "seed": 1211,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 480,
+      "y": 1320,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 270,
+      "y": 1130,
+      "owner": 0,
+      "charge": 4
+    },
+    {
+      "kind": "source",
+      "x": 800,
+      "y": 1200,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 720,
+      "y": 530,
+      "owner": 0,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 310,
+      "y": 600,
+      "owner": 2,
+      "charge": 10
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": "easy"
+    }
+  ],
+  "meta": {
+    "chapter": 2,
+    "order": 11,
+    "teaches": "everything so far against a livelier Teal",
+    "intro": {
+      "title": "Teal Stirs",
+      "body": "Teal reaches for the gray towers too. Take yours with full lines before it gets there."
+    },
+    "goal": "Beat Teal to the gray towers",
+    "coach": [
+      {
+        "on": "rival_attacks",
+        "title": "Teal attacks!",
+        "body": "Teal is sending at you. Hit back with two towers, or feed the one it hits."
+      }
+    ],
+    "show_split": false,
+    "tip": "Full lines on the near grays, then gang up on Teal.",
+    "par": {
+      "ticks": 742,
+      "lost": 21,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch02-11",
+      "level_hash": "ad88e83c3bc66c1a",
+      "rules_hash": "b24b3381a6fb0747",
+      "seed": 1211,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 20,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 40,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 60,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 140,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 160,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 200,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 220,
+          "type": "cut",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 260,
+          "type": "open",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 280,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        }
+      ],
+      "end_tick": 742,
+      "final_hash": "4b9f1fa73a3321a1"
+    },
+    "difficulty": {
+      "score": 3,
+      "tier": "Easy",
+      "think_s": 19.2,
+      "slack_s": 5.5,
+      "moves": 16,
+      "pressure": 0.64,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 4,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "ad88e83c3bc66c1a"
+    },
+    "stars": {
+      "t2": 105,
+      "t3": 75
+    }
+  }
+}

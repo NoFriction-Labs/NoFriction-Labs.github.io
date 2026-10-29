@@ -1,0 +1,135 @@
+{
+  "format": 1,
+  "id": "ch02-06",
+  "name": "Long Road",
+  "ruleset": "base@3",
+  "seed": 1206,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 280,
+      "y": 380,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 800,
+      "y": 900,
+      "owner": 0,
+      "charge": 10
+    },
+    {
+      "kind": "source",
+      "x": 200,
+      "y": 720,
+      "owner": 0,
+      "charge": 5
+    },
+    {
+      "kind": "source",
+      "x": 320,
+      "y": 1180,
+      "owner": 2,
+      "charge": 6
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": "gentle"
+    }
+  ],
+  "meta": {
+    "chapter": 2,
+    "order": 6,
+    "teaches": "cut early: the tower grows while its units travel",
+    "intro": {
+      "title": "Long Road",
+      "body": "A long line keeps your tower from growing. Send enough, cut, and let it grow while they walk."
+    },
+    "goal": "Send enough, cut, grow",
+    "coach": [
+      {
+        "on": "cut_in_flight",
+        "title": "Still landing",
+        "body": "Your units on that line keep going, and your tower grows again meanwhile."
+      }
+    ],
+    "show_split": true,
+    "tip": "Cut the long line once enough units are on it: they still land.",
+    "par": {
+      "ticks": 767,
+      "lost": 25,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch02-06",
+      "level_hash": "cae6a7350fc21dbd",
+      "rules_hash": "b24b3381a6fb0747",
+      "seed": 1206,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 20,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 80,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 280,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 300,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 340,
+          "type": "open",
+          "src": 2,
+          "dst": 3
+        }
+      ],
+      "end_tick": 767,
+      "final_hash": "96e8f4cc0e179ae5"
+    },
+    "difficulty": {
+      "score": 1,
+      "tier": "Easy",
+      "think_s": 19.0,
+      "slack_s": 5.8,
+      "moves": 10,
+      "pressure": 0.46,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 3,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "cae6a7350fc21dbd"
+    },
+    "stars": {
+      "t2": 90,
+      "t3": 65
+    }
+  }
+}

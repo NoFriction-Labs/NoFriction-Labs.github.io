@@ -1,0 +1,159 @@
+{
+  "format": 1,
+  "id": "ch02-10",
+  "name": "Switch",
+  "ruleset": "base@3",
+  "seed": 1210,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 700,
+      "y": 350,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 390,
+      "y": 380,
+      "owner": 0,
+      "charge": 5
+    },
+    {
+      "kind": "source",
+      "x": 700,
+      "y": 640,
+      "owner": 0,
+      "charge": 5
+    },
+    {
+      "kind": "source",
+      "x": 320,
+      "y": 900,
+      "owner": 0,
+      "charge": 10
+    },
+    {
+      "kind": "source",
+      "x": 650,
+      "y": 1160,
+      "owner": 2,
+      "charge": 12
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": "easy"
+    }
+  ],
+  "meta": {
+    "chapter": 2,
+    "order": 10,
+    "teaches": "re-aim mid-fight: cut and switch lines",
+    "intro": {
+      "title": "Switch",
+      "body": "Teal is a little quicker now. When a tower falls, switch your lines to the next target."
+    },
+    "goal": "Take a tower, switch, take the next",
+    "show_split": false,
+    "tip": "Cut a line the moment its tower falls, and aim it at the next one.",
+    "par": {
+      "ticks": 852,
+      "lost": 43,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch02-10",
+      "level_hash": "cf42c788759acfcc",
+      "rules_hash": "b24b3381a6fb0747",
+      "seed": 1210,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 60,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 80,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 240,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 260,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 400,
+          "type": "open",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 420,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 480,
+          "type": "cut",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 500,
+          "type": "open",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 520,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        }
+      ],
+      "end_tick": 852,
+      "final_hash": "bc0a33c750d56532"
+    },
+    "difficulty": {
+      "score": 2,
+      "tier": "Easy",
+      "think_s": 20.0,
+      "slack_s": 6.0,
+      "moves": 13,
+      "pressure": 0.65,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 4,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "cf42c788759acfcc"
+    },
+    "stars": {
+      "t2": 90,
+      "t3": 65
+    }
+  }
+}

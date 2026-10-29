@@ -1,0 +1,141 @@
+{
+  "format": 1,
+  "id": "ch02-07",
+  "name": "Strike and Grow",
+  "ruleset": "base@3",
+  "seed": 1207,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 540,
+      "y": 260,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 220,
+      "y": 690,
+      "owner": 0,
+      "charge": 5
+    },
+    {
+      "kind": "source",
+      "x": 800,
+      "y": 630,
+      "owner": 0,
+      "charge": 5
+    },
+    {
+      "kind": "source",
+      "x": 440,
+      "y": 930,
+      "owner": 2,
+      "charge": 14
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": "gentle"
+    }
+  ],
+  "meta": {
+    "chapter": 2,
+    "order": 7,
+    "teaches": "burst, cut, regrow, burst",
+    "intro": {
+      "title": "Strike and Grow",
+      "body": "Hit hard, cut, let your towers grow back, hit again. A tower that sends doesn't grow."
+    },
+    "goal": "Strike, cut, grow, strike",
+    "coach": [
+      {
+        "on": "first_capture",
+        "title": "Now grow",
+        "body": "Taken. Cut your lines, let your towers grow back to 20, then strike again."
+      }
+    ],
+    "show_split": true,
+    "tip": "Don't trickle at Teal: grow to 20, then strike with everything.",
+    "par": {
+      "ticks": 756,
+      "lost": 0,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch02-07",
+      "level_hash": "eaa332b812eb7c14",
+      "rules_hash": "b24b3381a6fb0747",
+      "seed": 1207,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 20,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 180,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 200,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 240,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 320,
+          "type": "open",
+          "src": 2,
+          "dst": 3
+        },
+        {
+          "tick": 340,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        }
+      ],
+      "end_tick": 756,
+      "final_hash": "f9275c397c437a7e"
+    },
+    "difficulty": {
+      "score": 2,
+      "tier": "Easy",
+      "think_s": 20.0,
+      "slack_s": 6.0,
+      "moves": 10,
+      "pressure": 0.67,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 3,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "eaa332b812eb7c14"
+    },
+    "stars": {
+      "t2": 75,
+      "t3": 55
+    }
+  }
+}

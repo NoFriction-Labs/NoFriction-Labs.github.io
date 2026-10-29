@@ -1,0 +1,154 @@
+{
+  "format": 1,
+  "id": "ch02-04",
+  "name": "Pick Your Lines",
+  "ruleset": "base@3",
+  "seed": 1204,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 220,
+      "y": 900,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 480,
+      "y": 520,
+      "owner": 0,
+      "charge": 3
+    },
+    {
+      "kind": "source",
+      "x": 520,
+      "y": 1300,
+      "owner": 0,
+      "charge": 3
+    },
+    {
+      "kind": "source",
+      "x": 780,
+      "y": 860,
+      "owner": 2,
+      "charge": 10
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": "gentle"
+    }
+  ],
+  "meta": {
+    "chapter": 2,
+    "order": 4,
+    "teaches": "spread onto cheap towers, focus on the big one",
+    "intro": {
+      "title": "Pick Your Lines",
+      "body": "Cheap towers fall to thin lines. A big, growing one needs your full stream."
+    },
+    "goal": "Spread on the cheap, focus on Teal",
+    "coach": [
+      {
+        "on": "stall",
+        "title": "Not enough",
+        "body": "Teal grows faster than this thin line hits it. Cut the rest, then hit Teal from more towers.",
+        "alone": "One tower alone can't beat a growing Teal. Take the cheap grays and bring them onto Teal too."
+      }
+    ],
+    "show_split": true,
+    "tip": "Two cheap grays first, then hit Teal from all three towers.",
+    "par": {
+      "ticks": 607,
+      "lost": 10,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch02-04",
+      "level_hash": "375ed680ba52cd48",
+      "rules_hash": "b24b3381a6fb0747",
+      "seed": 1204,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 10,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 110,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 200,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 210,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 290,
+          "type": "open",
+          "src": 2,
+          "dst": 3
+        },
+        {
+          "tick": 300,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 340,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 350,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        }
+      ],
+      "end_tick": 607,
+      "final_hash": "8d82b67269687847"
+    },
+    "difficulty": {
+      "score": 1,
+      "tier": "Easy",
+      "think_s": 19.0,
+      "slack_s": 6.0,
+      "moves": 9,
+      "pressure": 0.64,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 3,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "375ed680ba52cd48"
+    },
+    "stars": {
+      "t2": 65,
+      "t3": 45
+    }
+  }
+}

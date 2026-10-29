@@ -1,0 +1,232 @@
+{
+  "format": 1,
+  "id": "ch02-09",
+  "name": "Two Fronts",
+  "ruleset": "base@3",
+  "seed": 1209,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 220,
+      "y": 1180,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 500,
+      "y": 1370,
+      "owner": 0,
+      "charge": 5
+    },
+    {
+      "kind": "source",
+      "x": 740,
+      "y": 1250,
+      "owner": 0,
+      "charge": 5
+    },
+    {
+      "kind": "source",
+      "x": 290,
+      "y": 690,
+      "owner": 0,
+      "charge": 12
+    },
+    {
+      "kind": "source",
+      "x": 740,
+      "y": 520,
+      "owner": 2,
+      "charge": 8
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": "gentle"
+    }
+  ],
+  "meta": {
+    "chapter": 2,
+    "order": 9,
+    "teaches": "choose one line or two",
+    "intro": {
+      "title": "Two Fronts",
+      "body": "Two lines take two cheap towers at once. A big one needs your whole stream."
+    },
+    "goal": "Cheap ones together, big one alone",
+    "coach": [
+      {
+        "on": "first_capture",
+        "title": "One at a time",
+        "body": "Thin lines took the cheap one. The big tower needs a full line: cut back to one."
+      }
+    ],
+    "show_split": true,
+    "tip": "Thin lines for the cheap grays, full lines for the big one.",
+    "par": {
+      "ticks": 999,
+      "lost": 42,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch02-09",
+      "level_hash": "cf14cb22545c7745",
+      "rules_hash": "b24b3381a6fb0747",
+      "seed": 1209,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 10,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 20,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 30,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 100,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 170,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 180,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 230,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 290,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 300,
+          "type": "cut",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 330,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 460,
+          "type": "open",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 470,
+          "type": "open",
+          "src": 2,
+          "dst": 3
+        },
+        {
+          "tick": 490,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 500,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 510,
+          "type": "cut",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 540,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 550,
+          "type": "open",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 640,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 670,
+          "type": "open",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 680,
+          "type": "cut",
+          "src": 2,
+          "dst": 3
+        }
+      ],
+      "end_tick": 999,
+      "final_hash": "c96d8438bef5911e"
+    },
+    "difficulty": {
+      "score": 0,
+      "tier": "Easy",
+      "think_s": 20.0,
+      "slack_s": 6.0,
+      "moves": 11,
+      "pressure": 0.48,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 4,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "cf14cb22545c7745"
+    },
+    "stars": {
+      "t2": 75,
+      "t3": 55
+    }
+  }
+}
