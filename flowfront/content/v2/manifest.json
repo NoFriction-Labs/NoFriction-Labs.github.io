@@ -1,0 +1,68 @@
+{
+  "format": 1,
+  "channel": "main",
+  "serial": 1793251623,
+  "packs": [
+    {
+      "id": "ch02",
+      "version": 2,
+      "min_app_version": "0.4.0",
+      "chapter": 2,
+      "name": "Branches",
+      "files": [
+        {
+          "path": "packs/ch02/2/index.json",
+          "sha256": "73f0d6700059bc205c9cba3148a0bdcbfdf68002aad411696025cadd368ed17d"
+        },
+        {
+          "path": "packs/ch02/2/levels/01-full-stream.json",
+          "sha256": "db151ddbf4e8d4a71d18203506ea6679d9bff246f75c330bd093d05a6fd1a988"
+        },
+        {
+          "path": "packs/ch02/2/levels/02-cut-and-switch.json",
+          "sha256": "01201511229dc59e5997221227634a1eff4b0d5c92f15efb35d9ce6c4e917623"
+        },
+        {
+          "path": "packs/ch02/2/levels/03-thin-lines.json",
+          "sha256": "35510283e624e721f988fe3a9ef932b366232644e6808ab29ec0add2496fc87d"
+        },
+        {
+          "path": "packs/ch02/2/levels/04-pick-your-lines.json",
+          "sha256": "ab1b644cd4ec9ad1905c70331249bea2d3e29699c55961da4a89dc62949a72c6"
+        },
+        {
+          "path": "packs/ch02/2/levels/05-on-the-way.json",
+          "sha256": "b4272ed797072b15845a51a19eaa35a417172ecee04c8efaa6e8d194142572e5"
+        },
+        {
+          "path": "packs/ch02/2/levels/06-long-road.json",
+          "sha256": "01aeff5f34715dee607872bcaf81d809d24d6bede2509ef6d4038e4689b7e0d6"
+        },
+        {
+          "path": "packs/ch02/2/levels/07-strike-and-grow.json",
+          "sha256": "5f4e5b480ac72b06e2865cf1b3028bf51fa87b599d94fbb88e5ca3e788c2cb24"
+        },
+        {
+          "path": "packs/ch02/2/levels/08-feed-and-fight.json",
+          "sha256": "5a44c359a3f4941f38ee81afa8c7cd63c8702d0c1ba4e2485a944365df11b6d8"
+        },
+        {
+          "path": "packs/ch02/2/levels/09-two-fronts.json",
+          "sha256": "1f99588010ac93381136fd2e5de7d7a12f525ce1d0c1e29533fa41d6b48c5ea4"
+        },
+        {
+          "path": "packs/ch02/2/levels/10-switch.json",
+          "sha256": "2fcc3e6301c43cfa21d87e9da621f0f3396e25df544c2c0b76b1a8da2f5caed0"
+        },
+        {
+          "path": "packs/ch02/2/levels/11-teal-stirs.json",
+          "sha256": "da671c82225e4f7862ebaa82bc9f5af452055cbaa3731a6c50c8dfe475e7bf1b"
+        },
+        {
+          "path": "packs/ch02/2/levels/12-crossing.json",
+          "sha256": "6ffbe8ab266e383a111dadd517ab77249f261ac21bb9e0b5828b2ebb131b049f"
+        }
+      ]
+    }
+  ]
+}

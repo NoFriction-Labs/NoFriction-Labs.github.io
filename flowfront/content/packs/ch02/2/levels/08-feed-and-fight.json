@@ -1,0 +1,178 @@
+{
+  "format": 1,
+  "id": "ch02-08",
+  "name": "Feed and Fight",
+  "ruleset": "base@3",
+  "seed": 1208,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 570,
+      "y": 1250,
+      "owner": 1,
+      "charge": 25
+    },
+    {
+      "kind": "source",
+      "x": 660,
+      "y": 670,
+      "owner": 1,
+      "charge": 4
+    },
+    {
+      "kind": "source",
+      "x": 200,
+      "y": 1100,
+      "owner": 0,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 550,
+      "y": 360,
+      "owner": 2,
+      "charge": 10
+    },
+    {
+      "kind": "source",
+      "x": 280,
+      "y": 470,
+      "owner": 0,
+      "charge": 4
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": "gentle"
+    }
+  ],
+  "meta": {
+    "chapter": 2,
+    "order": 8,
+    "teaches": "one line feeds your own tower, one attacks",
+    "intro": {
+      "title": "Feed and Fight",
+      "body": "A line into your own tower makes it bigger. Feed your small tower, fight with the rest."
+    },
+    "goal": "Feed your small tower, then attack",
+    "coach": [
+      {
+        "on": "rival_attacks",
+        "title": "Feed it",
+        "body": "Teal hits one of your towers. A line from your big one into it keeps it standing."
+      }
+    ],
+    "show_split": true,
+    "tip": "Feed the small tower from the big one, then take the gray.",
+    "par": {
+      "ticks": 630,
+      "lost": 17,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch02-08",
+      "level_hash": "91c20bd11a978dbc",
+      "rules_hash": "b24b3381a6fb0747",
+      "seed": 1208,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 10,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 120,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 160,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 190,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 200,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 240,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 250,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 260,
+          "type": "cut",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 340,
+          "type": "open",
+          "src": 2,
+          "dst": 3
+        },
+        {
+          "tick": 350,
+          "type": "cut",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 380,
+          "type": "open",
+          "src": 4,
+          "dst": 3
+        }
+      ],
+      "end_tick": 630,
+      "final_hash": "147eb0b6c8c26ea7"
+    },
+    "difficulty": {
+      "score": 0,
+      "tier": "Easy",
+      "think_s": 18.1,
+      "slack_s": 6.0,
+      "moves": 9,
+      "pressure": 0.43,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 3,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "91c20bd11a978dbc"
+    },
+    "stars": {
+      "t2": 55,
+      "t3": 40
+    }
+  }
+}

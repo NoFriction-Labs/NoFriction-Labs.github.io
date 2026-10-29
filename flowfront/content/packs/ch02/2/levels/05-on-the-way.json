@@ -1,0 +1,249 @@
+{
+  "format": 1,
+  "id": "ch02-05",
+  "name": "On the Way",
+  "ruleset": "base@3",
+  "seed": 1205,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 760,
+      "y": 1320,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 260,
+      "y": 420,
+      "owner": 0,
+      "charge": 12
+    },
+    {
+      "kind": "source",
+      "x": 500,
+      "y": 1220,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 760,
+      "y": 640,
+      "owner": 2,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 300,
+      "y": 900,
+      "owner": 0,
+      "charge": 4
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": "gentle"
+    }
+  ],
+  "meta": {
+    "chapter": 2,
+    "order": 5,
+    "teaches": "units already on a line keep going after a cut",
+    "intro": {
+      "title": "On the Way",
+      "body": "Far towers take a while to reach. Once enough units are on the line, you can cut it."
+    },
+    "lesson": [
+      {
+        "title": "Units keep going",
+        "body": "Cut a line and the units already on it keep marching. They still land and still count.",
+        "demo": "flight"
+      }
+    ],
+    "goal": "Cut once enough are on the way",
+    "guide": [
+      {
+        "on": "start",
+        "title": "The far tower",
+        "body": "Drag to the far tower. It's a long road.",
+        "do": {
+          "open": [
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "on": "enough_in_flight",
+        "title": "Enough on the way",
+        "body": "Enough units are on that line to take it. Cut now: they still land.",
+        "do": {
+          "cut": [
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "on": "tick:150",
+        "title": "Next target",
+        "body": "Your tower is free again. Drag to the near gray tower.",
+        "do": {
+          "open": [
+            0,
+            2
+          ]
+        }
+      }
+    ],
+    "show_split": true,
+    "tip": "Cut the long line once enough units are on it, then send elsewhere.",
+    "par": {
+      "ticks": 964,
+      "lost": 45,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch02-05",
+      "level_hash": "92a2bd9967578fac",
+      "rules_hash": "b24b3381a6fb0747",
+      "seed": 1205,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 140,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 150,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 150,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 230,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 290,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 300,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 480,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 590,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 600,
+          "type": "open",
+          "src": 2,
+          "dst": 1
+        },
+        {
+          "tick": 620,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 630,
+          "type": "cut",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 640,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 670,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 680,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 690,
+          "type": "open",
+          "src": 2,
+          "dst": 3
+        },
+        {
+          "tick": 700,
+          "type": "cut",
+          "src": 2,
+          "dst": 1
+        },
+        {
+          "tick": 730,
+          "type": "open",
+          "src": 4,
+          "dst": 3
+        }
+      ],
+      "end_tick": 964,
+      "final_hash": "0787ee694127f851"
+    },
+    "difficulty": {
+      "score": 0,
+      "tier": "Easy",
+      "think_s": 17.7,
+      "slack_s": 5.9,
+      "moves": 12,
+      "pressure": 0.46,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 4,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "92a2bd9967578fac"
+    },
+    "stars": {
+      "t2": 75,
+      "t3": 55
+    }
+  }
+}

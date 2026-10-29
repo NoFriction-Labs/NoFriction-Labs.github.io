@@ -1,0 +1,216 @@
+{
+  "format": 1,
+  "id": "ch02-02",
+  "name": "Cut and Switch",
+  "ruleset": "base@3",
+  "seed": 1202,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 250,
+      "y": 1300,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 250,
+      "y": 950,
+      "owner": 0,
+      "charge": 10
+    },
+    {
+      "kind": "source",
+      "x": 600,
+      "y": 1300,
+      "owner": 0,
+      "charge": 10
+    },
+    {
+      "kind": "source",
+      "x": 720,
+      "y": 700,
+      "owner": 2,
+      "charge": 6
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": "gentle"
+    }
+  ],
+  "meta": {
+    "chapter": 2,
+    "order": 2,
+    "teaches": "a second line halves both: cut back to one, then switch",
+    "intro": {
+      "title": "Cut and Switch",
+      "body": "Two gray towers, one stream. Follow the finger and feel what a second line does."
+    },
+    "goal": "Follow the finger",
+    "guide": [
+      {
+        "on": "start",
+        "title": "One line",
+        "body": "Drag up to the tower above. One line gets your whole stream.",
+        "do": {
+          "open": [
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "on": "route_opened",
+        "title": "A second line",
+        "body": "Now drag to the right tower too, and watch the upper line.",
+        "do": {
+          "open": [
+            0,
+            2
+          ]
+        }
+      },
+      {
+        "on": "route_opened",
+        "title": "Split in half",
+        "body": "Both lines get half now, so both towers drop half as fast. Cut the new line.",
+        "do": {
+          "cut": [
+            0,
+            2
+          ]
+        }
+      },
+      {
+        "on": "first_capture",
+        "title": "Switch",
+        "body": "The upper tower is yours. Send it at the right one: a fresh full stream.",
+        "do": {
+          "open": [
+            1,
+            2
+          ]
+        }
+      }
+    ],
+    "show_split": true,
+    "tip": "One line at a time. When a tower falls, send from it to the next.",
+    "par": {
+      "ticks": 957,
+      "lost": 42,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch02-02",
+      "level_hash": "369ef83ad7828f3f",
+      "rules_hash": "b24b3381a6fb0747",
+      "seed": 1202,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 60,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 120,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 247,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 260,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 340,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 400,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 600,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 620,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 640,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 680,
+          "type": "open",
+          "src": 2,
+          "dst": 3
+        },
+        {
+          "tick": 700,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 720,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        }
+      ],
+      "end_tick": 957,
+      "final_hash": "c928ea5cdcb58669"
+    },
+    "difficulty": {
+      "score": 1,
+      "tier": "Easy",
+      "think_s": 20.0,
+      "slack_s": 5.7,
+      "moves": 11,
+      "pressure": 0.46,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 3,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "369ef83ad7828f3f"
+    },
+    "stars": {
+      "t2": 80,
+      "t3": 55
+    }
+  }
+}

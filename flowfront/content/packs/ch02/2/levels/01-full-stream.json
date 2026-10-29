@@ -1,0 +1,137 @@
+{
+  "format": 1,
+  "id": "ch02-01",
+  "name": "Full Stream",
+  "ruleset": "base@3",
+  "seed": 1201,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 550,
+      "y": 760,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 320,
+      "y": 1170,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 340,
+      "y": 510,
+      "owner": 2,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 800,
+      "y": 620,
+      "owner": 0,
+      "charge": 4
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": "gentle"
+    }
+  ],
+  "meta": {
+    "chapter": 2,
+    "order": 1,
+    "teaches": "one line gets a tower's whole output",
+    "intro": {
+      "title": "Full Stream",
+      "body": "Teal is awake now, but slow. Your tower makes a steady stream of units. Point it all down one line."
+    },
+    "lesson": [
+      {
+        "title": "One line, all of it",
+        "body": "At 20 your tower makes 3 units a second. With one line, every one of them goes down it.",
+        "demo": "split"
+      }
+    ],
+    "goal": "One line to the gray tower",
+    "coach": [
+      {
+        "on": "first_capture",
+        "title": "One line gets everything",
+        "body": "Every unit went down that one line, so it fell fast. Now take the rest, one line at a time."
+      }
+    ],
+    "ghost": "drag",
+    "show_split": true,
+    "tip": "Send one line at a time: the whole stream goes down it.",
+    "par": {
+      "ticks": 469,
+      "lost": 0,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch02-01",
+      "level_hash": "1f7a3e5608280442",
+      "rules_hash": "b24b3381a6fb0747",
+      "seed": 1201,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 100,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 180,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 230,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 340,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        }
+      ],
+      "end_tick": 469,
+      "final_hash": "3e37990dcef83b56"
+    },
+    "difficulty": {
+      "score": 0,
+      "tier": "Easy",
+      "think_s": 18.5,
+      "slack_s": 5.9,
+      "moves": 6,
+      "pressure": 0.46,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 3,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "1f7a3e5608280442"
+    },
+    "stars": {
+      "t2": 45,
+      "t3": 30
+    }
+  }
+}
