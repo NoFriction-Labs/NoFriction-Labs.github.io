@@ -1,0 +1,153 @@
+{
+  "format": 1,
+  "id": "ch01-05",
+  "name": "Grow First",
+  "ruleset": "base@2",
+  "seed": 105,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 240,
+      "y": 620,
+      "owner": 0,
+      "charge": 4
+    },
+    {
+      "kind": "source",
+      "x": 220,
+      "y": 1300,
+      "owner": 1,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 820,
+      "y": 1250,
+      "owner": 0,
+      "charge": 4
+    }
+  ],
+  "rivals": [],
+  "meta": {
+    "chapter": 1,
+    "order": 5,
+    "teaches": "route slots: 1 line under 10, 2 at 10, 3 at 20",
+    "intro": {
+      "title": "Grow First",
+      "body": "A small tower can hold only one line. Let it grow and it holds more."
+    },
+    "lesson": [
+      {
+        "title": "Room for lines",
+        "body": "Under 10 a tower holds 1 line. At 10 it holds 2, and at 20 it holds 3.",
+        "demo": "slots"
+      }
+    ],
+    "goal": "Wait for 10, then take both",
+    "coach": [
+      {
+        "on": "reach_10",
+        "title": "10! A 2nd line",
+        "body": "Your tower holds 2 lines now. Drag to both gray towers."
+      },
+      {
+        "on": "route_cap_refused",
+        "title": "Only 1 line",
+        "body": "Under 10 a tower holds 1 line. Swipe to cut yours, let the tower grow to 10, then drag to both."
+      }
+    ],
+    "marks": [
+      {
+        "at": 1,
+        "text": "Don't drag yet: grow to 10",
+        "until": {
+          "time": 80
+        }
+      },
+      {
+        "at": 1,
+        "text": "At 10 it holds 2 lines",
+        "arrow": [
+          1,
+          0
+        ],
+        "until": {
+          "open": [
+            1,
+            0
+          ]
+        }
+      },
+      {
+        "at": 1,
+        "text": "And this one",
+        "arrow": [
+          1,
+          2
+        ],
+        "until": {
+          "open": [
+            1,
+            2
+          ]
+        }
+      }
+    ],
+    "tip": "Don't drag yet: wait until your tower shows 10, then open both lines.",
+    "par": {
+      "ticks": 387,
+      "lost": 0,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch01-05",
+      "level_hash": "1b0dd9cd73b14579",
+      "rules_hash": "0b870726dec17070",
+      "seed": 105,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 80,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 90,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        }
+      ],
+      "end_tick": 387,
+      "final_hash": "25047e623947c1e9"
+    },
+    "difficulty": {
+      "score": 0,
+      "tier": "Easy",
+      "think_s": 20.0,
+      "slack_s": 6.0,
+      "moves": 3,
+      "pressure": 0.0,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 2,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "1b0dd9cd73b14579"
+    },
+    "stars": {
+      "t2": 45,
+      "t3": 35
+    }
+  }
+}

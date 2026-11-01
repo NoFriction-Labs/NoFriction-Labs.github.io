@@ -1,0 +1,110 @@
+[
+  {
+    "id": "ch03-01",
+    "name": "Dawn",
+    "chapter": 3,
+    "order": 1,
+    "tier": "Easy",
+    "path": "levels/01-dawn.json",
+    "chapter_name": "First Front"
+  },
+  {
+    "id": "ch03-02",
+    "name": "Around the Rock",
+    "chapter": 3,
+    "order": 2,
+    "tier": "Easy",
+    "path": "levels/02-around-the-rock.json",
+    "chapter_name": "First Front"
+  },
+  {
+    "id": "ch03-03",
+    "name": "Change of Plans",
+    "chapter": 3,
+    "order": 3,
+    "tier": "Easy",
+    "path": "levels/03-change-of-plans.json",
+    "chapter_name": "First Front"
+  },
+  {
+    "id": "ch03-04",
+    "name": "Narrow Pass",
+    "chapter": 3,
+    "order": 4,
+    "tier": "Easy",
+    "path": "levels/04-narrow-pass.json",
+    "chapter_name": "First Front"
+  },
+  {
+    "id": "ch03-05",
+    "name": "The Wall",
+    "chapter": 3,
+    "order": 5,
+    "tier": "Easy",
+    "path": "levels/05-the-wall.json",
+    "chapter_name": "First Front"
+  },
+  {
+    "id": "ch03-06",
+    "name": "Boulder Field",
+    "chapter": 3,
+    "order": 6,
+    "tier": "Easy",
+    "path": "levels/06-boulder-field.json",
+    "chapter_name": "First Front"
+  },
+  {
+    "id": "ch03-07",
+    "name": "The Divide",
+    "chapter": 3,
+    "order": 7,
+    "tier": "Easy",
+    "path": "levels/07-divide.json",
+    "chapter_name": "First Front"
+  },
+  {
+    "id": "ch03-08",
+    "name": "Watchtower",
+    "chapter": 3,
+    "order": 8,
+    "tier": "Easy",
+    "path": "levels/08-watchtower.json",
+    "chapter_name": "First Front"
+  },
+  {
+    "id": "ch03-09",
+    "name": "Stand Firm",
+    "chapter": 3,
+    "order": 9,
+    "tier": "Easy",
+    "path": "levels/09-stand-firm.json",
+    "chapter_name": "First Front"
+  },
+  {
+    "id": "ch03-10",
+    "name": "Guarded Pass",
+    "chapter": 3,
+    "order": 10,
+    "tier": "Medium",
+    "path": "levels/10-guarded-pass.json",
+    "chapter_name": "First Front"
+  },
+  {
+    "id": "ch03-11",
+    "name": "Overlook",
+    "chapter": 3,
+    "order": 11,
+    "tier": "Medium",
+    "path": "levels/11-overlook.json",
+    "chapter_name": "First Front"
+  },
+  {
+    "id": "ch03-12",
+    "name": "First Front",
+    "chapter": 3,
+    "order": 12,
+    "tier": "Medium",
+    "path": "levels/12-first-front.json",
+    "chapter_name": "First Front"
+  }
+]

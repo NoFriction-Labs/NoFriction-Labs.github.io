@@ -1,0 +1,125 @@
+{
+  "format": 1,
+  "id": "ch01-04",
+  "name": "Snip",
+  "ruleset": "base@2",
+  "seed": 104,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 560,
+      "y": 1350,
+      "owner": 0,
+      "charge": 1
+    },
+    {
+      "kind": "source",
+      "x": 220,
+      "y": 1100,
+      "owner": 1,
+      "charge": 3
+    },
+    {
+      "kind": "source",
+      "x": 780,
+      "y": 500,
+      "owner": 0,
+      "charge": 6
+    }
+  ],
+  "rivals": [],
+  "meta": {
+    "chapter": 1,
+    "order": 4,
+    "teaches": "cut a line to free its slot",
+    "intro": {
+      "title": "Snip",
+      "body": "Changed your mind? Swipe across a line to cut it. Its slot is free again at once. Units on it still land."
+    },
+    "goal": "Take one, cut, then take the other",
+    "ghost": "cut",
+    "marks": [
+      {
+        "at": 0,
+        "text": "Take the 1 first",
+        "arrow": [
+          1,
+          0
+        ],
+        "until": {
+          "own": 0
+        }
+      },
+      {
+        "at": 2,
+        "text": "Cut, then drag here",
+        "arrow": [
+          1,
+          2
+        ],
+        "until": {
+          "open": [
+            1,
+            2
+          ]
+        }
+      }
+    ],
+    "tip": "Swipe across your line to cut it, then drag to the other gray tower.",
+    "par": {
+      "ticks": 414,
+      "lost": 0,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch01-04",
+      "level_hash": "9d9c4aaa07947ad4",
+      "rules_hash": "0b870726dec17070",
+      "seed": 104,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 20,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 30,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        }
+      ],
+      "end_tick": 414,
+      "final_hash": "120bebceb6a0c0d9"
+    },
+    "difficulty": {
+      "score": 0,
+      "tier": "Easy",
+      "think_s": 20.0,
+      "slack_s": 6.0,
+      "moves": 4,
+      "pressure": 0.0,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 2,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "9d9c4aaa07947ad4"
+    },
+    "stars": {
+      "t2": 60,
+      "t3": 45
+    }
+  }
+}

@@ -1,0 +1,513 @@
+{
+  "format": 1,
+  "id": "ch05-04",
+  "name": "Spillway",
+  "ruleset": "base@2",
+  "seed": 5204,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 820,
+      "y": 200,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 560,
+      "y": 170,
+      "owner": 1,
+      "charge": 12
+    },
+    {
+      "kind": "vault",
+      "x": 880,
+      "y": 450,
+      "owner": 0,
+      "charge": 3
+    },
+    {
+      "kind": "relay",
+      "x": 540,
+      "y": 760,
+      "owner": 0,
+      "charge": 2
+    },
+    {
+      "kind": "source",
+      "x": 840,
+      "y": 1020,
+      "owner": 0,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 290,
+      "y": 520,
+      "owner": 0,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 200,
+      "y": 1000,
+      "owner": 2,
+      "charge": 10
+    },
+    {
+      "kind": "source",
+      "x": 520,
+      "y": 1300,
+      "owner": 2,
+      "charge": 10
+    },
+    {
+      "kind": "source",
+      "x": 200,
+      "y": 1360,
+      "owner": 2,
+      "charge": 12
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 140,
+        "aggression": 68,
+        "pref_player": 90,
+        "patience": 15,
+        "noise": 12,
+        "reaction": 140
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 5,
+    "order": 4,
+    "teaches": "pour a vault through a relay to any front",
+    "intro": {
+      "title": "Spillway",
+      "body": "A relay passes on what it gets. Pour your vault into it and steer the flood from there.",
+      "spotlight": null
+    },
+    "goal": "Pour the vault through the relay",
+    "marks": [
+      {
+        "at": 3,
+        "text": "Pour into the relay",
+        "arrow": [
+          2,
+          3
+        ],
+        "until": {
+          "open": [
+            2,
+            3
+          ]
+        }
+      },
+      {
+        "at": 4,
+        "text": "Swing the relay, not the vault",
+        "arrow": [
+          3,
+          4
+        ],
+        "after": 300,
+        "until": {
+          "open": [
+            3,
+            4
+          ]
+        }
+      }
+    ],
+    "tip": "Vault to relay, relay to the front: one pipe, many targets.",
+    "par": {
+      "ticks": 1650,
+      "lost": 106,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch05-04",
+      "level_hash": "b8c2095cf2918e72",
+      "rules_hash": "0b870726dec17070",
+      "seed": 5204,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 20,
+          "type": "open",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 40,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 60,
+          "type": "open",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 80,
+          "type": "open",
+          "src": 0,
+          "dst": 6
+        },
+        {
+          "tick": 100,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 120,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 180,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 200,
+          "type": "cut",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 220,
+          "type": "cut",
+          "src": 0,
+          "dst": 6
+        },
+        {
+          "tick": 240,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 260,
+          "type": "open",
+          "src": 3,
+          "dst": 6
+        },
+        {
+          "tick": 300,
+          "type": "open",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 320,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 340,
+          "type": "cut",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 440,
+          "type": "open",
+          "src": 0,
+          "dst": 7
+        },
+        {
+          "tick": 460,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 480,
+          "type": "open",
+          "src": 3,
+          "dst": 6
+        },
+        {
+          "tick": 500,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 520,
+          "type": "cut",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 540,
+          "type": "open",
+          "src": 5,
+          "dst": 3
+        },
+        {
+          "tick": 560,
+          "type": "open",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 580,
+          "type": "open",
+          "src": 5,
+          "dst": 7
+        },
+        {
+          "tick": 620,
+          "type": "open",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 640,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 660,
+          "type": "open",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 700,
+          "type": "cut",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 740,
+          "type": "cut",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 780,
+          "type": "open",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 800,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 820,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 840,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 860,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 880,
+          "type": "open",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 900,
+          "type": "open",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 920,
+          "type": "cut",
+          "src": 5,
+          "dst": 7
+        },
+        {
+          "tick": 940,
+          "type": "open",
+          "src": 6,
+          "dst": 8
+        },
+        {
+          "tick": 960,
+          "type": "open",
+          "src": 5,
+          "dst": 6
+        },
+        {
+          "tick": 980,
+          "type": "open",
+          "src": 3,
+          "dst": 6
+        },
+        {
+          "tick": 1000,
+          "type": "open",
+          "src": 4,
+          "dst": 1
+        },
+        {
+          "tick": 1020,
+          "type": "cut",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 1040,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 1060,
+          "type": "open",
+          "src": 3,
+          "dst": 6
+        },
+        {
+          "tick": 1140,
+          "type": "cut",
+          "src": 5,
+          "dst": 6
+        },
+        {
+          "tick": 1160,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 1180,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 1240,
+          "type": "open",
+          "src": 5,
+          "dst": 7
+        },
+        {
+          "tick": 1300,
+          "type": "open",
+          "src": 3,
+          "dst": 7
+        },
+        {
+          "tick": 1340,
+          "type": "open",
+          "src": 4,
+          "dst": 3
+        },
+        {
+          "tick": 1360,
+          "type": "open",
+          "src": 3,
+          "dst": 7
+        },
+        {
+          "tick": 1380,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 1420,
+          "type": "open",
+          "src": 3,
+          "dst": 7
+        },
+        {
+          "tick": 1500,
+          "type": "open",
+          "src": 4,
+          "dst": 7
+        },
+        {
+          "tick": 1540,
+          "type": "open",
+          "src": 3,
+          "dst": 7
+        },
+        {
+          "tick": 1560,
+          "type": "open",
+          "src": 8,
+          "dst": 7
+        },
+        {
+          "tick": 1580,
+          "type": "open",
+          "src": 3,
+          "dst": 7
+        },
+        {
+          "tick": 1600,
+          "type": "open",
+          "src": 3,
+          "dst": 7
+        },
+        {
+          "tick": 1640,
+          "type": "open",
+          "src": 3,
+          "dst": 7
+        }
+      ],
+      "end_tick": 1650,
+      "final_hash": "c63295d1bd5c3d97"
+    },
+    "difficulty": {
+      "score": 49,
+      "tier": "Medium",
+      "think_s": 7.5,
+      "slack_s": 3.5,
+      "moves": 38,
+      "pressure": 1.16,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 7,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "b8c2095cf2918e72"
+    },
+    "stars": {
+      "t2": 215,
+      "t3": 155
+    }
+  }
+}

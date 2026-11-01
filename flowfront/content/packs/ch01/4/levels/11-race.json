@@ -1,0 +1,254 @@
+{
+  "format": 1,
+  "id": "ch01-11",
+  "name": "Race",
+  "ruleset": "base@2",
+  "seed": 111,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 200,
+      "y": 1300,
+      "owner": 1,
+      "charge": 10
+    },
+    {
+      "kind": "source",
+      "x": 500,
+      "y": 1350,
+      "owner": 0,
+      "charge": 5
+    },
+    {
+      "kind": "source",
+      "x": 220,
+      "y": 900,
+      "owner": 0,
+      "charge": 5
+    },
+    {
+      "kind": "source",
+      "x": 520,
+      "y": 950,
+      "owner": 0,
+      "charge": 12
+    },
+    {
+      "kind": "source",
+      "x": 780,
+      "y": 400,
+      "owner": 2,
+      "charge": 20
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 240,
+        "reaction": 240,
+        "aggression": 40,
+        "noise": 12,
+        "distance": 7
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 1,
+    "order": 11,
+    "teaches": "timing: when to bank and when to send",
+    "intro": {
+      "title": "Race",
+      "body": "Teal starts bigger, but the gray towers sit nearer you. Grab them fast, but don't spread too thin."
+    },
+    "goal": "Take the 5s, then the 12",
+    "tip": "Take the two 5s first, then the 12.",
+    "par": {
+      "ticks": 1233,
+      "lost": 79,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch01-11",
+      "level_hash": "a9d72a14ad9610de",
+      "rules_hash": "0b870726dec17070",
+      "seed": 111,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 10,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 140,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 150,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 160,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 240,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 250,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 260,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 390,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 400,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 470,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 480,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 520,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 570,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 580,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 650,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 680,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 710,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 720,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 730,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 840,
+          "type": "open",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 850,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 860,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 880,
+          "type": "open",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 890,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        }
+      ],
+      "end_tick": 1233,
+      "final_hash": "a62b3cbe9c16f3c3"
+    },
+    "difficulty": {
+      "score": 13,
+      "tier": "Easy",
+      "think_s": 18.2,
+      "slack_s": 5.5,
+      "moves": 15,
+      "pressure": 1.57,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 4,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "a9d72a14ad9610de"
+    },
+    "stars": {
+      "t2": 115,
+      "t3": 85
+    }
+  }
+}

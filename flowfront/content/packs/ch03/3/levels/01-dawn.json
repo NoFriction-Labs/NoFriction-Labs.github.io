@@ -1,0 +1,283 @@
+{
+  "format": 1,
+  "id": "ch03-01",
+  "name": "Dawn",
+  "ruleset": "base@2",
+  "seed": 1101,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 180,
+      "y": 1380,
+      "owner": 1,
+      "charge": 16
+    },
+    {
+      "kind": "source",
+      "x": 820,
+      "y": 1380,
+      "owner": 2,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 500,
+      "y": 1150,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 150,
+      "y": 1000,
+      "owner": 0,
+      "charge": 3
+    },
+    {
+      "kind": "source",
+      "x": 850,
+      "y": 1000,
+      "owner": 0,
+      "charge": 3
+    },
+    {
+      "kind": "source",
+      "x": 290,
+      "y": 650,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 710,
+      "y": 650,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 470,
+      "y": 435,
+      "owner": 0,
+      "charge": 8
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 170,
+        "reaction": 170,
+        "aggression": 50,
+        "pref_player": 100,
+        "patience": 20,
+        "noise": 12,
+        "distance": 12
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 3,
+    "order": 1,
+    "teaches": "a full match: out-expand an awake rival",
+    "intro": {
+      "title": "Dawn",
+      "body": "Teal is awake and starts across from you. Send as many units as a tower's number to take it. Grab gray towers first."
+    },
+    "tip": "Take the cheap gray towers near you first: each one makes more units.",
+    "goal": "Out-grow Teal, then take its tower",
+    "par": {
+      "ticks": 922,
+      "lost": 38,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch03-01",
+      "level_hash": "b6d9ea74c9aa3506",
+      "rules_hash": "0b870726dec17070",
+      "seed": 1101,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 50,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 60,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 80,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 90,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 160,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 180,
+          "type": "open",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 270,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 280,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 300,
+          "type": "cut",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 310,
+          "type": "open",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 320,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 330,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 340,
+          "type": "cut",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 350,
+          "type": "open",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 360,
+          "type": "cut",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 370,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 380,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 430,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 530,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 570,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 590,
+          "type": "open",
+          "src": 2,
+          "dst": 1
+        },
+        {
+          "tick": 600,
+          "type": "open",
+          "src": 3,
+          "dst": 2
+        },
+        {
+          "tick": 620,
+          "type": "open",
+          "src": 5,
+          "dst": 6
+        },
+        {
+          "tick": 710,
+          "type": "cut",
+          "src": 5,
+          "dst": 6
+        },
+        {
+          "tick": 720,
+          "type": "open",
+          "src": 5,
+          "dst": 7
+        }
+      ],
+      "end_tick": 922,
+      "final_hash": "e884a1afb290c128"
+    },
+    "difficulty": {
+      "score": 21,
+      "tier": "Easy",
+      "think_s": 12.2,
+      "slack_s": 4.2,
+      "moves": 20,
+      "pressure": 0.7,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 7,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "b6d9ea74c9aa3506"
+    },
+    "stars": {
+      "t2": 110,
+      "t3": 80
+    }
+  }
+}

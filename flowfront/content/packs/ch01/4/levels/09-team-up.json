@@ -1,0 +1,126 @@
+{
+  "format": 1,
+  "id": "ch01-09",
+  "name": "Team Up",
+  "ruleset": "base@2",
+  "seed": 109,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 300,
+      "y": 600,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 300,
+      "y": 1000,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 650,
+      "y": 800,
+      "owner": 2,
+      "charge": 40
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 300,
+        "reaction": 300,
+        "aggression": 30,
+        "noise": 12,
+        "distance": 12
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 1,
+    "order": 9,
+    "teaches": "two towers feed one target",
+    "intro": {
+      "title": "Team Up",
+      "body": "One tower can't beat a big Teal. Aim two at it and they can. Teal stirs now: its units knock your numbers down."
+    },
+    "goal": "Aim both towers at Teal",
+    "guide": [
+      {
+        "on": "start",
+        "title": "Aim at Teal",
+        "body": "Drag from this tower to Teal's big one.",
+        "do": {
+          "open": [
+            0,
+            2
+          ]
+        }
+      },
+      {
+        "on": "route_opened",
+        "title": "Team up",
+        "body": "One line only keeps Teal level. Add your other tower and Teal falls.",
+        "do": {
+          "open": [
+            1,
+            2
+          ]
+        }
+      }
+    ],
+    "tip": "Drag from both towers to Teal: one alone only keeps it level.",
+    "par": {
+      "ticks": 525,
+      "lost": 0,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch01-09",
+      "level_hash": "4912b04cc90d2f2c",
+      "rules_hash": "0b870726dec17070",
+      "seed": 109,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 60,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        }
+      ],
+      "end_tick": 525,
+      "final_hash": "e0ba91185fd87c08"
+    },
+    "difficulty": {
+      "score": 1,
+      "tier": "Easy",
+      "think_s": 20.0,
+      "slack_s": 6.0,
+      "moves": 2,
+      "pressure": 0.59,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 1,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "4912b04cc90d2f2c"
+    },
+    "stars": {
+      "t2": 40,
+      "t3": 35
+    }
+  }
+}

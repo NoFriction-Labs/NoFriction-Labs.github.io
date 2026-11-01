@@ -1,0 +1,241 @@
+{
+  "format": 1,
+  "id": "ch02-06",
+  "name": "Long Road",
+  "ruleset": "base@3",
+  "seed": 1206,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 220,
+      "y": 260,
+      "owner": 1,
+      "charge": 12
+    },
+    {
+      "kind": "source",
+      "x": 780,
+      "y": 1340,
+      "owner": 0,
+      "charge": 10
+    },
+    {
+      "kind": "source",
+      "x": 520,
+      "y": 420,
+      "owner": 0,
+      "charge": 5
+    },
+    {
+      "kind": "source",
+      "x": 460,
+      "y": 1180,
+      "owner": 2,
+      "charge": 30
+    },
+    {
+      "kind": "source",
+      "x": 780,
+      "y": 760,
+      "owner": 0,
+      "charge": 5
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": "gentle"
+    }
+  ],
+  "meta": {
+    "chapter": 2,
+    "order": 6,
+    "teaches": "cut early: the tower grows while its units travel",
+    "intro": {
+      "title": "Long Road",
+      "body": "A long line keeps your tower from growing. Send enough, cut, and let it grow while they walk."
+    },
+    "goal": "Send enough, cut, grow",
+    "coach": [
+      {
+        "on": "cut_in_flight",
+        "title": "Still landing",
+        "body": "Your units on that line keep going, and your tower grows again meanwhile."
+      }
+    ],
+    "show_split": true,
+    "tip": "Cut the long line once enough units are on it: they still land.",
+    "par": {
+      "ticks": 1308,
+      "lost": 80,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch02-06",
+      "level_hash": "b7dea92945a406c9",
+      "rules_hash": "b24b3381a6fb0747",
+      "seed": 1206,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 10,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 170,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 220,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 250,
+          "type": "open",
+          "src": 2,
+          "dst": 1
+        },
+        {
+          "tick": 270,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 290,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 420,
+          "type": "cut",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 610,
+          "type": "open",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 620,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 780,
+          "type": "open",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 790,
+          "type": "cut",
+          "src": 2,
+          "dst": 1
+        },
+        {
+          "tick": 850,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 860,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 870,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 920,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 930,
+          "type": "open",
+          "src": 2,
+          "dst": 3
+        },
+        {
+          "tick": 940,
+          "type": "cut",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 950,
+          "type": "cut",
+          "src": 2,
+          "dst": 4
+        }
+      ],
+      "end_tick": 1308,
+      "final_hash": "5a8fd97d594662ec"
+    },
+    "difficulty": {
+      "score": 12,
+      "tier": "Easy",
+      "think_s": 19.1,
+      "slack_s": 6.0,
+      "moves": 16,
+      "pressure": 1.67,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 4,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "b7dea92945a406c9"
+    },
+    "stars": {
+      "t2": 115,
+      "t3": 85
+    },
+    "marks": [
+      {
+        "at": 2,
+        "text": "Near and cheap",
+        "arrow": [
+          0,
+          2
+        ],
+        "until": {
+          "own": 2
+        }
+      },
+      {
+        "at": 1,
+        "text": "Far: send enough, then cut",
+        "until": {
+          "own": 1
+        },
+        "after": 30
+      }
+    ]
+  }
+}

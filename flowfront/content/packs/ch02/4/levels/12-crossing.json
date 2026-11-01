@@ -1,0 +1,332 @@
+{
+  "format": 1,
+  "id": "ch02-12",
+  "name": "Crossing",
+  "ruleset": "base@3",
+  "seed": 1212,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 220,
+      "y": 1350,
+      "owner": 1,
+      "charge": 9
+    },
+    {
+      "kind": "source",
+      "x": 560,
+      "y": 1300,
+      "owner": 0,
+      "charge": 3
+    },
+    {
+      "kind": "source",
+      "x": 260,
+      "y": 1000,
+      "owner": 0,
+      "charge": 3
+    },
+    {
+      "kind": "source",
+      "x": 560,
+      "y": 880,
+      "owner": 0,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 780,
+      "y": 560,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 560,
+      "y": 420,
+      "owner": 2,
+      "charge": 20
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 190,
+        "reaction": 190,
+        "aggression": 70,
+        "pref_player": 100,
+        "noise": 12,
+        "distance": 12
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 2,
+    "order": 12,
+    "teaches": "the whole chapter against an awake Teal",
+    "intro": {
+      "title": "Crossing",
+      "body": "Teal is wide awake. Focus your lines, cut when enough are on the way, and switch fast."
+    },
+    "goal": "Take every tower",
+    "show_split": false,
+    "tip": "One full line at a time, and cut once enough units are on it.",
+    "par": {
+      "ticks": 1509,
+      "lost": 54,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch02-12",
+      "level_hash": "a755acd20259322b",
+      "rules_hash": "b24b3381a6fb0747",
+      "seed": 1212,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 60,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 70,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 120,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 130,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 180,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 200,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 300,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 310,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 320,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 440,
+          "type": "open",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 450,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 560,
+          "type": "open",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 610,
+          "type": "cut",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 660,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 750,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 760,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 770,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 780,
+          "type": "open",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 850,
+          "type": "open",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 900,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 920,
+          "type": "open",
+          "src": 2,
+          "dst": 5
+        },
+        {
+          "tick": 950,
+          "type": "cut",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 970,
+          "type": "cut",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 1010,
+          "type": "open",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 1070,
+          "type": "cut",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 1080,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 1090,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 1100,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 1110,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 1160,
+          "type": "open",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 1170,
+          "type": "cut",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 1220,
+          "type": "open",
+          "src": 4,
+          "dst": 5
+        }
+      ],
+      "end_tick": 1509,
+      "final_hash": "96659546fa6da94d"
+    },
+    "difficulty": {
+      "score": 22,
+      "tier": "Easy",
+      "think_s": 19.0,
+      "slack_s": 4.4,
+      "moves": 21,
+      "pressure": 2.04,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 5,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "a755acd20259322b"
+    },
+    "stars": {
+      "t2": 120,
+      "t3": 85
+    },
+    "marks": [
+      {
+        "at": 1,
+        "text": "Cheap: one line",
+        "arrow": [
+          0,
+          1
+        ],
+        "until": {
+          "own": 1
+        }
+      },
+      {
+        "at": 5,
+        "text": "Last: gang up on Teal",
+        "until": {
+          "own": 5
+        },
+        "after": 60
+      }
+    ]
+  }
+}

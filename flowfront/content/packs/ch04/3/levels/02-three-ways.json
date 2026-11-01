@@ -1,0 +1,432 @@
+{
+  "format": 1,
+  "id": "ch04-02",
+  "name": "Three Ways",
+  "ruleset": "base@2",
+  "seed": 2202,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 300,
+      "y": 1400,
+      "owner": 1,
+      "charge": 15
+    },
+    {
+      "kind": "source",
+      "x": 140,
+      "y": 1060,
+      "owner": 1,
+      "charge": 6
+    },
+    {
+      "kind": "relay",
+      "x": 506,
+      "y": 1080,
+      "owner": 0,
+      "charge": 3
+    },
+    {
+      "kind": "source",
+      "x": 184,
+      "y": 720,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 560,
+      "y": 690,
+      "owner": 0,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 860,
+      "y": 1060,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 250,
+      "y": 300,
+      "owner": 2,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 780,
+      "y": 400,
+      "owner": 2,
+      "charge": 7
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 150,
+        "aggression": 60,
+        "pref_player": 90,
+        "patience": 20,
+        "noise": 12,
+        "reaction": 150
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 4,
+    "order": 2,
+    "teaches": "a relay splits what it gets evenly over its routes",
+    "intro": {
+      "title": "Three Ways",
+      "body": "A relay can hold three lines at once and splits what arrives evenly over them.",
+      "spotlight": null
+    },
+    "tip": "Give the relay one target at a time if you need a hard hit.",
+    "par": {
+      "ticks": 1207,
+      "lost": 25,
+      "source": "lookahead"
+    },
+    "difficulty": {
+      "score": 31,
+      "tier": "Easy",
+      "think_s": 10.3,
+      "slack_s": 4.3,
+      "moves": 19,
+      "pressure": 0.83,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 6,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "1226ecf9b32a48ef"
+    },
+    "stars": {
+      "t2": 105,
+      "t3": 75
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch04-02",
+      "level_hash": "1226ecf9b32a48ef",
+      "rules_hash": "0b870726dec17070",
+      "seed": 2202,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 10,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 20,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 190,
+          "type": "open",
+          "src": 2,
+          "dst": 5
+        },
+        {
+          "tick": 200,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 210,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 220,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 250,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 270,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 280,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 310,
+          "type": "open",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 320,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 400,
+          "type": "cut",
+          "src": 2,
+          "dst": 5
+        },
+        {
+          "tick": 420,
+          "type": "open",
+          "src": 3,
+          "dst": 7
+        },
+        {
+          "tick": 430,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 450,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 460,
+          "type": "open",
+          "src": 5,
+          "dst": 7
+        },
+        {
+          "tick": 470,
+          "type": "cut",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 480,
+          "type": "open",
+          "src": 2,
+          "dst": 7
+        },
+        {
+          "tick": 530,
+          "type": "cut",
+          "src": 5,
+          "dst": 7
+        },
+        {
+          "tick": 580,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 610,
+          "type": "open",
+          "src": 2,
+          "dst": 7
+        },
+        {
+          "tick": 700,
+          "type": "open",
+          "src": 3,
+          "dst": 2
+        },
+        {
+          "tick": 740,
+          "type": "cut",
+          "src": 3,
+          "dst": 7
+        },
+        {
+          "tick": 750,
+          "type": "open",
+          "src": 2,
+          "dst": 7
+        },
+        {
+          "tick": 760,
+          "type": "open",
+          "src": 0,
+          "dst": 6
+        },
+        {
+          "tick": 780,
+          "type": "open",
+          "src": 5,
+          "dst": 3
+        },
+        {
+          "tick": 790,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 800,
+          "type": "open",
+          "src": 4,
+          "dst": 5
+        },
+        {
+          "tick": 810,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 820,
+          "type": "open",
+          "src": 5,
+          "dst": 4
+        },
+        {
+          "tick": 830,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 840,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 850,
+          "type": "open",
+          "src": 4,
+          "dst": 1
+        },
+        {
+          "tick": 880,
+          "type": "open",
+          "src": 5,
+          "dst": 0
+        },
+        {
+          "tick": 890,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 900,
+          "type": "open",
+          "src": 7,
+          "dst": 6
+        },
+        {
+          "tick": 910,
+          "type": "open",
+          "src": 3,
+          "dst": 7
+        },
+        {
+          "tick": 920,
+          "type": "cut",
+          "src": 5,
+          "dst": 4
+        },
+        {
+          "tick": 930,
+          "type": "open",
+          "src": 5,
+          "dst": 7
+        },
+        {
+          "tick": 940,
+          "type": "open",
+          "src": 4,
+          "dst": 6
+        },
+        {
+          "tick": 950,
+          "type": "cut",
+          "src": 4,
+          "dst": 1
+        },
+        {
+          "tick": 960,
+          "type": "cut",
+          "src": 4,
+          "dst": 5
+        },
+        {
+          "tick": 970,
+          "type": "open",
+          "src": 2,
+          "dst": 6
+        },
+        {
+          "tick": 980,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 990,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 1000,
+          "type": "cut",
+          "src": 0,
+          "dst": 6
+        },
+        {
+          "tick": 1010,
+          "type": "cut",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 1020,
+          "type": "cut",
+          "src": 3,
+          "dst": 7
+        },
+        {
+          "tick": 1030,
+          "type": "open",
+          "src": 4,
+          "dst": 2
+        },
+        {
+          "tick": 1040,
+          "type": "cut",
+          "src": 4,
+          "dst": 6
+        }
+      ],
+      "end_tick": 1207,
+      "final_hash": "fc8c5ae2dbbc47b6"
+    }
+  }
+}

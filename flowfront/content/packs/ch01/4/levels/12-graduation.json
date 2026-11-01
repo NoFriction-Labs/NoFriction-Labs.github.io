@@ -1,0 +1,346 @@
+{
+  "format": 1,
+  "id": "ch01-12",
+  "name": "Graduation",
+  "ruleset": "base@2",
+  "seed": 112,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 780,
+      "y": 1300,
+      "owner": 1,
+      "charge": 16
+    },
+    {
+      "kind": "source",
+      "x": 820,
+      "y": 950,
+      "owner": 1,
+      "charge": 3
+    },
+    {
+      "kind": "source",
+      "x": 450,
+      "y": 1350,
+      "owner": 0,
+      "charge": 4
+    },
+    {
+      "kind": "source",
+      "x": 400,
+      "y": 980,
+      "owner": 0,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 250,
+      "y": 600,
+      "owner": 2,
+      "charge": 30
+    },
+    {
+      "kind": "source",
+      "x": 600,
+      "y": 350,
+      "owner": 2,
+      "charge": 24
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 260,
+        "reaction": 260,
+        "aggression": 40,
+        "pref_player": 100,
+        "noise": 12,
+        "distance": 12
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 1,
+    "order": 12,
+    "teaches": "everything under pressure",
+    "intro": {
+      "title": "Graduation",
+      "body": "Lines, cuts, growth and a wide-awake Teal, all at once. Show what you learned!"
+    },
+    "goal": "Take every tower",
+    "tip": "Grow, then gang up: two towers on one target beat Teal.",
+    "par": {
+      "ticks": 1381,
+      "lost": 67,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch01-12",
+      "level_hash": "556890dc2864aa42",
+      "rules_hash": "0b870726dec17070",
+      "seed": 112,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 10,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 80,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 90,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 150,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 160,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 170,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 260,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 270,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 280,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 380,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 390,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 480,
+          "type": "open",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 490,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 500,
+          "type": "open",
+          "src": 2,
+          "dst": 1
+        },
+        {
+          "tick": 560,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 570,
+          "type": "open",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 580,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 720,
+          "type": "open",
+          "src": 2,
+          "dst": 5
+        },
+        {
+          "tick": 730,
+          "type": "open",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 740,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 750,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 760,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 770,
+          "type": "cut",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 790,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 800,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 810,
+          "type": "cut",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 850,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 890,
+          "type": "cut",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 900,
+          "type": "cut",
+          "src": 2,
+          "dst": 1
+        },
+        {
+          "tick": 910,
+          "type": "open",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 920,
+          "type": "open",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 930,
+          "type": "open",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 940,
+          "type": "open",
+          "src": 2,
+          "dst": 3
+        },
+        {
+          "tick": 960,
+          "type": "cut",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 970,
+          "type": "cut",
+          "src": 2,
+          "dst": 3
+        },
+        {
+          "tick": 980,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 990,
+          "type": "cut",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 1190,
+          "type": "open",
+          "src": 4,
+          "dst": 5
+        }
+      ],
+      "end_tick": 1381,
+      "final_hash": "5df44c909d24a054"
+    },
+    "difficulty": {
+      "score": 14,
+      "tier": "Easy",
+      "think_s": 19.2,
+      "slack_s": 6.0,
+      "moves": 18,
+      "pressure": 1.89,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 4,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "556890dc2864aa42"
+    },
+    "stars": {
+      "t2": 120,
+      "t3": 90
+    }
+  }
+}

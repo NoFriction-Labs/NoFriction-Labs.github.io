@@ -1,0 +1,154 @@
+{
+  "format": 1,
+  "id": "ch01-08",
+  "name": "Full Tower",
+  "ruleset": "base@2",
+  "seed": 108,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 760,
+      "y": 350,
+      "owner": 1,
+      "charge": 38
+    },
+    {
+      "kind": "source",
+      "x": 300,
+      "y": 480,
+      "owner": 0,
+      "charge": 12
+    },
+    {
+      "kind": "source",
+      "x": 700,
+      "y": 820,
+      "owner": 0,
+      "charge": 12
+    },
+    {
+      "kind": "source",
+      "x": 320,
+      "y": 1080,
+      "owner": 0,
+      "charge": 12
+    }
+  ],
+  "rivals": [],
+  "meta": {
+    "chapter": 1,
+    "order": 8,
+    "teaches": "cap 40 stops growth: spend a full tower",
+    "intro": {
+      "title": "Full Tower",
+      "body": "A tower stops growing at 40. Every unit it makes after that is wasted, so send it out."
+    },
+    "goal": "Your tower is nearly full: send it!",
+    "marks": [
+      {
+        "at": 0,
+        "text": "Full at 40: no more growth",
+        "until": {
+          "time": 45
+        }
+      },
+      {
+        "at": 0,
+        "text": "Send it out!",
+        "arrow": [
+          0,
+          1
+        ],
+        "until": {
+          "time": 120
+        }
+      }
+    ],
+    "tip": "A full tower wastes units. Open lines as soon as it shows 40.",
+    "par": {
+      "ticks": 604,
+      "lost": 0,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch01-08",
+      "level_hash": "29c9654b63773578",
+      "rules_hash": "0b870726dec17070",
+      "seed": 108,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 170,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 240,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 330,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 340,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 350,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 380,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 390,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        }
+      ],
+      "end_tick": 604,
+      "final_hash": "9cb890224f4fb622"
+    },
+    "difficulty": {
+      "score": 0,
+      "tier": "Easy",
+      "think_s": 20.0,
+      "slack_s": 6.0,
+      "moves": 6,
+      "pressure": 0.0,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 3,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "29c9654b63773578"
+    },
+    "stars": {
+      "t2": 65,
+      "t3": 50
+    }
+  }
+}

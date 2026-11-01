@@ -1,0 +1,558 @@
+{
+  "format": 1,
+  "id": "ch04-10",
+  "name": "Two Roads",
+  "ruleset": "base@2",
+  "seed": 3010,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 500,
+      "y": 1460,
+      "owner": 1,
+      "charge": 14
+    },
+    {
+      "kind": "foundry",
+      "x": 160,
+      "y": 1300,
+      "owner": 1,
+      "charge": 10
+    },
+    {
+      "kind": "relay",
+      "x": 800,
+      "y": 1200,
+      "owner": 0,
+      "charge": 2
+    },
+    {
+      "kind": "source",
+      "x": 500,
+      "y": 1130,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "watchtower",
+      "x": 250,
+      "y": 850,
+      "owner": 2,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 500,
+      "y": 820,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "relay",
+      "x": 800,
+      "y": 750,
+      "owner": 0,
+      "charge": 2
+    },
+    {
+      "kind": "watchtower",
+      "x": 250,
+      "y": 475,
+      "owner": 2,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 600,
+      "y": 450,
+      "owner": 2,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 335,
+      "y": 195,
+      "owner": 2,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 810,
+      "y": 250,
+      "owner": 2,
+      "charge": 8
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 140,
+        "aggression": 50,
+        "pref_player": 70,
+        "patience": 20,
+        "noise": 12,
+        "reaction": 140
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 4,
+    "order": 10,
+    "teaches": "relays for speed, armour for the guarded side",
+    "intro": {
+      "title": "Two Roads",
+      "body": "One front is guarded by towers, the other is open but far. Armour for one, relays for the other.",
+      "spotlight": null
+    },
+    "tip": "Armour goes left past the towers; the relay carries the right.",
+    "par": {
+      "ticks": 1690,
+      "lost": 129,
+      "source": "lookahead"
+    },
+    "difficulty": {
+      "score": 46,
+      "tier": "Medium",
+      "think_s": 8.9,
+      "slack_s": 3.7,
+      "moves": 41,
+      "pressure": 1.52,
+      "towers": {
+        "rings": 2,
+        "cover": 0.25,
+        "lanes": 7,
+        "guarded": 0,
+        "answers": [
+          "detour",
+          "capture"
+        ]
+      },
+      "level_hash": "1fa03a2bddca7ba4"
+    },
+    "stars": {
+      "t2": 200,
+      "t3": 140
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch04-10",
+      "level_hash": "1fa03a2bddca7ba4",
+      "rules_hash": "0b870726dec17070",
+      "seed": 3010,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 10,
+          "type": "open",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 20,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 90,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 210,
+          "type": "open",
+          "src": 2,
+          "dst": 8
+        },
+        {
+          "tick": 220,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 230,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 240,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 320,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 350,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 400,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 410,
+          "type": "cut",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 420,
+          "type": "open",
+          "src": 3,
+          "dst": 1
+        },
+        {
+          "tick": 440,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 460,
+          "type": "open",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 470,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 530,
+          "type": "open",
+          "src": 2,
+          "dst": 9
+        },
+        {
+          "tick": 700,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 710,
+          "type": "open",
+          "src": 8,
+          "dst": 9
+        },
+        {
+          "tick": 730,
+          "type": "open",
+          "src": 5,
+          "dst": 8
+        },
+        {
+          "tick": 740,
+          "type": "cut",
+          "src": 3,
+          "dst": 1
+        },
+        {
+          "tick": 770,
+          "type": "open",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 830,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 840,
+          "type": "cut",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 860,
+          "type": "open",
+          "src": 5,
+          "dst": 2
+        },
+        {
+          "tick": 910,
+          "type": "open",
+          "src": 8,
+          "dst": 1
+        },
+        {
+          "tick": 950,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 960,
+          "type": "open",
+          "src": 0,
+          "dst": 10
+        },
+        {
+          "tick": 970,
+          "type": "open",
+          "src": 3,
+          "dst": 6
+        },
+        {
+          "tick": 980,
+          "type": "open",
+          "src": 2,
+          "dst": 6
+        },
+        {
+          "tick": 990,
+          "type": "cut",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 1000,
+          "type": "open",
+          "src": 4,
+          "dst": 5
+        },
+        {
+          "tick": 1010,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 1020,
+          "type": "open",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 1030,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 1040,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 1060,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 1080,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 1090,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 1110,
+          "type": "open",
+          "src": 8,
+          "dst": 2
+        },
+        {
+          "tick": 1130,
+          "type": "open",
+          "src": 4,
+          "dst": 2
+        },
+        {
+          "tick": 1140,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 1150,
+          "type": "cut",
+          "src": 8,
+          "dst": 9
+        },
+        {
+          "tick": 1160,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 1210,
+          "type": "cut",
+          "src": 8,
+          "dst": 2
+        },
+        {
+          "tick": 1260,
+          "type": "cut",
+          "src": 5,
+          "dst": 8
+        },
+        {
+          "tick": 1270,
+          "type": "open",
+          "src": 3,
+          "dst": 10
+        },
+        {
+          "tick": 1280,
+          "type": "cut",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 1290,
+          "type": "cut",
+          "src": 4,
+          "dst": 5
+        },
+        {
+          "tick": 1300,
+          "type": "open",
+          "src": 4,
+          "dst": 0
+        },
+        {
+          "tick": 1310,
+          "type": "open",
+          "src": 9,
+          "dst": 10
+        },
+        {
+          "tick": 1320,
+          "type": "open",
+          "src": 8,
+          "dst": 9
+        },
+        {
+          "tick": 1330,
+          "type": "open",
+          "src": 5,
+          "dst": 10
+        },
+        {
+          "tick": 1340,
+          "type": "cut",
+          "src": 5,
+          "dst": 2
+        },
+        {
+          "tick": 1350,
+          "type": "open",
+          "src": 8,
+          "dst": 10
+        },
+        {
+          "tick": 1360,
+          "type": "cut",
+          "src": 8,
+          "dst": 1
+        },
+        {
+          "tick": 1370,
+          "type": "open",
+          "src": 1,
+          "dst": 8
+        },
+        {
+          "tick": 1380,
+          "type": "open",
+          "src": 8,
+          "dst": 2
+        },
+        {
+          "tick": 1390,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 1400,
+          "type": "cut",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 1410,
+          "type": "cut",
+          "src": 8,
+          "dst": 10
+        },
+        {
+          "tick": 1420,
+          "type": "open",
+          "src": 6,
+          "dst": 7
+        },
+        {
+          "tick": 1430,
+          "type": "cut",
+          "src": 2,
+          "dst": 8
+        },
+        {
+          "tick": 1440,
+          "type": "open",
+          "src": 8,
+          "dst": 10
+        },
+        {
+          "tick": 1450,
+          "type": "cut",
+          "src": 8,
+          "dst": 9
+        },
+        {
+          "tick": 1460,
+          "type": "cut",
+          "src": 2,
+          "dst": 9
+        },
+        {
+          "tick": 1470,
+          "type": "cut",
+          "src": 8,
+          "dst": 2
+        },
+        {
+          "tick": 1610,
+          "type": "open",
+          "src": 6,
+          "dst": 10
+        }
+      ],
+      "end_tick": 1690,
+      "final_hash": "c4d6ff872707191b"
+    }
+  }
+}

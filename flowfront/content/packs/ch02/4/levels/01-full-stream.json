@@ -1,0 +1,205 @@
+{
+  "format": 1,
+  "id": "ch02-01",
+  "name": "Full Stream",
+  "ruleset": "base@3",
+  "seed": 1201,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 550,
+      "y": 760,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 320,
+      "y": 1170,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 340,
+      "y": 510,
+      "owner": 2,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 800,
+      "y": 620,
+      "owner": 0,
+      "charge": 4
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": "gentle"
+    }
+  ],
+  "meta": {
+    "chapter": 2,
+    "order": 1,
+    "teaches": "one line gets a tower's whole output",
+    "intro": {
+      "title": "Full Stream",
+      "body": "Teal is awake now, but slow. One line gets your tower's whole stream, so point it at one tower at a time."
+    },
+    "goal": "One line to a gray tower",
+    "coach": [
+      {
+        "on": "first_capture",
+        "title": "One line gets everything",
+        "body": "Taken! One line carries every unit your tower makes. Take the rest the same way, one at a time."
+      }
+    ],
+    "ghost": "drag",
+    "show_split": true,
+    "tip": "Send one line at a time: the whole stream goes down it.",
+    "par": {
+      "ticks": 869,
+      "lost": 23,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch02-01",
+      "level_hash": "1225be3ce64da102",
+      "rules_hash": "b24b3381a6fb0747",
+      "seed": 1201,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 160,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 180,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 260,
+          "type": "open",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 340,
+          "type": "open",
+          "src": 3,
+          "dst": 1
+        },
+        {
+          "tick": 380,
+          "type": "open",
+          "src": 3,
+          "dst": 2
+        },
+        {
+          "tick": 420,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 440,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 560,
+          "type": "cut",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 580,
+          "type": "open",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 680,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 700,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        }
+      ],
+      "end_tick": 869,
+      "final_hash": "df248d24dda5f172"
+    },
+    "difficulty": {
+      "score": 6,
+      "tier": "Easy",
+      "think_s": 17.8,
+      "slack_s": 5.8,
+      "moves": 8,
+      "pressure": 1.0,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 3,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "1225be3ce64da102"
+    },
+    "stars": {
+      "t2": 60,
+      "t3": 45
+    },
+    "marks": [
+      {
+        "at": 3,
+        "text": "Your whole stream",
+        "until": {
+          "own": 3
+        },
+        "arrow": [
+          0,
+          3
+        ]
+      },
+      {
+        "at": 1,
+        "text": "Next: one line here",
+        "arrow": [
+          0,
+          1
+        ],
+        "until": {
+          "own": 1
+        },
+        "after": 30
+      },
+      {
+        "at": 2,
+        "text": "Teal last",
+        "until": {
+          "own": 2
+        },
+        "after": 30
+      }
+    ]
+  }
+}

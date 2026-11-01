@@ -1,0 +1,110 @@
+[
+  {
+    "id": "ch02-01",
+    "name": "Full Stream",
+    "chapter": 2,
+    "order": 1,
+    "tier": "Easy",
+    "path": "levels/01-full-stream.json",
+    "chapter_name": "Branches"
+  },
+  {
+    "id": "ch02-02",
+    "name": "Cut and Switch",
+    "chapter": 2,
+    "order": 2,
+    "tier": "Easy",
+    "path": "levels/02-cut-and-switch.json",
+    "chapter_name": "Branches"
+  },
+  {
+    "id": "ch02-03",
+    "name": "Thin Lines",
+    "chapter": 2,
+    "order": 3,
+    "tier": "Easy",
+    "path": "levels/03-thin-lines.json",
+    "chapter_name": "Branches"
+  },
+  {
+    "id": "ch02-04",
+    "name": "Pick Your Lines",
+    "chapter": 2,
+    "order": 4,
+    "tier": "Easy",
+    "path": "levels/04-pick-your-lines.json",
+    "chapter_name": "Branches"
+  },
+  {
+    "id": "ch02-05",
+    "name": "On the Way",
+    "chapter": 2,
+    "order": 5,
+    "tier": "Easy",
+    "path": "levels/05-on-the-way.json",
+    "chapter_name": "Branches"
+  },
+  {
+    "id": "ch02-06",
+    "name": "Long Road",
+    "chapter": 2,
+    "order": 6,
+    "tier": "Easy",
+    "path": "levels/06-long-road.json",
+    "chapter_name": "Branches"
+  },
+  {
+    "id": "ch02-07",
+    "name": "Strike and Grow",
+    "chapter": 2,
+    "order": 7,
+    "tier": "Easy",
+    "path": "levels/07-strike-and-grow.json",
+    "chapter_name": "Branches"
+  },
+  {
+    "id": "ch02-08",
+    "name": "Feed and Fight",
+    "chapter": 2,
+    "order": 8,
+    "tier": "Easy",
+    "path": "levels/08-feed-and-fight.json",
+    "chapter_name": "Branches"
+  },
+  {
+    "id": "ch02-09",
+    "name": "Two Fronts",
+    "chapter": 2,
+    "order": 9,
+    "tier": "Easy",
+    "path": "levels/09-two-fronts.json",
+    "chapter_name": "Branches"
+  },
+  {
+    "id": "ch02-10",
+    "name": "Switch",
+    "chapter": 2,
+    "order": 10,
+    "tier": "Easy",
+    "path": "levels/10-switch.json",
+    "chapter_name": "Branches"
+  },
+  {
+    "id": "ch02-11",
+    "name": "Teal Stirs",
+    "chapter": 2,
+    "order": 11,
+    "tier": "Easy",
+    "path": "levels/11-teal-stirs.json",
+    "chapter_name": "Branches"
+  },
+  {
+    "id": "ch02-12",
+    "name": "Crossing",
+    "chapter": 2,
+    "order": 12,
+    "tier": "Easy",
+    "path": "levels/12-crossing.json",
+    "chapter_name": "Branches"
+  }
+]

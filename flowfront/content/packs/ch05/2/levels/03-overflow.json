@@ -1,0 +1,428 @@
+{
+  "format": 1,
+  "id": "ch05-03",
+  "name": "Overflow",
+  "ruleset": "base@2",
+  "seed": 4102,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 200,
+      "y": 220,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 460,
+      "y": 170,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "vault",
+      "x": 300,
+      "y": 450,
+      "owner": 0,
+      "charge": 4
+    },
+    {
+      "kind": "source",
+      "x": 680,
+      "y": 420,
+      "owner": 0,
+      "charge": 10
+    },
+    {
+      "kind": "source",
+      "x": 180,
+      "y": 820,
+      "owner": 0,
+      "charge": 10
+    },
+    {
+      "kind": "source",
+      "x": 560,
+      "y": 1000,
+      "owner": 2,
+      "charge": 30
+    },
+    {
+      "kind": "source",
+      "x": 230,
+      "y": 1380,
+      "owner": 2,
+      "charge": 12
+    },
+    {
+      "kind": "source",
+      "x": 820,
+      "y": 1350,
+      "owner": 2,
+      "charge": 12
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 140,
+        "aggression": 66,
+        "pref_player": 90,
+        "patience": 15,
+        "noise": 12,
+        "reaction": 140
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 5,
+    "order": 3,
+    "teaches": "a vault holds 99: spill full towers into it",
+    "intro": {
+      "title": "Overflow",
+      "body": "A tower stops at 40, but a vault holds up to 99. Spill your full towers into it.",
+      "spotlight": null
+    },
+    "goal": "Spill full towers into the vault",
+    "marks": [
+      {
+        "at": 2,
+        "text": "Holds up to 99",
+        "arrow": [
+          0,
+          2
+        ],
+        "until": {
+          "own": 2
+        }
+      }
+    ],
+    "tip": "Keep your towers sending into the vault, then pour it at Teal.",
+    "par": {
+      "ticks": 1585,
+      "lost": 71,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch05-03",
+      "level_hash": "c326386c011eeb2f",
+      "rules_hash": "0b870726dec17070",
+      "seed": 4102,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 10,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 20,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 330,
+          "type": "open",
+          "src": 2,
+          "dst": 3
+        },
+        {
+          "tick": 430,
+          "type": "open",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 500,
+          "type": "cut",
+          "src": 2,
+          "dst": 3
+        },
+        {
+          "tick": 510,
+          "type": "open",
+          "src": 2,
+          "dst": 5
+        },
+        {
+          "tick": 520,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 530,
+          "type": "cut",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 550,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 570,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 630,
+          "type": "open",
+          "src": 3,
+          "dst": 2
+        },
+        {
+          "tick": 640,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 690,
+          "type": "open",
+          "src": 4,
+          "dst": 2
+        },
+        {
+          "tick": 700,
+          "type": "open",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 770,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 780,
+          "type": "open",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 790,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 800,
+          "type": "cut",
+          "src": 2,
+          "dst": 5
+        },
+        {
+          "tick": 810,
+          "type": "open",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 820,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 830,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 840,
+          "type": "cut",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 850,
+          "type": "open",
+          "src": 3,
+          "dst": 6
+        },
+        {
+          "tick": 880,
+          "type": "cut",
+          "src": 3,
+          "dst": 6
+        },
+        {
+          "tick": 890,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 920,
+          "type": "open",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 990,
+          "type": "open",
+          "src": 2,
+          "dst": 6
+        },
+        {
+          "tick": 1000,
+          "type": "open",
+          "src": 5,
+          "dst": 6
+        },
+        {
+          "tick": 1010,
+          "type": "open",
+          "src": 4,
+          "dst": 5
+        },
+        {
+          "tick": 1020,
+          "type": "open",
+          "src": 1,
+          "dst": 7
+        },
+        {
+          "tick": 1030,
+          "type": "cut",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 1040,
+          "type": "open",
+          "src": 5,
+          "dst": 2
+        },
+        {
+          "tick": 1050,
+          "type": "open",
+          "src": 4,
+          "dst": 7
+        },
+        {
+          "tick": 1060,
+          "type": "cut",
+          "src": 5,
+          "dst": 6
+        },
+        {
+          "tick": 1070,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 1080,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 1110,
+          "type": "cut",
+          "src": 2,
+          "dst": 6
+        },
+        {
+          "tick": 1120,
+          "type": "open",
+          "src": 5,
+          "dst": 6
+        },
+        {
+          "tick": 1140,
+          "type": "cut",
+          "src": 4,
+          "dst": 2
+        },
+        {
+          "tick": 1150,
+          "type": "cut",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 1160,
+          "type": "open",
+          "src": 3,
+          "dst": 7
+        },
+        {
+          "tick": 1170,
+          "type": "cut",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 1180,
+          "type": "cut",
+          "src": 3,
+          "dst": 2
+        },
+        {
+          "tick": 1190,
+          "type": "cut",
+          "src": 4,
+          "dst": 5
+        },
+        {
+          "tick": 1270,
+          "type": "open",
+          "src": 5,
+          "dst": 7
+        },
+        {
+          "tick": 1280,
+          "type": "cut",
+          "src": 5,
+          "dst": 2
+        },
+        {
+          "tick": 1290,
+          "type": "cut",
+          "src": 5,
+          "dst": 6
+        }
+      ],
+      "end_tick": 1585,
+      "final_hash": "f6aaae09afb54e05"
+    },
+    "difficulty": {
+      "score": 47,
+      "tier": "Medium",
+      "think_s": 8.6,
+      "slack_s": 2.9,
+      "moves": 31,
+      "pressure": 1.2,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 6,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "c326386c011eeb2f"
+    },
+    "stars": {
+      "t2": 165,
+      "t3": 120
+    }
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "format": 1,
+  "id": "ch01-06",
+  "name": "Bank It",
+  "ruleset": "base@2",
+  "seed": 106,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 400,
+      "y": 400,
+      "owner": 1,
+      "charge": 4
+    },
+    {
+      "kind": "source",
+      "x": 560,
+      "y": 1250,
+      "owner": 1,
+      "charge": 4
+    },
+    {
+      "kind": "source",
+      "x": 450,
+      "y": 760,
+      "owner": 2,
+      "charge": 20
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 1000000,
+        "reaction": 1000000
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 1,
+    "order": 6,
+    "teaches": "a sending tower doesn't grow: cut, bank, then strike",
+    "intro": {
+      "title": "Bank It",
+      "body": "A tower that sends stops growing, and a big one sends faster. Let both grow to 20, then hit Teal together."
+    },
+    "goal": "Grow both to 20, then hit Teal",
+    "marks": [
+      {
+        "at": 0,
+        "text": "Don't send: let it grow",
+        "until": {
+          "time": 280
+        }
+      },
+      {
+        "at": 0,
+        "text": "Both at 20: hit Teal",
+        "arrow": [
+          0,
+          2
+        ],
+        "until": {
+          "open": [
+            0,
+            2
+          ]
+        }
+      },
+      {
+        "at": 1,
+        "text": "Now this one too",
+        "arrow": [
+          1,
+          2
+        ],
+        "until": {
+          "open": [
+            1,
+            2
+          ]
+        }
+      }
+    ],
+    "tip": "Cut your lines and wait until both towers show 20, then hit Teal.",
+    "par": {
+      "ticks": 801,
+      "lost": 0,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch01-06",
+      "level_hash": "eae7c86fa756108a",
+      "rules_hash": "0b870726dec17070",
+      "seed": 106,
+      "inputs": [
+        {
+          "tick": 300,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 310,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        }
+      ],
+      "end_tick": 801,
+      "final_hash": "90177e48f0f3dbec"
+    },
+    "difficulty": {
+      "score": 6,
+      "tier": "Easy",
+      "think_s": 20.0,
+      "slack_s": 6.0,
+      "moves": 2,
+      "pressure": 1.12,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 1,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "eae7c86fa756108a"
+    },
+    "stars": {
+      "t2": 65,
+      "t3": 50
+    }
+  }
+}

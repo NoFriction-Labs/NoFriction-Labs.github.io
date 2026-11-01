@@ -1,0 +1,389 @@
+{
+  "format": 1,
+  "id": "ch05-02",
+  "name": "Floodgate",
+  "ruleset": "base@2",
+  "seed": 4103,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 170,
+      "y": 900,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 220,
+      "y": 1200,
+      "owner": 1,
+      "charge": 15
+    },
+    {
+      "kind": "vault",
+      "x": 400,
+      "y": 1060,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 180,
+      "y": 560,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "watchtower",
+      "x": 610,
+      "y": 860,
+      "owner": 2,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 840,
+      "y": 600,
+      "owner": 2,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 830,
+      "y": 1120,
+      "owner": 2,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 760,
+      "y": 260,
+      "owner": 2,
+      "charge": 15
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 140,
+        "aggression": 70,
+        "pref_player": 90,
+        "patience": 15,
+        "noise": 12,
+        "reaction": 140
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 5,
+    "order": 2,
+    "teaches": "a vault's flood swamps a watchtower",
+    "intro": {
+      "title": "Floodgate",
+      "body": "A watchtower shoots one unit a second. A vault sends ten. Fill yours, then flood the tower.",
+      "spotlight": null
+    },
+    "goal": "Flood the watchtower from the vault",
+    "marks": [
+      {
+        "at": 4,
+        "text": "Shoots 1 a second",
+        "until": {
+          "time": 150
+        }
+      },
+      {
+        "at": 4,
+        "text": "Flood it from the vault",
+        "arrow": [
+          2,
+          4
+        ],
+        "after": 150,
+        "until": {
+          "open": [
+            2,
+            4
+          ]
+        }
+      }
+    ],
+    "tip": "Don't trickle into the tower's ring: fill the vault, then flood it.",
+    "par": {
+      "ticks": 1220,
+      "lost": 51,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch05-02",
+      "level_hash": "71e3b1fba8d19f31",
+      "rules_hash": "0b870726dec17070",
+      "seed": 4103,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 10,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 20,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 30,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 190,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 200,
+          "type": "open",
+          "src": 4,
+          "dst": 5
+        },
+        {
+          "tick": 230,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 240,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 310,
+          "type": "open",
+          "src": 4,
+          "dst": 6
+        },
+        {
+          "tick": 330,
+          "type": "open",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 360,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 400,
+          "type": "cut",
+          "src": 4,
+          "dst": 5
+        },
+        {
+          "tick": 410,
+          "type": "open",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 420,
+          "type": "open",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 440,
+          "type": "open",
+          "src": 4,
+          "dst": 3
+        },
+        {
+          "tick": 470,
+          "type": "open",
+          "src": 3,
+          "dst": 2
+        },
+        {
+          "tick": 480,
+          "type": "cut",
+          "src": 4,
+          "dst": 3
+        },
+        {
+          "tick": 530,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 540,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 570,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 620,
+          "type": "cut",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 640,
+          "type": "open",
+          "src": 1,
+          "dst": 7
+        },
+        {
+          "tick": 650,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 670,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 700,
+          "type": "cut",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 710,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 720,
+          "type": "open",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 730,
+          "type": "open",
+          "src": 4,
+          "dst": 5
+        },
+        {
+          "tick": 740,
+          "type": "cut",
+          "src": 4,
+          "dst": 6
+        },
+        {
+          "tick": 750,
+          "type": "cut",
+          "src": 3,
+          "dst": 2
+        },
+        {
+          "tick": 780,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 790,
+          "type": "open",
+          "src": 0,
+          "dst": 7
+        },
+        {
+          "tick": 810,
+          "type": "cut",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 840,
+          "type": "open",
+          "src": 3,
+          "dst": 7
+        },
+        {
+          "tick": 870,
+          "type": "cut",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 890,
+          "type": "open",
+          "src": 4,
+          "dst": 7
+        },
+        {
+          "tick": 900,
+          "type": "cut",
+          "src": 4,
+          "dst": 5
+        },
+        {
+          "tick": 910,
+          "type": "open",
+          "src": 6,
+          "dst": 5
+        },
+        {
+          "tick": 1020,
+          "type": "open",
+          "src": 5,
+          "dst": 7
+        }
+      ],
+      "end_tick": 1220,
+      "final_hash": "3895fe72d67a4d2f"
+    },
+    "difficulty": {
+      "score": 42,
+      "tier": "Medium",
+      "think_s": 9.3,
+      "slack_s": 2.9,
+      "moves": 25,
+      "pressure": 1.0,
+      "towers": {
+        "rings": 1,
+        "cover": 0.17,
+        "lanes": 4,
+        "guarded": 0,
+        "answers": [
+          "detour",
+          "pour",
+          "capture"
+        ]
+      },
+      "level_hash": "71e3b1fba8d19f31"
+    },
+    "stars": {
+      "t2": 130,
+      "t3": 95
+    }
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "format": 1,
+  "id": "ch02-10",
+  "name": "Switch",
+  "ruleset": "base@3",
+  "seed": 1210,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 700,
+      "y": 350,
+      "owner": 1,
+      "charge": 9
+    },
+    {
+      "kind": "source",
+      "x": 390,
+      "y": 380,
+      "owner": 0,
+      "charge": 5
+    },
+    {
+      "kind": "source",
+      "x": 700,
+      "y": 640,
+      "owner": 0,
+      "charge": 5
+    },
+    {
+      "kind": "source",
+      "x": 320,
+      "y": 900,
+      "owner": 0,
+      "charge": 10
+    },
+    {
+      "kind": "source",
+      "x": 600,
+      "y": 1240,
+      "owner": 2,
+      "charge": 20
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 150,
+        "reaction": 150,
+        "aggression": 60,
+        "pref_player": 100,
+        "noise": 12,
+        "distance": 12
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 2,
+    "order": 10,
+    "teaches": "re-aim mid-fight: cut and switch lines",
+    "intro": {
+      "title": "Switch",
+      "body": "Teal is a little quicker now. When a tower falls, switch your lines to the next target."
+    },
+    "goal": "Take a tower, switch, take the next",
+    "show_split": false,
+    "tip": "Cut a line the moment its tower falls, and aim it at the next one.",
+    "par": {
+      "ticks": 1175,
+      "lost": 70,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch02-10",
+      "level_hash": "f86d99c6f47530c1",
+      "rules_hash": "b24b3381a6fb0747",
+      "seed": 1210,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 100,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 120,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 160,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 200,
+          "type": "open",
+          "src": 2,
+          "dst": 3
+        },
+        {
+          "tick": 240,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 300,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 320,
+          "type": "cut",
+          "src": 2,
+          "dst": 3
+        },
+        {
+          "tick": 460,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 540,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 560,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 600,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 620,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 700,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 720,
+          "type": "open",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 760,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 780,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 840,
+          "type": "open",
+          "src": 2,
+          "dst": 4
+        }
+      ],
+      "end_tick": 1175,
+      "final_hash": "b86df406d4814396"
+    },
+    "difficulty": {
+      "score": 15,
+      "tier": "Easy",
+      "think_s": 17.6,
+      "slack_s": 6.0,
+      "moves": 17,
+      "pressure": 2.04,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 4,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "f86d99c6f47530c1"
+    },
+    "stars": {
+      "t2": 125,
+      "t3": 90
+    },
+    "marks": [
+      {
+        "at": 2,
+        "text": "Take this, then switch",
+        "arrow": [
+          0,
+          2
+        ],
+        "until": {
+          "own": 2
+        }
+      },
+      {
+        "at": 3,
+        "text": "Switch your lines here",
+        "until": {
+          "own": 3
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,433 @@
+{
+  "format": 1,
+  "id": "ch03-11",
+  "name": "Overlook",
+  "ruleset": "base@2",
+  "seed": 1111,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 180,
+      "y": 800,
+      "owner": 1,
+      "charge": 18
+    },
+    {
+      "kind": "source",
+      "x": 400,
+      "y": 800,
+      "owner": 0,
+      "charge": 7
+    },
+    {
+      "kind": "watchtower",
+      "x": 620,
+      "y": 800,
+      "owner": 0,
+      "charge": 12
+    },
+    {
+      "kind": "source",
+      "x": 820,
+      "y": 180,
+      "owner": 2,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 820,
+      "y": 480,
+      "owner": 0,
+      "charge": 8
+    },
+    {
+      "kind": "watchtower",
+      "x": 820,
+      "y": 1120,
+      "owner": 2,
+      "charge": 10
+    },
+    {
+      "kind": "source",
+      "x": 820,
+      "y": 1400,
+      "owner": 0,
+      "charge": 9
+    },
+    {
+      "kind": "source",
+      "x": 300,
+      "y": 1170,
+      "owner": 0,
+      "charge": 5
+    },
+    {
+      "kind": "source",
+      "x": 300,
+      "y": 430,
+      "owner": 0,
+      "charge": 5
+    }
+  ],
+  "rocks": [
+    {
+      "x": 545,
+      "y": 1095,
+      "r": 70
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 160,
+        "reaction": 160,
+        "aggression": 80,
+        "pref_player": 90,
+        "patience": 20,
+        "noise": 12
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 3,
+    "order": 11,
+    "teaches": "take a grey tower to cover your advance",
+    "intro": {
+      "title": "Overlook",
+      "body": "The gray tower holds fire until someone takes it. Make it yours, then advance under its cover."
+    },
+    "tip": "Take the gray tower first: it guards the whole crossroads.",
+    "marks": [
+      {
+        "at": 2,
+        "text": "Take this tower",
+        "until": {
+          "own": 2
+        }
+      }
+    ],
+    "par": {
+      "ticks": 1444,
+      "lost": 87,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch03-11",
+      "level_hash": "f0cdb84b96717c5c",
+      "rules_hash": "0b870726dec17070",
+      "seed": 1111,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 10,
+          "type": "open",
+          "src": 0,
+          "dst": 7
+        },
+        {
+          "tick": 150,
+          "type": "cut",
+          "src": 0,
+          "dst": 7
+        },
+        {
+          "tick": 160,
+          "type": "open",
+          "src": 0,
+          "dst": 8
+        },
+        {
+          "tick": 200,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 210,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 270,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 280,
+          "type": "open",
+          "src": 7,
+          "dst": 6
+        },
+        {
+          "tick": 290,
+          "type": "cut",
+          "src": 0,
+          "dst": 8
+        },
+        {
+          "tick": 420,
+          "type": "open",
+          "src": 8,
+          "dst": 0
+        },
+        {
+          "tick": 430,
+          "type": "cut",
+          "src": 7,
+          "dst": 6
+        },
+        {
+          "tick": 460,
+          "type": "cut",
+          "src": 8,
+          "dst": 0
+        },
+        {
+          "tick": 470,
+          "type": "open",
+          "src": 0,
+          "dst": 8
+        },
+        {
+          "tick": 540,
+          "type": "cut",
+          "src": 0,
+          "dst": 8
+        },
+        {
+          "tick": 570,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 590,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 680,
+          "type": "open",
+          "src": 7,
+          "dst": 6
+        },
+        {
+          "tick": 690,
+          "type": "open",
+          "src": 1,
+          "dst": 7
+        },
+        {
+          "tick": 730,
+          "type": "open",
+          "src": 8,
+          "dst": 0
+        },
+        {
+          "tick": 740,
+          "type": "open",
+          "src": 7,
+          "dst": 8
+        },
+        {
+          "tick": 810,
+          "type": "open",
+          "src": 8,
+          "dst": 3
+        },
+        {
+          "tick": 820,
+          "type": "cut",
+          "src": 8,
+          "dst": 0
+        },
+        {
+          "tick": 830,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 840,
+          "type": "cut",
+          "src": 7,
+          "dst": 6
+        },
+        {
+          "tick": 850,
+          "type": "cut",
+          "src": 1,
+          "dst": 7
+        },
+        {
+          "tick": 860,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 870,
+          "type": "open",
+          "src": 0,
+          "dst": 8
+        },
+        {
+          "tick": 880,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 890,
+          "type": "open",
+          "src": 7,
+          "dst": 0
+        },
+        {
+          "tick": 940,
+          "type": "cut",
+          "src": 0,
+          "dst": 8
+        },
+        {
+          "tick": 980,
+          "type": "open",
+          "src": 7,
+          "dst": 1
+        },
+        {
+          "tick": 990,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 1000,
+          "type": "open",
+          "src": 8,
+          "dst": 4
+        },
+        {
+          "tick": 1010,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 1040,
+          "type": "cut",
+          "src": 8,
+          "dst": 3
+        },
+        {
+          "tick": 1050,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 1060,
+          "type": "open",
+          "src": 6,
+          "dst": 7
+        },
+        {
+          "tick": 1070,
+          "type": "open",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 1090,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 1120,
+          "type": "cut",
+          "src": 6,
+          "dst": 7
+        },
+        {
+          "tick": 1140,
+          "type": "open",
+          "src": 0,
+          "dst": 7
+        },
+        {
+          "tick": 1160,
+          "type": "open",
+          "src": 6,
+          "dst": 5
+        },
+        {
+          "tick": 1170,
+          "type": "cut",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 1180,
+          "type": "open",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 1190,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 1200,
+          "type": "open",
+          "src": 2,
+          "dst": 5
+        },
+        {
+          "tick": 1210,
+          "type": "cut",
+          "src": 2,
+          "dst": 4
+        }
+      ],
+      "end_tick": 1444,
+      "final_hash": "6f4dc98d13b214b5"
+    },
+    "difficulty": {
+      "score": 44,
+      "tier": "Medium",
+      "think_s": 8.8,
+      "slack_s": 3.4,
+      "moves": 34,
+      "pressure": 1.19,
+      "towers": {
+        "rings": 2,
+        "cover": 0.08,
+        "lanes": 6,
+        "guarded": 0,
+        "answers": [
+          "detour",
+          "capture"
+        ]
+      },
+      "level_hash": "f0cdb84b96717c5c"
+    },
+    "stars": {
+      "t2": 195,
+      "t3": 140
+    }
+  }
+}

@@ -1,0 +1,429 @@
+{
+  "format": 1,
+  "id": "ch02-11",
+  "name": "Teal Stirs",
+  "ruleset": "base@3",
+  "seed": 1211,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 200,
+      "y": 1360,
+      "owner": 1,
+      "charge": 9
+    },
+    {
+      "kind": "source",
+      "x": 620,
+      "y": 760,
+      "owner": 2,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 520,
+      "y": 1260,
+      "owner": 0,
+      "charge": 4
+    },
+    {
+      "kind": "source",
+      "x": 200,
+      "y": 880,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 820,
+      "y": 1200,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 380,
+      "y": 420,
+      "owner": 0,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 800,
+      "y": 360,
+      "owner": 0,
+      "charge": 6
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 200,
+        "reaction": 200,
+        "aggression": 45,
+        "pref_player": 100,
+        "noise": 12,
+        "distance": 12
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 2,
+    "order": 11,
+    "teaches": "everything so far against a livelier Teal",
+    "intro": {
+      "title": "Teal Stirs",
+      "body": "Teal reaches for the gray towers too. Take yours with full lines before it gets there."
+    },
+    "goal": "Beat Teal to the gray towers",
+    "show_split": false,
+    "tip": "Full lines on the near grays, then gang up on Teal.",
+    "par": {
+      "ticks": 1818,
+      "lost": 2,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch02-11",
+      "level_hash": "1d9938236c3f0048",
+      "rules_hash": "b24b3381a6fb0747",
+      "seed": 1211,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 80,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 220,
+          "type": "open",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 260,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 300,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 340,
+          "type": "cut",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 420,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 500,
+          "type": "open",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 520,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 540,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 560,
+          "type": "open",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 580,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 600,
+          "type": "cut",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 660,
+          "type": "open",
+          "src": 4,
+          "dst": 3
+        },
+        {
+          "tick": 680,
+          "type": "open",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 740,
+          "type": "cut",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 760,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 780,
+          "type": "open",
+          "src": 2,
+          "dst": 3
+        },
+        {
+          "tick": 800,
+          "type": "open",
+          "src": 2,
+          "dst": 1
+        },
+        {
+          "tick": 820,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 840,
+          "type": "cut",
+          "src": 2,
+          "dst": 3
+        },
+        {
+          "tick": 900,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 920,
+          "type": "cut",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 960,
+          "type": "open",
+          "src": 4,
+          "dst": 1
+        },
+        {
+          "tick": 980,
+          "type": "cut",
+          "src": 4,
+          "dst": 3
+        },
+        {
+          "tick": 1120,
+          "type": "open",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 1140,
+          "type": "open",
+          "src": 4,
+          "dst": 3
+        },
+        {
+          "tick": 1160,
+          "type": "cut",
+          "src": 4,
+          "dst": 1
+        },
+        {
+          "tick": 1180,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 1200,
+          "type": "open",
+          "src": 2,
+          "dst": 3
+        },
+        {
+          "tick": 1220,
+          "type": "cut",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 1240,
+          "type": "cut",
+          "src": 2,
+          "dst": 1
+        },
+        {
+          "tick": 1260,
+          "type": "open",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 1300,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 1340,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 1360,
+          "type": "cut",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 1420,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 1440,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 1460,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 1480,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 1500,
+          "type": "open",
+          "src": 2,
+          "dst": 5
+        },
+        {
+          "tick": 1520,
+          "type": "cut",
+          "src": 2,
+          "dst": 3
+        },
+        {
+          "tick": 1540,
+          "type": "open",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 1560,
+          "type": "open",
+          "src": 3,
+          "dst": 2
+        },
+        {
+          "tick": 1600,
+          "type": "open",
+          "src": 6,
+          "dst": 5
+        },
+        {
+          "tick": 1620,
+          "type": "open",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 1640,
+          "type": "open",
+          "src": 3,
+          "dst": 5
+        }
+      ],
+      "end_tick": 1818,
+      "final_hash": "71154c2d09f1300d"
+    },
+    "difficulty": {
+      "score": 18,
+      "tier": "Easy",
+      "think_s": 14.4,
+      "slack_s": 5.9,
+      "moves": 24,
+      "pressure": 2.04,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 6,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "1d9938236c3f0048"
+    },
+    "stars": {
+      "t2": 125,
+      "t3": 90
+    },
+    "marks": [
+      {
+        "at": 2,
+        "text": "Nearest: one full line",
+        "arrow": [
+          0,
+          2
+        ],
+        "until": {
+          "own": 2
+        }
+      },
+      {
+        "at": 3,
+        "text": "Then this, before Teal",
+        "until": {
+          "own": 3
+        }
+      },
+      {
+        "at": 3,
+        "text": "Feed it if Teal hits",
+        "until": {
+          "lose": 3
+        }
+      }
+    ]
+  }
+}

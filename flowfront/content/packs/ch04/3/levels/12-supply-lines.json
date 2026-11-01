@@ -1,0 +1,572 @@
+{
+  "format": 1,
+  "id": "ch04-12",
+  "name": "Supply Lines",
+  "ruleset": "base@2",
+  "seed": 3212,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "foundry",
+      "x": 160,
+      "y": 1400,
+      "owner": 1,
+      "charge": 16
+    },
+    {
+      "kind": "source",
+      "x": 380,
+      "y": 1470,
+      "owner": 1,
+      "charge": 19
+    },
+    {
+      "kind": "source",
+      "x": 850,
+      "y": 1350,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "relay",
+      "x": 380,
+      "y": 1040,
+      "owner": 0,
+      "charge": 2
+    },
+    {
+      "kind": "watchtower",
+      "x": 700,
+      "y": 1090,
+      "owner": 2,
+      "charge": 6
+    },
+    {
+      "kind": "relay",
+      "x": 620,
+      "y": 750,
+      "owner": 0,
+      "charge": 2
+    },
+    {
+      "kind": "source",
+      "x": 140,
+      "y": 790,
+      "owner": 0,
+      "charge": 9
+    },
+    {
+      "kind": "watchtower",
+      "x": 270,
+      "y": 540,
+      "owner": 2,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 810,
+      "y": 580,
+      "owner": 2,
+      "charge": 10
+    },
+    {
+      "kind": "foundry",
+      "x": 530,
+      "y": 250,
+      "owner": 2,
+      "charge": 5
+    },
+    {
+      "kind": "source",
+      "x": 200,
+      "y": 120,
+      "owner": 2,
+      "charge": 8
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 140,
+        "aggression": 50,
+        "pref_player": 90,
+        "patience": 15,
+        "noise": 12,
+        "reaction": 140
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 4,
+    "order": 12,
+    "teaches": "everything together: chain relays, march armour, hold the line",
+    "intro": {
+      "title": "Supply Lines",
+      "body": "Long roads, guarded gates, two relays. Keep your supply lines open and the armour moving.",
+      "spotlight": null
+    },
+    "tip": "Take a relay early: it is your fastest road to every front.",
+    "par": {
+      "ticks": 1751,
+      "lost": 83,
+      "source": "lookahead"
+    },
+    "difficulty": {
+      "score": 46,
+      "tier": "Medium",
+      "think_s": 8.7,
+      "slack_s": 3.7,
+      "moves": 36,
+      "pressure": 1.49,
+      "towers": {
+        "rings": 2,
+        "cover": 0.18,
+        "lanes": 7,
+        "guarded": 0,
+        "answers": [
+          "detour",
+          "relay",
+          "armour",
+          "capture"
+        ]
+      },
+      "level_hash": "a4006110aec05014"
+    },
+    "stars": {
+      "t2": 190,
+      "t3": 135
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch04-12",
+      "level_hash": "a4006110aec05014",
+      "rules_hash": "0b870726dec17070",
+      "seed": 3212,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 20,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 40,
+          "type": "open",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 60,
+          "type": "open",
+          "src": 0,
+          "dst": 6
+        },
+        {
+          "tick": 100,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 120,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 140,
+          "type": "cut",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 160,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 180,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 280,
+          "type": "open",
+          "src": 0,
+          "dst": 7
+        },
+        {
+          "tick": 300,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 320,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 340,
+          "type": "cut",
+          "src": 0,
+          "dst": 7
+        },
+        {
+          "tick": 360,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 380,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 400,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 420,
+          "type": "cut",
+          "src": 0,
+          "dst": 6
+        },
+        {
+          "tick": 460,
+          "type": "open",
+          "src": 3,
+          "dst": 7
+        },
+        {
+          "tick": 480,
+          "type": "open",
+          "src": 0,
+          "dst": 7
+        },
+        {
+          "tick": 500,
+          "type": "open",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 540,
+          "type": "open",
+          "src": 6,
+          "dst": 8
+        },
+        {
+          "tick": 560,
+          "type": "open",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 580,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 600,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 660,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 680,
+          "type": "open",
+          "src": 3,
+          "dst": 6
+        },
+        {
+          "tick": 700,
+          "type": "open",
+          "src": 2,
+          "dst": 1
+        },
+        {
+          "tick": 720,
+          "type": "open",
+          "src": 3,
+          "dst": 2
+        },
+        {
+          "tick": 800,
+          "type": "cut",
+          "src": 2,
+          "dst": 1
+        },
+        {
+          "tick": 820,
+          "type": "cut",
+          "src": 0,
+          "dst": 7
+        },
+        {
+          "tick": 840,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 860,
+          "type": "open",
+          "src": 7,
+          "dst": 8
+        },
+        {
+          "tick": 900,
+          "type": "open",
+          "src": 6,
+          "dst": 7
+        },
+        {
+          "tick": 920,
+          "type": "cut",
+          "src": 6,
+          "dst": 7
+        },
+        {
+          "tick": 960,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 980,
+          "type": "cut",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 1000,
+          "type": "cut",
+          "src": 7,
+          "dst": 8
+        },
+        {
+          "tick": 1020,
+          "type": "open",
+          "src": 6,
+          "dst": 5
+        },
+        {
+          "tick": 1060,
+          "type": "open",
+          "src": 3,
+          "dst": 9
+        },
+        {
+          "tick": 1080,
+          "type": "cut",
+          "src": 6,
+          "dst": 8
+        },
+        {
+          "tick": 1100,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 1120,
+          "type": "open",
+          "src": 7,
+          "dst": 3
+        },
+        {
+          "tick": 1140,
+          "type": "open",
+          "src": 8,
+          "dst": 5
+        },
+        {
+          "tick": 1160,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 1180,
+          "type": "open",
+          "src": 6,
+          "dst": 8
+        },
+        {
+          "tick": 1200,
+          "type": "open",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 1220,
+          "type": "open",
+          "src": 7,
+          "dst": 8
+        },
+        {
+          "tick": 1240,
+          "type": "cut",
+          "src": 7,
+          "dst": 3
+        },
+        {
+          "tick": 1260,
+          "type": "open",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 1280,
+          "type": "open",
+          "src": 8,
+          "dst": 7
+        },
+        {
+          "tick": 1300,
+          "type": "open",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 1320,
+          "type": "cut",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 1340,
+          "type": "open",
+          "src": 2,
+          "dst": 3
+        },
+        {
+          "tick": 1360,
+          "type": "cut",
+          "src": 6,
+          "dst": 8
+        },
+        {
+          "tick": 1380,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 1400,
+          "type": "open",
+          "src": 6,
+          "dst": 10
+        },
+        {
+          "tick": 1420,
+          "type": "open",
+          "src": 7,
+          "dst": 5
+        },
+        {
+          "tick": 1440,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 1460,
+          "type": "open",
+          "src": 2,
+          "dst": 8
+        },
+        {
+          "tick": 1480,
+          "type": "cut",
+          "src": 7,
+          "dst": 8
+        },
+        {
+          "tick": 1500,
+          "type": "open",
+          "src": 3,
+          "dst": 9
+        },
+        {
+          "tick": 1520,
+          "type": "open",
+          "src": 8,
+          "dst": 1
+        },
+        {
+          "tick": 1540,
+          "type": "open",
+          "src": 4,
+          "dst": 10
+        },
+        {
+          "tick": 1560,
+          "type": "open",
+          "src": 5,
+          "dst": 10
+        },
+        {
+          "tick": 1580,
+          "type": "open",
+          "src": 5,
+          "dst": 9
+        },
+        {
+          "tick": 1600,
+          "type": "cut",
+          "src": 4,
+          "dst": 10
+        },
+        {
+          "tick": 1620,
+          "type": "open",
+          "src": 4,
+          "dst": 5
+        },
+        {
+          "tick": 1640,
+          "type": "open",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 1660,
+          "type": "cut",
+          "src": 8,
+          "dst": 1
+        },
+        {
+          "tick": 1680,
+          "type": "cut",
+          "src": 5,
+          "dst": 9
+        }
+      ],
+      "end_tick": 1751,
+      "final_hash": "790cd910269a78fc"
+    }
+  }
+}

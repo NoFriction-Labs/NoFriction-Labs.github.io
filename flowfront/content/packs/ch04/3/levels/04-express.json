@@ -1,0 +1,516 @@
+{
+  "format": 1,
+  "id": "ch04-04",
+  "name": "Express",
+  "ruleset": "base@2",
+  "seed": 2404,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 140,
+      "y": 1400,
+      "owner": 1,
+      "charge": 14
+    },
+    {
+      "kind": "source",
+      "x": 530,
+      "y": 1435,
+      "owner": 0,
+      "charge": 4
+    },
+    {
+      "kind": "relay",
+      "x": 320,
+      "y": 1030,
+      "owner": 0,
+      "charge": 2
+    },
+    {
+      "kind": "source",
+      "x": 800,
+      "y": 1250,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "relay",
+      "x": 650,
+      "y": 740,
+      "owner": 0,
+      "charge": 2
+    },
+    {
+      "kind": "source",
+      "x": 200,
+      "y": 600,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 850,
+      "y": 350,
+      "owner": 2,
+      "charge": 11
+    },
+    {
+      "kind": "source",
+      "x": 440,
+      "y": 245,
+      "owner": 2,
+      "charge": 9
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 150,
+        "aggression": 70,
+        "pref_player": 90,
+        "patience": 20,
+        "noise": 12,
+        "reaction": 150
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 4,
+    "order": 4,
+    "teaches": "a relay near the front turns a long march into a short strike",
+    "intro": {
+      "title": "Express",
+      "body": "Lines out of a relay arrive in a blink, however long they are. Put one near the front and strike fast.",
+      "spotlight": null
+    },
+    "tip": "Chain your towers into the far relay, then hit from there.",
+    "par": {
+      "ticks": 1764,
+      "lost": 111,
+      "source": "lookahead"
+    },
+    "difficulty": {
+      "score": 34,
+      "tier": "Easy",
+      "think_s": 11.7,
+      "slack_s": 4.1,
+      "moves": 31,
+      "pressure": 1.69,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 7,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "ae1dbe01aab465f7"
+    },
+    "stars": {
+      "t2": 180,
+      "t3": 130
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch04-04",
+      "level_hash": "ae1dbe01aab465f7",
+      "rules_hash": "0b870726dec17070",
+      "seed": 2404,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 10,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 150,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 160,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 210,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 220,
+          "type": "open",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 260,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 310,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 320,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 330,
+          "type": "cut",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 370,
+          "type": "open",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 470,
+          "type": "open",
+          "src": 2,
+          "dst": 5
+        },
+        {
+          "tick": 480,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 490,
+          "type": "cut",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 500,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 510,
+          "type": "open",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 540,
+          "type": "cut",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 550,
+          "type": "open",
+          "src": 3,
+          "dst": 1
+        },
+        {
+          "tick": 570,
+          "type": "cut",
+          "src": 3,
+          "dst": 1
+        },
+        {
+          "tick": 580,
+          "type": "open",
+          "src": 3,
+          "dst": 1
+        },
+        {
+          "tick": 590,
+          "type": "open",
+          "src": 3,
+          "dst": 6
+        },
+        {
+          "tick": 600,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 610,
+          "type": "open",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 760,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 850,
+          "type": "open",
+          "src": 2,
+          "dst": 6
+        },
+        {
+          "tick": 860,
+          "type": "cut",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 880,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 890,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 940,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 950,
+          "type": "cut",
+          "src": 3,
+          "dst": 1
+        },
+        {
+          "tick": 960,
+          "type": "open",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 980,
+          "type": "open",
+          "src": 3,
+          "dst": 1
+        },
+        {
+          "tick": 1010,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 1040,
+          "type": "open",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 1050,
+          "type": "cut",
+          "src": 3,
+          "dst": 1
+        },
+        {
+          "tick": 1060,
+          "type": "cut",
+          "src": 3,
+          "dst": 6
+        },
+        {
+          "tick": 1070,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 1090,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 1220,
+          "type": "cut",
+          "src": 2,
+          "dst": 6
+        },
+        {
+          "tick": 1230,
+          "type": "open",
+          "src": 2,
+          "dst": 7
+        },
+        {
+          "tick": 1260,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 1270,
+          "type": "open",
+          "src": 0,
+          "dst": 7
+        },
+        {
+          "tick": 1280,
+          "type": "cut",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 1290,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 1300,
+          "type": "cut",
+          "src": 2,
+          "dst": 7
+        },
+        {
+          "tick": 1310,
+          "type": "open",
+          "src": 2,
+          "dst": 1
+        },
+        {
+          "tick": 1420,
+          "type": "open",
+          "src": 6,
+          "dst": 1
+        },
+        {
+          "tick": 1430,
+          "type": "open",
+          "src": 5,
+          "dst": 6
+        },
+        {
+          "tick": 1440,
+          "type": "open",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 1450,
+          "type": "cut",
+          "src": 2,
+          "dst": 1
+        },
+        {
+          "tick": 1460,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 1470,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 1480,
+          "type": "open",
+          "src": 1,
+          "dst": 7
+        },
+        {
+          "tick": 1490,
+          "type": "cut",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 1500,
+          "type": "open",
+          "src": 6,
+          "dst": 7
+        },
+        {
+          "tick": 1510,
+          "type": "open",
+          "src": 4,
+          "dst": 7
+        },
+        {
+          "tick": 1520,
+          "type": "cut",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 1530,
+          "type": "cut",
+          "src": 6,
+          "dst": 1
+        },
+        {
+          "tick": 1540,
+          "type": "open",
+          "src": 2,
+          "dst": 7
+        },
+        {
+          "tick": 1550,
+          "type": "cut",
+          "src": 2,
+          "dst": 5
+        },
+        {
+          "tick": 1560,
+          "type": "cut",
+          "src": 1,
+          "dst": 7
+        },
+        {
+          "tick": 1570,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 1580,
+          "type": "cut",
+          "src": 0,
+          "dst": 7
+        },
+        {
+          "tick": 1590,
+          "type": "cut",
+          "src": 6,
+          "dst": 7
+        },
+        {
+          "tick": 1600,
+          "type": "open",
+          "src": 6,
+          "dst": 4
+        }
+      ],
+      "end_tick": 1764,
+      "final_hash": "af1b029f77a0ba7b"
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "format": 1,
+  "id": "ch01-02",
+  "name": "Beat Teal",
+  "ruleset": "base@2",
+  "seed": 102,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 300,
+      "y": 1250,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 560,
+      "y": 1350,
+      "owner": 1,
+      "charge": 4
+    },
+    {
+      "kind": "source",
+      "x": 420,
+      "y": 850,
+      "owner": 2,
+      "charge": 2
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 1000000,
+        "reaction": 1000000
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 1,
+    "order": 2,
+    "teaches": "capture the rival's tower to win",
+    "intro": {
+      "title": "Beat Teal",
+      "body": "Meet Teal, your rival. Teal's towers grow like yours, so hit them while their number is small. Take every tower to win."
+    },
+    "goal": "Take Teal's tower",
+    "tip": "Drag to Teal while its number is small. Big already? Drag from both your towers.",
+    "par": {
+      "ticks": 239,
+      "lost": 0,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch01-02",
+      "level_hash": "4ecd54a43dedf353",
+      "rules_hash": "0b870726dec17070",
+      "seed": 102,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 10,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        }
+      ],
+      "end_tick": 239,
+      "final_hash": "e3ecfa20680b8302"
+    },
+    "difficulty": {
+      "score": 0,
+      "tier": "Easy",
+      "think_s": 20.0,
+      "slack_s": 6.0,
+      "moves": 2,
+      "pressure": 0.3,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 1,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "4ecd54a43dedf353"
+    },
+    "stars": {
+      "t2": 30,
+      "t3": 25
+    }
+  }
+}

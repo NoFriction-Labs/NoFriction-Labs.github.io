@@ -1,0 +1,500 @@
+{
+  "format": 1,
+  "id": "ch04-08",
+  "name": "Iron Column",
+  "ruleset": "base@2",
+  "seed": 2808,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 200,
+      "y": 1400,
+      "owner": 1,
+      "charge": 10
+    },
+    {
+      "kind": "foundry",
+      "x": 560,
+      "y": 1390,
+      "owner": 1,
+      "charge": 16
+    },
+    {
+      "kind": "source",
+      "x": 820,
+      "y": 1140,
+      "owner": 0,
+      "charge": 5
+    },
+    {
+      "kind": "watchtower",
+      "x": 380,
+      "y": 1000,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 760,
+      "y": 760,
+      "owner": 0,
+      "charge": 12
+    },
+    {
+      "kind": "watchtower",
+      "x": 300,
+      "y": 580,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 700,
+      "y": 330,
+      "owner": 2,
+      "charge": 10
+    },
+    {
+      "kind": "source",
+      "x": 220,
+      "y": 200,
+      "owner": 2,
+      "charge": 13
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 150,
+        "reaction": 150,
+        "aggression": 70,
+        "pref_player": 90,
+        "patience": 20,
+        "noise": 12
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 4,
+    "order": 8,
+    "teaches": "armour clears a road two towers guard",
+    "intro": {
+      "title": "Iron Column",
+      "body": "Two gray towers guard the way. Take them before Teal does: armour walks through their rings, plain units melt."
+    },
+    "tip": "Take a tower with armour, and it fires for you.",
+    "par": {
+      "ticks": 1668,
+      "lost": 77,
+      "source": "lookahead"
+    },
+    "difficulty": {
+      "score": 38,
+      "tier": "Easy",
+      "think_s": 9.3,
+      "slack_s": 4.0,
+      "moves": 33,
+      "pressure": 0.98,
+      "towers": {
+        "rings": 2,
+        "cover": 0.14,
+        "lanes": 4,
+        "guarded": 0,
+        "answers": [
+          "detour",
+          "capture"
+        ]
+      },
+      "level_hash": "751398cf90b0ffd9"
+    },
+    "stars": {
+      "t2": 175,
+      "t3": 125
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch04-08",
+      "level_hash": "751398cf90b0ffd9",
+      "rules_hash": "0b870726dec17070",
+      "seed": 2808,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 10,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 50,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 60,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 160,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 170,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 180,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 190,
+          "type": "open",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 200,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 210,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 220,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 300,
+          "type": "open",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 330,
+          "type": "open",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 340,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 400,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 410,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 420,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 440,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 460,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 470,
+          "type": "cut",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 510,
+          "type": "open",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 540,
+          "type": "cut",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 550,
+          "type": "open",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 560,
+          "type": "open",
+          "src": 3,
+          "dst": 2
+        },
+        {
+          "tick": 570,
+          "type": "open",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 600,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 620,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 720,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 730,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 740,
+          "type": "cut",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 750,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 760,
+          "type": "open",
+          "src": 3,
+          "dst": 1
+        },
+        {
+          "tick": 770,
+          "type": "open",
+          "src": 2,
+          "dst": 5
+        },
+        {
+          "tick": 780,
+          "type": "open",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 840,
+          "type": "cut",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 860,
+          "type": "open",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 900,
+          "type": "cut",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 910,
+          "type": "open",
+          "src": 4,
+          "dst": 6
+        },
+        {
+          "tick": 920,
+          "type": "cut",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 930,
+          "type": "open",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 940,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 950,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 960,
+          "type": "cut",
+          "src": 3,
+          "dst": 1
+        },
+        {
+          "tick": 970,
+          "type": "cut",
+          "src": 3,
+          "dst": 2
+        },
+        {
+          "tick": 990,
+          "type": "open",
+          "src": 4,
+          "dst": 5
+        },
+        {
+          "tick": 1000,
+          "type": "open",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 1020,
+          "type": "cut",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 1030,
+          "type": "open",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 1040,
+          "type": "cut",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 1060,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 1070,
+          "type": "open",
+          "src": 0,
+          "dst": 7
+        },
+        {
+          "tick": 1080,
+          "type": "open",
+          "src": 2,
+          "dst": 7
+        },
+        {
+          "tick": 1120,
+          "type": "cut",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 1150,
+          "type": "cut",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 1160,
+          "type": "cut",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 1170,
+          "type": "cut",
+          "src": 2,
+          "dst": 5
+        },
+        {
+          "tick": 1180,
+          "type": "open",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 1190,
+          "type": "cut",
+          "src": 4,
+          "dst": 6
+        },
+        {
+          "tick": 1200,
+          "type": "open",
+          "src": 4,
+          "dst": 7
+        },
+        {
+          "tick": 1230,
+          "type": "cut",
+          "src": 4,
+          "dst": 5
+        },
+        {
+          "tick": 1350,
+          "type": "open",
+          "src": 6,
+          "dst": 7
+        },
+        {
+          "tick": 1400,
+          "type": "open",
+          "src": 5,
+          "dst": 7
+        }
+      ],
+      "end_tick": 1668,
+      "final_hash": "7ab6fa6733c0f59c"
+    }
+  }
+}

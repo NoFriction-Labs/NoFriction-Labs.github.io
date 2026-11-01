@@ -1,0 +1,394 @@
+{
+  "format": 1,
+  "id": "ch04-07",
+  "name": "Foundry",
+  "ruleset": "base@2",
+  "seed": 2707,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "foundry",
+      "x": 500,
+      "y": 1400,
+      "owner": 1,
+      "charge": 15
+    },
+    {
+      "kind": "source",
+      "x": 210,
+      "y": 1320,
+      "owner": 1,
+      "charge": 12
+    },
+    {
+      "kind": "source",
+      "x": 800,
+      "y": 1250,
+      "owner": 0,
+      "charge": 4
+    },
+    {
+      "kind": "watchtower",
+      "x": 500,
+      "y": 950,
+      "owner": 2,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 160,
+      "y": 820,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 840,
+      "y": 820,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 300,
+      "y": 400,
+      "owner": 2,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 700,
+      "y": 400,
+      "owner": 2,
+      "charge": 10
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 140,
+        "aggression": 60,
+        "pref_player": 70,
+        "patience": 20,
+        "noise": 12,
+        "reaction": 140
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 4,
+    "order": 7,
+    "teaches": "a foundry makes armoured units that towers can't shoot",
+    "intro": {
+      "title": "Foundry",
+      "body": "A foundry makes armour: strength-3 units, one every second or two. Towers can't shoot armour.",
+      "spotlight": "foundry"
+    },
+    "tip": "Send the foundry through the ring; keep plain units out of it.",
+    "par": {
+      "ticks": 1372,
+      "lost": 50,
+      "source": "lookahead"
+    },
+    "difficulty": {
+      "score": 37,
+      "tier": "Easy",
+      "think_s": 10.2,
+      "slack_s": 3.3,
+      "moves": 22,
+      "pressure": 1.03,
+      "towers": {
+        "rings": 1,
+        "cover": 0.08,
+        "lanes": 5,
+        "guarded": 0,
+        "answers": [
+          "detour",
+          "capture"
+        ]
+      },
+      "level_hash": "e88343ee0fe7e1fb"
+    },
+    "stars": {
+      "t2": 105,
+      "t3": 75
+    },
+    "goal": "March armour past the tower",
+    "marks": [
+      {
+        "at": 0,
+        "text": "Foundry: makes armour",
+        "until": {
+          "time": 150
+        }
+      },
+      {
+        "at": 3,
+        "text": "Armour can take it",
+        "arrow": [
+          0,
+          3
+        ],
+        "after": 30,
+        "until": {
+          "open": [
+            0,
+            3
+          ]
+        }
+      }
+    ],
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch04-07",
+      "level_hash": "e88343ee0fe7e1fb",
+      "rules_hash": "0b870726dec17070",
+      "seed": 2707,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 20,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 40,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 60,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 160,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 240,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 260,
+          "type": "open",
+          "src": 2,
+          "dst": 5
+        },
+        {
+          "tick": 320,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 340,
+          "type": "open",
+          "src": 4,
+          "dst": 0
+        },
+        {
+          "tick": 380,
+          "type": "open",
+          "src": 4,
+          "dst": 2
+        },
+        {
+          "tick": 400,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 460,
+          "type": "cut",
+          "src": 2,
+          "dst": 5
+        },
+        {
+          "tick": 480,
+          "type": "open",
+          "src": 2,
+          "dst": 6
+        },
+        {
+          "tick": 500,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 520,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 540,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 580,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 600,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 620,
+          "type": "open",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 640,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 660,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 680,
+          "type": "open",
+          "src": 3,
+          "dst": 6
+        },
+        {
+          "tick": 700,
+          "type": "open",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 720,
+          "type": "open",
+          "src": 4,
+          "dst": 6
+        },
+        {
+          "tick": 740,
+          "type": "open",
+          "src": 5,
+          "dst": 4
+        },
+        {
+          "tick": 760,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 780,
+          "type": "open",
+          "src": 2,
+          "dst": 5
+        },
+        {
+          "tick": 800,
+          "type": "cut",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 820,
+          "type": "open",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 840,
+          "type": "open",
+          "src": 2,
+          "dst": 7
+        },
+        {
+          "tick": 860,
+          "type": "open",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 880,
+          "type": "open",
+          "src": 3,
+          "dst": 7
+        },
+        {
+          "tick": 900,
+          "type": "cut",
+          "src": 3,
+          "dst": 6
+        },
+        {
+          "tick": 920,
+          "type": "open",
+          "src": 4,
+          "dst": 7
+        },
+        {
+          "tick": 940,
+          "type": "open",
+          "src": 5,
+          "dst": 7
+        },
+        {
+          "tick": 960,
+          "type": "cut",
+          "src": 5,
+          "dst": 4
+        },
+        {
+          "tick": 980,
+          "type": "cut",
+          "src": 4,
+          "dst": 6
+        },
+        {
+          "tick": 1000,
+          "type": "cut",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 1020,
+          "type": "cut",
+          "src": 2,
+          "dst": 6
+        },
+        {
+          "tick": 1040,
+          "type": "cut",
+          "src": 2,
+          "dst": 5
+        }
+      ],
+      "end_tick": 1372,
+      "final_hash": "ca9106fe490eb5d0"
+    }
+  }
+}

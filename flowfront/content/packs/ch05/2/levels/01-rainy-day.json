@@ -1,0 +1,487 @@
+{
+  "format": 1,
+  "id": "ch05-01",
+  "name": "Rainy Day",
+  "ruleset": "base@2",
+  "seed": 6104,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 200,
+      "y": 1380,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 430,
+      "y": 1430,
+      "owner": 1,
+      "charge": 15
+    },
+    {
+      "kind": "vault",
+      "x": 330,
+      "y": 1130,
+      "owner": 0,
+      "charge": 3
+    },
+    {
+      "kind": "source",
+      "x": 150,
+      "y": 840,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 660,
+      "y": 1120,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 580,
+      "y": 620,
+      "owner": 2,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 840,
+      "y": 800,
+      "owner": 2,
+      "charge": 9
+    },
+    {
+      "kind": "source",
+      "x": 790,
+      "y": 290,
+      "owner": 2,
+      "charge": 8
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 140,
+        "aggression": 67,
+        "pref_player": 90,
+        "patience": 15,
+        "noise": 12,
+        "reaction": 140
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 5,
+    "order": 1,
+    "teaches": "a vault banks units, then pours them out fast",
+    "intro": {
+      "title": "Rainy Day",
+      "body": "A vault makes nothing and leaks 1 every 2 s, but banks what you send. It pours 10 a second per line. Fill it, then pour.",
+      "spotlight": "vault"
+    },
+    "goal": "Fill the vault, then pour it at Teal",
+    "marks": [
+      {
+        "at": 2,
+        "text": "Vault: take it",
+        "arrow": [
+          0,
+          2
+        ],
+        "until": {
+          "own": 2
+        }
+      },
+      {
+        "at": 2,
+        "text": "Fill it from both",
+        "arrow": [
+          1,
+          2
+        ],
+        "until": {
+          "open": [
+            1,
+            2
+          ]
+        }
+      },
+      {
+        "at": 5,
+        "text": "Pour it at Teal",
+        "arrow": [
+          2,
+          5
+        ],
+        "after": 360,
+        "until": {
+          "open": [
+            2,
+            5
+          ]
+        }
+      }
+    ],
+    "tip": "Fill the vault from both towers, then pour it all at once.",
+    "par": {
+      "ticks": 1584,
+      "lost": 163,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch05-01",
+      "level_hash": "e76fce61396353e0",
+      "rules_hash": "0b870726dec17070",
+      "seed": 6104,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 10,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 20,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 30,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 50,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 130,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 140,
+          "type": "cut",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 150,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 270,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 320,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 330,
+          "type": "open",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 340,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 520,
+          "type": "open",
+          "src": 4,
+          "dst": 6
+        },
+        {
+          "tick": 600,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 610,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 630,
+          "type": "cut",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 640,
+          "type": "open",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 700,
+          "type": "open",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 710,
+          "type": "open",
+          "src": 0,
+          "dst": 6
+        },
+        {
+          "tick": 720,
+          "type": "cut",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 730,
+          "type": "open",
+          "src": 3,
+          "dst": 6
+        },
+        {
+          "tick": 750,
+          "type": "cut",
+          "src": 3,
+          "dst": 6
+        },
+        {
+          "tick": 790,
+          "type": "cut",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 840,
+          "type": "open",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 850,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 860,
+          "type": "cut",
+          "src": 0,
+          "dst": 6
+        },
+        {
+          "tick": 870,
+          "type": "open",
+          "src": 4,
+          "dst": 3
+        },
+        {
+          "tick": 920,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 930,
+          "type": "open",
+          "src": 1,
+          "dst": 7
+        },
+        {
+          "tick": 970,
+          "type": "open",
+          "src": 4,
+          "dst": 5
+        },
+        {
+          "tick": 980,
+          "type": "cut",
+          "src": 4,
+          "dst": 3
+        },
+        {
+          "tick": 990,
+          "type": "cut",
+          "src": 4,
+          "dst": 6
+        },
+        {
+          "tick": 1000,
+          "type": "open",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 1020,
+          "type": "cut",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 1030,
+          "type": "open",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 1040,
+          "type": "open",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 1080,
+          "type": "open",
+          "src": 3,
+          "dst": 2
+        },
+        {
+          "tick": 1100,
+          "type": "open",
+          "src": 4,
+          "dst": 7
+        },
+        {
+          "tick": 1120,
+          "type": "open",
+          "src": 0,
+          "dst": 6
+        },
+        {
+          "tick": 1140,
+          "type": "open",
+          "src": 4,
+          "dst": 1
+        },
+        {
+          "tick": 1150,
+          "type": "cut",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 1160,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 1170,
+          "type": "cut",
+          "src": 0,
+          "dst": 6
+        },
+        {
+          "tick": 1180,
+          "type": "cut",
+          "src": 4,
+          "dst": 5
+        },
+        {
+          "tick": 1190,
+          "type": "cut",
+          "src": 4,
+          "dst": 1
+        },
+        {
+          "tick": 1200,
+          "type": "open",
+          "src": 0,
+          "dst": 6
+        },
+        {
+          "tick": 1210,
+          "type": "open",
+          "src": 6,
+          "dst": 7
+        },
+        {
+          "tick": 1220,
+          "type": "cut",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 1230,
+          "type": "cut",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 1240,
+          "type": "open",
+          "src": 3,
+          "dst": 7
+        },
+        {
+          "tick": 1250,
+          "type": "open",
+          "src": 5,
+          "dst": 7
+        },
+        {
+          "tick": 1260,
+          "type": "cut",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 1270,
+          "type": "cut",
+          "src": 3,
+          "dst": 2
+        }
+      ],
+      "end_tick": 1584,
+      "final_hash": "c8a4608f2361d721"
+    },
+    "difficulty": {
+      "score": 42,
+      "tier": "Medium",
+      "think_s": 10.1,
+      "slack_s": 2.6,
+      "moves": 27,
+      "pressure": 1.17,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 6,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "e76fce61396353e0"
+    },
+    "stars": {
+      "t2": 140,
+      "t3": 100
+    }
+  }
+}

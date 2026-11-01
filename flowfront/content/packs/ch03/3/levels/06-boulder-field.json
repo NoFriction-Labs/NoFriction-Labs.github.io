@@ -1,0 +1,443 @@
+{
+  "format": 1,
+  "id": "ch03-06",
+  "name": "Boulder Field",
+  "ruleset": "base@2",
+  "seed": 1106,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 180,
+      "y": 1380,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 500,
+      "y": 1380,
+      "owner": 0,
+      "charge": 9
+    },
+    {
+      "kind": "source",
+      "x": 820,
+      "y": 1380,
+      "owner": 0,
+      "charge": 7
+    },
+    {
+      "kind": "source",
+      "x": 180,
+      "y": 1000,
+      "owner": 0,
+      "charge": 5
+    },
+    {
+      "kind": "source",
+      "x": 500,
+      "y": 1000,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 820,
+      "y": 1000,
+      "owner": 0,
+      "charge": 7
+    },
+    {
+      "kind": "source",
+      "x": 180,
+      "y": 620,
+      "owner": 0,
+      "charge": 4
+    },
+    {
+      "kind": "source",
+      "x": 500,
+      "y": 620,
+      "owner": 0,
+      "charge": 12
+    },
+    {
+      "kind": "source",
+      "x": 805,
+      "y": 635,
+      "owner": 0,
+      "charge": 16
+    },
+    {
+      "kind": "source",
+      "x": 180,
+      "y": 220,
+      "owner": 0,
+      "charge": 18
+    },
+    {
+      "kind": "source",
+      "x": 805,
+      "y": 205,
+      "owner": 2,
+      "charge": 6
+    }
+  ],
+  "rocks": [
+    {
+      "x": 340,
+      "y": 1190,
+      "r": 50
+    },
+    {
+      "x": 630,
+      "y": 810,
+      "r": 70
+    },
+    {
+      "x": 340,
+      "y": 810,
+      "r": 90
+    },
+    {
+      "x": 660,
+      "y": 420,
+      "r": 70
+    },
+    {
+      "x": 500,
+      "y": 300,
+      "r": 60
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 180,
+        "reaction": 180,
+        "aggression": 60,
+        "pref_player": 70,
+        "patience": 20,
+        "noise": 12
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 3,
+    "order": 6,
+    "teaches": "many rocks: plan a path before you drag",
+    "intro": {
+      "title": "Boulder Field",
+      "body": "Boulders block many lines. Look before you drag: find which towers see each other, then plan a path."
+    },
+    "tip": "Pause and plan: tap the board to freeze time and look for open lines.",
+    "par": {
+      "ticks": 1457,
+      "lost": 75,
+      "source": "lookahead"
+    },
+    "difficulty": {
+      "score": 30,
+      "tier": "Easy",
+      "think_s": 9.7,
+      "slack_s": 4.2,
+      "moves": 26,
+      "pressure": 0.46,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 10,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "5f44d75e3d3acf64"
+    },
+    "stars": {
+      "t2": 135,
+      "t3": 95
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch03-06",
+      "level_hash": "5f44d75e3d3acf64",
+      "rules_hash": "0b870726dec17070",
+      "seed": 1106,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 20,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 80,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 120,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 200,
+          "type": "open",
+          "src": 3,
+          "dst": 6
+        },
+        {
+          "tick": 240,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 260,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 320,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 340,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 380,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 460,
+          "type": "open",
+          "src": 6,
+          "dst": 7
+        },
+        {
+          "tick": 480,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 500,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 520,
+          "type": "open",
+          "src": 4,
+          "dst": 5
+        },
+        {
+          "tick": 540,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 560,
+          "type": "cut",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 580,
+          "type": "open",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 600,
+          "type": "cut",
+          "src": 4,
+          "dst": 5
+        },
+        {
+          "tick": 620,
+          "type": "open",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 640,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 660,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 700,
+          "type": "cut",
+          "src": 6,
+          "dst": 7
+        },
+        {
+          "tick": 720,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 740,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 760,
+          "type": "open",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 780,
+          "type": "open",
+          "src": 4,
+          "dst": 7
+        },
+        {
+          "tick": 800,
+          "type": "open",
+          "src": 4,
+          "dst": 3
+        },
+        {
+          "tick": 820,
+          "type": "open",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 840,
+          "type": "open",
+          "src": 2,
+          "dst": 9
+        },
+        {
+          "tick": 860,
+          "type": "open",
+          "src": 5,
+          "dst": 8
+        },
+        {
+          "tick": 880,
+          "type": "open",
+          "src": 7,
+          "dst": 8
+        },
+        {
+          "tick": 900,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 920,
+          "type": "cut",
+          "src": 4,
+          "dst": 3
+        },
+        {
+          "tick": 940,
+          "type": "open",
+          "src": 6,
+          "dst": 9
+        },
+        {
+          "tick": 960,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 980,
+          "type": "open",
+          "src": 5,
+          "dst": 2
+        },
+        {
+          "tick": 1000,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 1020,
+          "type": "open",
+          "src": 7,
+          "dst": 9
+        },
+        {
+          "tick": 1040,
+          "type": "cut",
+          "src": 6,
+          "dst": 9
+        },
+        {
+          "tick": 1060,
+          "type": "cut",
+          "src": 7,
+          "dst": 8
+        },
+        {
+          "tick": 1080,
+          "type": "cut",
+          "src": 5,
+          "dst": 2
+        },
+        {
+          "tick": 1100,
+          "type": "open",
+          "src": 4,
+          "dst": 2
+        },
+        {
+          "tick": 1120,
+          "type": "open",
+          "src": 5,
+          "dst": 0
+        },
+        {
+          "tick": 1140,
+          "type": "open",
+          "src": 6,
+          "dst": 10
+        },
+        {
+          "tick": 1160,
+          "type": "open",
+          "src": 8,
+          "dst": 10
+        }
+      ],
+      "end_tick": 1457,
+      "final_hash": "6d7400d0158328f9"
+    }
+  }
+}

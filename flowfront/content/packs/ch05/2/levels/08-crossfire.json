@@ -1,0 +1,571 @@
+{
+  "format": 1,
+  "id": "ch05-08",
+  "name": "Crossfire",
+  "ruleset": "base@2",
+  "seed": 6124,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 420,
+      "y": 180,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 700,
+      "y": 160,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "vault",
+      "x": 600,
+      "y": 380,
+      "owner": 0,
+      "charge": 3
+    },
+    {
+      "kind": "source",
+      "x": 250,
+      "y": 400,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 850,
+      "y": 540,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 520,
+      "y": 850,
+      "owner": 0,
+      "charge": 12
+    },
+    {
+      "kind": "source",
+      "x": 180,
+      "y": 900,
+      "owner": 2,
+      "charge": 25
+    },
+    {
+      "kind": "source",
+      "x": 200,
+      "y": 1300,
+      "owner": 2,
+      "charge": 10
+    },
+    {
+      "kind": "source",
+      "x": 820,
+      "y": 1080,
+      "owner": 3,
+      "charge": 25
+    },
+    {
+      "kind": "source",
+      "x": 600,
+      "y": 1400,
+      "owner": 3,
+      "charge": 10
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 140,
+        "aggression": 70,
+        "pref_player": 90,
+        "patience": 15,
+        "noise": 12,
+        "reaction": 140,
+        "pref_rival": 70
+      }
+    },
+    {
+      "faction": 3,
+      "personality": {
+        "cadence": 140,
+        "aggression": 70,
+        "pref_player": 90,
+        "patience": 15,
+        "noise": 12,
+        "reaction": 140,
+        "pref_rival": 70
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 5,
+    "order": 8,
+    "teaches": "strike the rival that just spent itself",
+    "intro": {
+      "title": "Crossfire",
+      "body": "Teal and Violet both reach for the middle. Pour your vault at whichever one just lost towers.",
+      "spotlight": null
+    },
+    "goal": "Flood the weaker rival, then the other",
+    "marks": [
+      {
+        "at": 5,
+        "text": "Both rivals want this",
+        "until": {
+          "time": 180
+        }
+      }
+    ],
+    "tip": "One rival at a time: a full vault beats one, a split one beats neither.",
+    "par": {
+      "ticks": 1684,
+      "lost": 167,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch05-08",
+      "level_hash": "1bcc63271277b407",
+      "rules_hash": "0b870726dec17070",
+      "seed": 6124,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 10,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 20,
+          "type": "open",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 100,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 110,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 260,
+          "type": "open",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 270,
+          "type": "cut",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 280,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 290,
+          "type": "cut",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 300,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 310,
+          "type": "cut",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 320,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 330,
+          "type": "cut",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 340,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 350,
+          "type": "cut",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 360,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 400,
+          "type": "open",
+          "src": 1,
+          "dst": 8
+        },
+        {
+          "tick": 410,
+          "type": "cut",
+          "src": 1,
+          "dst": 8
+        },
+        {
+          "tick": 420,
+          "type": "open",
+          "src": 1,
+          "dst": 8
+        },
+        {
+          "tick": 430,
+          "type": "cut",
+          "src": 1,
+          "dst": 8
+        },
+        {
+          "tick": 440,
+          "type": "open",
+          "src": 1,
+          "dst": 8
+        },
+        {
+          "tick": 450,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 460,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 470,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 480,
+          "type": "open",
+          "src": 3,
+          "dst": 8
+        },
+        {
+          "tick": 500,
+          "type": "cut",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 510,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 520,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 530,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 580,
+          "type": "open",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 640,
+          "type": "open",
+          "src": 4,
+          "dst": 8
+        },
+        {
+          "tick": 650,
+          "type": "open",
+          "src": 2,
+          "dst": 8
+        },
+        {
+          "tick": 730,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 740,
+          "type": "cut",
+          "src": 1,
+          "dst": 8
+        },
+        {
+          "tick": 800,
+          "type": "open",
+          "src": 1,
+          "dst": 8
+        },
+        {
+          "tick": 860,
+          "type": "open",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 870,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 880,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 890,
+          "type": "open",
+          "src": 0,
+          "dst": 6
+        },
+        {
+          "tick": 910,
+          "type": "open",
+          "src": 3,
+          "dst": 6
+        },
+        {
+          "tick": 920,
+          "type": "cut",
+          "src": 3,
+          "dst": 8
+        },
+        {
+          "tick": 930,
+          "type": "open",
+          "src": 5,
+          "dst": 6
+        },
+        {
+          "tick": 940,
+          "type": "cut",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 950,
+          "type": "open",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 970,
+          "type": "open",
+          "src": 4,
+          "dst": 5
+        },
+        {
+          "tick": 980,
+          "type": "cut",
+          "src": 4,
+          "dst": 8
+        },
+        {
+          "tick": 990,
+          "type": "open",
+          "src": 2,
+          "dst": 5
+        },
+        {
+          "tick": 1030,
+          "type": "cut",
+          "src": 0,
+          "dst": 6
+        },
+        {
+          "tick": 1040,
+          "type": "cut",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 1050,
+          "type": "open",
+          "src": 0,
+          "dst": 7
+        },
+        {
+          "tick": 1060,
+          "type": "open",
+          "src": 5,
+          "dst": 7
+        },
+        {
+          "tick": 1100,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 1110,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 1120,
+          "type": "cut",
+          "src": 1,
+          "dst": 8
+        },
+        {
+          "tick": 1130,
+          "type": "cut",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 1140,
+          "type": "open",
+          "src": 3,
+          "dst": 2
+        },
+        {
+          "tick": 1170,
+          "type": "open",
+          "src": 4,
+          "dst": 2
+        },
+        {
+          "tick": 1190,
+          "type": "cut",
+          "src": 5,
+          "dst": 6
+        },
+        {
+          "tick": 1200,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 1210,
+          "type": "open",
+          "src": 2,
+          "dst": 7
+        },
+        {
+          "tick": 1230,
+          "type": "open",
+          "src": 5,
+          "dst": 9
+        },
+        {
+          "tick": 1240,
+          "type": "open",
+          "src": 8,
+          "dst": 9
+        },
+        {
+          "tick": 1260,
+          "type": "open",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 1270,
+          "type": "open",
+          "src": 4,
+          "dst": 9
+        },
+        {
+          "tick": 1280,
+          "type": "cut",
+          "src": 4,
+          "dst": 5
+        },
+        {
+          "tick": 1400,
+          "type": "open",
+          "src": 6,
+          "dst": 7
+        },
+        {
+          "tick": 1410,
+          "type": "cut",
+          "src": 5,
+          "dst": 7
+        },
+        {
+          "tick": 1430,
+          "type": "open",
+          "src": 5,
+          "dst": 7
+        }
+      ],
+      "end_tick": 1684,
+      "final_hash": "9f2022374ecda4f2"
+    },
+    "difficulty": {
+      "score": 44,
+      "tier": "Medium",
+      "think_s": 7.4,
+      "slack_s": 4.0,
+      "moves": 39,
+      "pressure": 0.84,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 8,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "1bcc63271277b407"
+    },
+    "stars": {
+      "t2": 180,
+      "t3": 130
+    }
+  }
+}

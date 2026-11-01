@@ -1,66 +1,310 @@
 {
   "format": 1,
   "channel": "main",
-  "serial": 1793251623,
+  "serial": 1793569943,
   "packs": [
     {
+      "id": "ch01",
+      "version": 4,
+      "min_app_version": "0.3.0",
+      "chapter": 1,
+      "name": "Basics",
+      "files": [
+        {
+          "path": "packs/ch01/4/index.json",
+          "sha256": "178967c004dfcfc560bfbfcdb9ad0ff9bee84b3476091f42a5913dba1eb9b50a"
+        },
+        {
+          "path": "packs/ch01/4/levels/01-first-line.json",
+          "sha256": "b28a04bb023cf07861868ff6c9fc15907c4c76bfbc2fc69b616951bdf9108913"
+        },
+        {
+          "path": "packs/ch01/4/levels/02-beat-teal.json",
+          "sha256": "9fc11c7d096ebbc51491e2fb569fef106290e01f28c60d064c009a43d184f446"
+        },
+        {
+          "path": "packs/ch01/4/levels/03-chain.json",
+          "sha256": "c3398f63532515c9e561abea60b2a9d462eb755c763aef9045887f9098878ca8"
+        },
+        {
+          "path": "packs/ch01/4/levels/04-snip.json",
+          "sha256": "e5e67e47289874926d1125aac1692bc7c87ebb2676c49916ba7545a08fdb5ec9"
+        },
+        {
+          "path": "packs/ch01/4/levels/05-grow-first.json",
+          "sha256": "09f7c16831a54d06c2ecd93dc36f0a725175429f1cc33793f8bd97bf2750abfc"
+        },
+        {
+          "path": "packs/ch01/4/levels/06-bank-it.json",
+          "sha256": "60673f83cd379ed23e9736eb7c40b502f6f4023f4006eae8eb90440fd2672f35"
+        },
+        {
+          "path": "packs/ch01/4/levels/07-three-speeds.json",
+          "sha256": "bf5f6fbad0b1fcb72abd7cbfaf9da86ca051894c5381a964e0c12f5f0d39fe0b"
+        },
+        {
+          "path": "packs/ch01/4/levels/08-full-tower.json",
+          "sha256": "5c399f5591e4f6ab1e1e62916ccceb580ec442ccce00e7c32e9ece63f90a68cf"
+        },
+        {
+          "path": "packs/ch01/4/levels/09-team-up.json",
+          "sha256": "9db9076ea271b143132963ab30d9d5cfe42d2be6326106dc069becd88f4c3f9d"
+        },
+        {
+          "path": "packs/ch01/4/levels/10-teal-wakes.json",
+          "sha256": "4e506c09926aa6429e19fed37c35584c7a42e49d0e391f1195a73ba83b5c74e4"
+        },
+        {
+          "path": "packs/ch01/4/levels/11-race.json",
+          "sha256": "6e7dd377b0f530a3a98c712a05b08df22558aec2720ca2372a75ad9f252f8fd8"
+        },
+        {
+          "path": "packs/ch01/4/levels/12-graduation.json",
+          "sha256": "6bb0e86e6f7c53dfd8d49f162f3c2e73eb5ccda7df373ba59790eaf23d45e4c3"
+        }
+      ]
+    },
+    {
       "id": "ch02",
-      "version": 2,
+      "version": 4,
       "min_app_version": "0.4.0",
       "chapter": 2,
       "name": "Branches",
       "files": [
         {
-          "path": "packs/ch02/2/index.json",
+          "path": "packs/ch02/4/index.json",
           "sha256": "73f0d6700059bc205c9cba3148a0bdcbfdf68002aad411696025cadd368ed17d"
         },
         {
-          "path": "packs/ch02/2/levels/01-full-stream.json",
-          "sha256": "db151ddbf4e8d4a71d18203506ea6679d9bff246f75c330bd093d05a6fd1a988"
+          "path": "packs/ch02/4/levels/01-full-stream.json",
+          "sha256": "5e4a76470a054681506eb26c50e8aea1494f866629cdcb774a16475279c1e835"
         },
         {
-          "path": "packs/ch02/2/levels/02-cut-and-switch.json",
-          "sha256": "01201511229dc59e5997221227634a1eff4b0d5c92f15efb35d9ce6c4e917623"
+          "path": "packs/ch02/4/levels/02-cut-and-switch.json",
+          "sha256": "16bbbf0e2324156593dd88f384714d00791e4c23f0d75dc134455354abac3eb9"
         },
         {
-          "path": "packs/ch02/2/levels/03-thin-lines.json",
-          "sha256": "35510283e624e721f988fe3a9ef932b366232644e6808ab29ec0add2496fc87d"
+          "path": "packs/ch02/4/levels/03-thin-lines.json",
+          "sha256": "b2ae57e44387dbd30f7f599cea306ab1b410db69c3940a8c1aef78e06adf0755"
         },
         {
-          "path": "packs/ch02/2/levels/04-pick-your-lines.json",
-          "sha256": "ab1b644cd4ec9ad1905c70331249bea2d3e29699c55961da4a89dc62949a72c6"
+          "path": "packs/ch02/4/levels/04-pick-your-lines.json",
+          "sha256": "5f4236e4662c6809431083369c906034df7ac716f9f7e1effa2ad026fbed3dcf"
         },
         {
-          "path": "packs/ch02/2/levels/05-on-the-way.json",
-          "sha256": "b4272ed797072b15845a51a19eaa35a417172ecee04c8efaa6e8d194142572e5"
+          "path": "packs/ch02/4/levels/05-on-the-way.json",
+          "sha256": "0ef661e01ccce5cacd19ccc705a29ae182921a91fff1c67c2e8f631e8d53efd6"
         },
         {
-          "path": "packs/ch02/2/levels/06-long-road.json",
-          "sha256": "01aeff5f34715dee607872bcaf81d809d24d6bede2509ef6d4038e4689b7e0d6"
+          "path": "packs/ch02/4/levels/06-long-road.json",
+          "sha256": "45debf2f35f201991ab39c02c31edca9f6932e11933babbec483c8dc04bf6d44"
         },
         {
-          "path": "packs/ch02/2/levels/07-strike-and-grow.json",
-          "sha256": "5f4e5b480ac72b06e2865cf1b3028bf51fa87b599d94fbb88e5ca3e788c2cb24"
+          "path": "packs/ch02/4/levels/07-strike-and-grow.json",
+          "sha256": "3a781c54fa2f73272d08cd88cf68a44b19fa1485bc3daf25775a6689722c7ea8"
         },
         {
-          "path": "packs/ch02/2/levels/08-feed-and-fight.json",
-          "sha256": "5a44c359a3f4941f38ee81afa8c7cd63c8702d0c1ba4e2485a944365df11b6d8"
+          "path": "packs/ch02/4/levels/08-feed-and-fight.json",
+          "sha256": "d4777f2df093979719e61c192b6a558b39ea3bc9419ad9453167e8a14bc97cce"
         },
         {
-          "path": "packs/ch02/2/levels/09-two-fronts.json",
-          "sha256": "1f99588010ac93381136fd2e5de7d7a12f525ce1d0c1e29533fa41d6b48c5ea4"
+          "path": "packs/ch02/4/levels/09-two-fronts.json",
+          "sha256": "62d375af0daa9379230fdf13c2b17529e19b106169c9c44aa3f17ca12c04a8b6"
         },
         {
-          "path": "packs/ch02/2/levels/10-switch.json",
-          "sha256": "2fcc3e6301c43cfa21d87e9da621f0f3396e25df544c2c0b76b1a8da2f5caed0"
+          "path": "packs/ch02/4/levels/10-switch.json",
+          "sha256": "f2d073f1b5048268989ca07d4a62970b50d85882b2e9b4125fde6a773a51f3a3"
         },
         {
-          "path": "packs/ch02/2/levels/11-teal-stirs.json",
-          "sha256": "da671c82225e4f7862ebaa82bc9f5af452055cbaa3731a6c50c8dfe475e7bf1b"
+          "path": "packs/ch02/4/levels/11-teal-stirs.json",
+          "sha256": "a00845370bd0b3d1de8d2918d8b46d6fe1f743bb540d71a83b060abe9da85b82"
         },
         {
-          "path": "packs/ch02/2/levels/12-crossing.json",
-          "sha256": "6ffbe8ab266e383a111dadd517ab77249f261ac21bb9e0b5828b2ebb131b049f"
+          "path": "packs/ch02/4/levels/12-crossing.json",
+          "sha256": "5f1962dc5b22b428fb5726a7d58ba143a954d6b335bd0b74fb3e781afb1cd532"
+        }
+      ]
+    },
+    {
+      "id": "ch03",
+      "version": 3,
+      "min_app_version": "0.4.0",
+      "chapter": 3,
+      "name": "First Front",
+      "files": [
+        {
+          "path": "packs/ch03/3/index.json",
+          "sha256": "7a641852401f3bc84949de88432306897047ee0460250e77e66e7930ae50f9c8"
+        },
+        {
+          "path": "packs/ch03/3/levels/01-dawn.json",
+          "sha256": "6336cd189ead979dc1a0088d50b593b4c3ea927b5640c2c3d1f86f6787d139d8"
+        },
+        {
+          "path": "packs/ch03/3/levels/02-around-the-rock.json",
+          "sha256": "b5b8118fb94622ad9aec690f4a75ada36936df68708db7d22008f5d7003e0a27"
+        },
+        {
+          "path": "packs/ch03/3/levels/03-change-of-plans.json",
+          "sha256": "8c8813ce6accd1be03c6082464d3bd5e81a5020e123fec5637717611ff743e5f"
+        },
+        {
+          "path": "packs/ch03/3/levels/04-narrow-pass.json",
+          "sha256": "f379cd505814d000c1d064ec653b2ae03b40e36564d3373f08ba0bac57b09c97"
+        },
+        {
+          "path": "packs/ch03/3/levels/05-the-wall.json",
+          "sha256": "ce10baae8ab5983baaa785405064563f45d6e110ca2e2c99a210b24860d58b8c"
+        },
+        {
+          "path": "packs/ch03/3/levels/06-boulder-field.json",
+          "sha256": "b3c357de46ddaef166ff7b146424fc3cc6e71c492cbe816bf3381a8a5f686705"
+        },
+        {
+          "path": "packs/ch03/3/levels/07-divide.json",
+          "sha256": "64be67e9293846c94cdb2eac704613474ee62b22d2d478d16109695b5ce0c7dd"
+        },
+        {
+          "path": "packs/ch03/3/levels/08-watchtower.json",
+          "sha256": "1041a4d56f5930ab5b91966dd88f2a3bc9f5638b7d6da7ff943a72e17958d07c"
+        },
+        {
+          "path": "packs/ch03/3/levels/09-stand-firm.json",
+          "sha256": "946815b9d0ffe489475d6303acf02e46788de73472812050481b01e714f34f5c"
+        },
+        {
+          "path": "packs/ch03/3/levels/10-guarded-pass.json",
+          "sha256": "2f84884f49aee0764d9c99846801b350b80980569ee9304c59b3bede4c89a5dc"
+        },
+        {
+          "path": "packs/ch03/3/levels/11-overlook.json",
+          "sha256": "b3e4f5eeb5b74b50f63416fd4e01925558927c05d6e6fbb006f6625280c5767f"
+        },
+        {
+          "path": "packs/ch03/3/levels/12-first-front.json",
+          "sha256": "dd5a48148e0327c4374ad79c2df3a1e97fd9c7124a2e0917f3ea687b245dac96"
+        }
+      ]
+    },
+    {
+      "id": "ch04",
+      "version": 3,
+      "min_app_version": "0.4.0",
+      "chapter": 4,
+      "name": "Supply Lines",
+      "files": [
+        {
+          "path": "packs/ch04/3/index.json",
+          "sha256": "0868c5c9be85fe2fa5d3f8d15fde9b0d88bc8d15ff2003a9a5931b314840f54c"
+        },
+        {
+          "path": "packs/ch04/3/levels/01-relay-station.json",
+          "sha256": "aa4f0e4f8d9bfa602520ccd33500a3014d555efc85589f62f6ec514b2186874b"
+        },
+        {
+          "path": "packs/ch04/3/levels/02-three-ways.json",
+          "sha256": "721ff71eedcff11a1ff09781869f9448ec007f1441d460cb6322519f19153d84"
+        },
+        {
+          "path": "packs/ch04/3/levels/03-boulder-pass.json",
+          "sha256": "19bf1451424058c42127eb0ebb61b3b645c94a68e9f6e15e993300ea1b25b4fa"
+        },
+        {
+          "path": "packs/ch04/3/levels/04-express.json",
+          "sha256": "2ab6867d637e9f3dd178d4b07d6ce7646d4eb3c7ca692549809bcb777c3084e3"
+        },
+        {
+          "path": "packs/ch04/3/levels/05-blind-spot.json",
+          "sha256": "165f290a94114788ed8a89cde0d6ba043c085df9d70f0fccd8710efe5091ae35"
+        },
+        {
+          "path": "packs/ch04/3/levels/06-switchyard.json",
+          "sha256": "fae8f018e8a6b5349d5b365c05349468b6a2e50641841ecc4df390b4761d2edc"
+        },
+        {
+          "path": "packs/ch04/3/levels/07-foundry.json",
+          "sha256": "d88c0643c651ed68cc8568f07d56622f3dfedb1771c7617d8d3843352603937f"
+        },
+        {
+          "path": "packs/ch04/3/levels/08-iron-column.json",
+          "sha256": "d2106eeaf841933c4ae7f05a6d8db1983c4aad3f83713f00667528d0397bd307"
+        },
+        {
+          "path": "packs/ch04/3/levels/09-escort.json",
+          "sha256": "13547191e18993a82165b23d4e2740acb4c686b7a0e0cf7b0305c9ac1a291292"
+        },
+        {
+          "path": "packs/ch04/3/levels/10-two-roads.json",
+          "sha256": "69b182147dfdf10c0bc8a4483e5426eb64c3a87ee75ff8c47dae05cf91172e89"
+        },
+        {
+          "path": "packs/ch04/3/levels/11-crossroads.json",
+          "sha256": "c59ca0dae4a1af32b129b285f4d9151d6d1e190bd05d4cb6166a343cbbf73a13"
+        },
+        {
+          "path": "packs/ch04/3/levels/12-supply-lines.json",
+          "sha256": "de776c0476221cb378413b920967b5ece81bf7e072be57100c18492a5fe72c3d"
+        }
+      ]
+    },
+    {
+      "id": "ch05",
+      "version": 2,
+      "min_app_version": "0.3.0",
+      "chapter": 5,
+      "name": "Reserves",
+      "files": [
+        {
+          "path": "packs/ch05/2/index.json",
+          "sha256": "885cc86f9d08b3a2e71256f3908b8a33a1c664ee1da7e564b2ec13187f57521d"
+        },
+        {
+          "path": "packs/ch05/2/levels/01-rainy-day.json",
+          "sha256": "e6f5dc4c36818ed399304db00f84fa31177ff60f1c50a3cb26b37e21141ab21d"
+        },
+        {
+          "path": "packs/ch05/2/levels/02-floodgate.json",
+          "sha256": "e6645ddb695f7ca5d27899434aab54580f937cda1caedc8c77ec7846d93c66d4"
+        },
+        {
+          "path": "packs/ch05/2/levels/03-overflow.json",
+          "sha256": "f1dc1f849f7fbb9c2fd0c532d87f30eb2146c2b26dae4b08d7d8cfd914dcac8e"
+        },
+        {
+          "path": "packs/ch05/2/levels/04-spillway.json",
+          "sha256": "cc3fa62203a82faa5585585003ccb76b90dc281b3d922533fed7c68a22e3dd6c"
+        },
+        {
+          "path": "packs/ch05/2/levels/05-iron-reserve.json",
+          "sha256": "134aba67254912c290b9bf38ba6b622f17acad88fe2e56d0c2862534718b2fe7"
+        },
+        {
+          "path": "packs/ch05/2/levels/06-their-vault.json",
+          "sha256": "a8785ad6f0a6bbd6f18c6f03a1ff81c7de2b88d07fd527b6370647c335d429e5"
+        },
+        {
+          "path": "packs/ch05/2/levels/07-violet.json",
+          "sha256": "a2f9457d7682db789a3fd25c593ea9fcf925d54f79287e1ed554bef8997242c1"
+        },
+        {
+          "path": "packs/ch05/2/levels/08-crossfire.json",
+          "sha256": "328a54c27090ff2fa75d1b4682d95f95f18b79220972cf02e92cdb4e9ab41cb3"
+        },
+        {
+          "path": "packs/ch05/2/levels/09-bystander.json",
+          "sha256": "9e63b916132b15bd2d057eeefc87f074d6bbf5cabc5fc24ccd545768ea9d0676"
+        },
+        {
+          "path": "packs/ch05/2/levels/10-two-fronts.json",
+          "sha256": "7384935957e81815a469b86a5547cb354389db7da6aca891de87ddb85fcbd407"
+        },
+        {
+          "path": "packs/ch05/2/levels/11-iron-and-gold.json",
+          "sha256": "1bc8bcdabc4c4c1ee7fe21e4c5b6a7b2c372eab1f703eb44419449dd5fa13b51"
+        },
+        {
+          "path": "packs/ch05/2/levels/12-reserves.json",
+          "sha256": "259e57898de2071f758dafeac66868067d5432f16d5e575fa33d56b81f03e35d"
         }
       ]
     }

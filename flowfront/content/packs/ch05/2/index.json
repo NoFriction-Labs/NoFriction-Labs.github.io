@@ -1,0 +1,110 @@
+[
+  {
+    "id": "ch05-01",
+    "name": "Rainy Day",
+    "chapter": 5,
+    "order": 1,
+    "tier": "Medium",
+    "path": "levels/01-rainy-day.json",
+    "chapter_name": "Reserves"
+  },
+  {
+    "id": "ch05-02",
+    "name": "Floodgate",
+    "chapter": 5,
+    "order": 2,
+    "tier": "Medium",
+    "path": "levels/02-floodgate.json",
+    "chapter_name": "Reserves"
+  },
+  {
+    "id": "ch05-03",
+    "name": "Overflow",
+    "chapter": 5,
+    "order": 3,
+    "tier": "Medium",
+    "path": "levels/03-overflow.json",
+    "chapter_name": "Reserves"
+  },
+  {
+    "id": "ch05-04",
+    "name": "Spillway",
+    "chapter": 5,
+    "order": 4,
+    "tier": "Medium",
+    "path": "levels/04-spillway.json",
+    "chapter_name": "Reserves"
+  },
+  {
+    "id": "ch05-05",
+    "name": "Iron Reserve",
+    "chapter": 5,
+    "order": 5,
+    "tier": "Medium",
+    "path": "levels/05-iron-reserve.json",
+    "chapter_name": "Reserves"
+  },
+  {
+    "id": "ch05-06",
+    "name": "Their Vault",
+    "chapter": 5,
+    "order": 6,
+    "tier": "Medium",
+    "path": "levels/06-their-vault.json",
+    "chapter_name": "Reserves"
+  },
+  {
+    "id": "ch05-07",
+    "name": "Violet",
+    "chapter": 5,
+    "order": 7,
+    "tier": "Medium",
+    "path": "levels/07-violet.json",
+    "chapter_name": "Reserves"
+  },
+  {
+    "id": "ch05-08",
+    "name": "Crossfire",
+    "chapter": 5,
+    "order": 8,
+    "tier": "Medium",
+    "path": "levels/08-crossfire.json",
+    "chapter_name": "Reserves"
+  },
+  {
+    "id": "ch05-09",
+    "name": "Bystander",
+    "chapter": 5,
+    "order": 9,
+    "tier": "Medium",
+    "path": "levels/09-bystander.json",
+    "chapter_name": "Reserves"
+  },
+  {
+    "id": "ch05-10",
+    "name": "Two Fronts",
+    "chapter": 5,
+    "order": 10,
+    "tier": "Hard",
+    "path": "levels/10-two-fronts.json",
+    "chapter_name": "Reserves"
+  },
+  {
+    "id": "ch05-11",
+    "name": "Iron and Gold",
+    "chapter": 5,
+    "order": 11,
+    "tier": "Hard",
+    "path": "levels/11-iron-and-gold.json",
+    "chapter_name": "Reserves"
+  },
+  {
+    "id": "ch05-12",
+    "name": "Reserves",
+    "chapter": 5,
+    "order": 12,
+    "tier": "Hard",
+    "path": "levels/12-reserves.json",
+    "chapter_name": "Reserves"
+  }
+]

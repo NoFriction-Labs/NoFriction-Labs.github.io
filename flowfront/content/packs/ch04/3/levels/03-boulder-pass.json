@@ -1,0 +1,457 @@
+{
+  "format": 1,
+  "id": "ch04-03",
+  "name": "Boulder Pass",
+  "ruleset": "base@2",
+  "seed": 2303,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 830,
+      "y": 800,
+      "owner": 1,
+      "charge": 17
+    },
+    {
+      "kind": "source",
+      "x": 680,
+      "y": 480,
+      "owner": 0,
+      "charge": 4
+    },
+    {
+      "kind": "source",
+      "x": 680,
+      "y": 1120,
+      "owner": 0,
+      "charge": 4
+    },
+    {
+      "kind": "relay",
+      "x": 420,
+      "y": 380,
+      "owner": 0,
+      "charge": 2
+    },
+    {
+      "kind": "relay",
+      "x": 380,
+      "y": 1180,
+      "owner": 0,
+      "charge": 2
+    },
+    {
+      "kind": "source",
+      "x": 170,
+      "y": 600,
+      "owner": 2,
+      "charge": 12
+    },
+    {
+      "kind": "source",
+      "x": 190,
+      "y": 1260,
+      "owner": 2,
+      "charge": 12
+    },
+    {
+      "kind": "source",
+      "x": 840,
+      "y": 1400,
+      "owner": 0,
+      "charge": 6
+    }
+  ],
+  "rocks": [
+    {
+      "x": 450,
+      "y": 820,
+      "r": 150
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 170,
+        "reaction": 170,
+        "aggression": 60,
+        "pref_player": 80,
+        "patience": 20,
+        "noise": 12
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 4,
+    "order": 3,
+    "teaches": "relays on either side of a rock carry you around it",
+    "intro": {
+      "title": "Boulder Pass",
+      "body": "The rock blocks the middle. A relay at either side gets you past it without the long walk."
+    },
+    "tip": "Take one side relay first and hold it.",
+    "par": {
+      "ticks": 1770,
+      "lost": 194,
+      "source": "lookahead"
+    },
+    "difficulty": {
+      "score": 33,
+      "tier": "Easy",
+      "think_s": 10.5,
+      "slack_s": 6.0,
+      "moves": 25,
+      "pressure": 1.87,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 7,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "483b583181428bee"
+    },
+    "stars": {
+      "t2": 150,
+      "t3": 105
+    },
+    "goal": "Go round the rock by a relay",
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch04-03",
+      "level_hash": "483b583181428bee",
+      "rules_hash": "0b870726dec17070",
+      "seed": 2303,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 10,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 120,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 300,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 310,
+          "type": "open",
+          "src": 1,
+          "dst": 7
+        },
+        {
+          "tick": 320,
+          "type": "open",
+          "src": 3,
+          "dst": 1
+        },
+        {
+          "tick": 330,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 340,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 350,
+          "type": "open",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 440,
+          "type": "cut",
+          "src": 1,
+          "dst": 7
+        },
+        {
+          "tick": 450,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 460,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 470,
+          "type": "cut",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 500,
+          "type": "open",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 530,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 540,
+          "type": "open",
+          "src": 0,
+          "dst": 7
+        },
+        {
+          "tick": 560,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 570,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 580,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 590,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 600,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 610,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 620,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 630,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 810,
+          "type": "open",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 850,
+          "type": "open",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 860,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 870,
+          "type": "cut",
+          "src": 0,
+          "dst": 7
+        },
+        {
+          "tick": 960,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 1140,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 1170,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 1210,
+          "type": "cut",
+          "src": 3,
+          "dst": 1
+        },
+        {
+          "tick": 1220,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 1230,
+          "type": "cut",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 1240,
+          "type": "cut",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 1250,
+          "type": "open",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 1260,
+          "type": "cut",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 1320,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 1330,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 1340,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 1420,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 1430,
+          "type": "open",
+          "src": 4,
+          "dst": 6
+        },
+        {
+          "tick": 1470,
+          "type": "open",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 1500,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 1510,
+          "type": "open",
+          "src": 7,
+          "dst": 6
+        },
+        {
+          "tick": 1520,
+          "type": "open",
+          "src": 4,
+          "dst": 6
+        },
+        {
+          "tick": 1560,
+          "type": "open",
+          "src": 4,
+          "dst": 6
+        },
+        {
+          "tick": 1590,
+          "type": "open",
+          "src": 4,
+          "dst": 6
+        },
+        {
+          "tick": 1630,
+          "type": "open",
+          "src": 4,
+          "dst": 6
+        },
+        {
+          "tick": 1670,
+          "type": "open",
+          "src": 4,
+          "dst": 6
+        },
+        {
+          "tick": 1680,
+          "type": "open",
+          "src": 4,
+          "dst": 6
+        },
+        {
+          "tick": 1710,
+          "type": "open",
+          "src": 4,
+          "dst": 6
+        },
+        {
+          "tick": 1730,
+          "type": "open",
+          "src": 4,
+          "dst": 6
+        },
+        {
+          "tick": 1750,
+          "type": "open",
+          "src": 4,
+          "dst": 6
+        }
+      ],
+      "end_tick": 1770,
+      "final_hash": "830371131449a558"
+    }
+  }
+}

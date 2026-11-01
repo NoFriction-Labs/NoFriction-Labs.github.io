@@ -1,0 +1,298 @@
+{
+  "format": 1,
+  "id": "ch02-09",
+  "name": "Two Fronts",
+  "ruleset": "base@3",
+  "seed": 1209,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 220,
+      "y": 1180,
+      "owner": 1,
+      "charge": 10
+    },
+    {
+      "kind": "source",
+      "x": 500,
+      "y": 1370,
+      "owner": 0,
+      "charge": 5
+    },
+    {
+      "kind": "source",
+      "x": 740,
+      "y": 1250,
+      "owner": 0,
+      "charge": 5
+    },
+    {
+      "kind": "source",
+      "x": 290,
+      "y": 690,
+      "owner": 0,
+      "charge": 12
+    },
+    {
+      "kind": "source",
+      "x": 740,
+      "y": 520,
+      "owner": 2,
+      "charge": 20
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 240,
+        "reaction": 240,
+        "aggression": 80,
+        "pref_player": 100,
+        "noise": 12,
+        "distance": 12
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 2,
+    "order": 9,
+    "teaches": "choose one line or two",
+    "intro": {
+      "title": "Two Fronts",
+      "body": "Two lines take two cheap towers at once. A big one needs your whole stream."
+    },
+    "goal": "Cheap ones together, big one alone",
+    "coach": [
+      {
+        "on": "first_capture",
+        "title": "One at a time",
+        "body": "Cheap towers fall to thin lines. The big one needs a full line: cut back to one when you go for it."
+      }
+    ],
+    "show_split": true,
+    "tip": "Thin lines for the cheap grays, full lines for the big one.",
+    "par": {
+      "ticks": 1450,
+      "lost": 0,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch02-09",
+      "level_hash": "ef923ca85b02bada",
+      "rules_hash": "b24b3381a6fb0747",
+      "seed": 1209,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 10,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 250,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 260,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 370,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 460,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 530,
+          "type": "open",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 570,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 580,
+          "type": "cut",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 590,
+          "type": "cut",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 600,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 710,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 720,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 730,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 740,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 750,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 760,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 820,
+          "type": "open",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 850,
+          "type": "open",
+          "src": 2,
+          "dst": 3
+        },
+        {
+          "tick": 1030,
+          "type": "cut",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 1040,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 1050,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 1070,
+          "type": "cut",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 1080,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 1090,
+          "type": "cut",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 1100,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 1110,
+          "type": "cut",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 1160,
+          "type": "open",
+          "src": 4,
+          "dst": 3
+        }
+      ],
+      "end_tick": 1450,
+      "final_hash": "488eeb0bc9920f87"
+    },
+    "difficulty": {
+      "score": 15,
+      "tier": "Easy",
+      "think_s": 14.3,
+      "slack_s": 5.8,
+      "moves": 16,
+      "pressure": 1.57,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 4,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "ef923ca85b02bada"
+    },
+    "stars": {
+      "t2": 100,
+      "t3": 70
+    },
+    "marks": [
+      {
+        "at": 1,
+        "text": "Cheap: thin lines will do",
+        "until": {
+          "own": 1
+        }
+      },
+      {
+        "at": 3,
+        "text": "Big: one full line",
+        "until": {
+          "own": 3
+        },
+        "after": 30
+      }
+    ]
+  }
+}
