@@ -1,0 +1,398 @@
+{
+  "format": 1,
+  "id": "ch05-11",
+  "name": "Iron and Gold",
+  "ruleset": "base@2",
+  "seed": 4111,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "foundry",
+      "x": 150,
+      "y": 800,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 200,
+      "y": 500,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "vault",
+      "x": 200,
+      "y": 1100,
+      "owner": 1,
+      "charge": 30
+    },
+    {
+      "kind": "watchtower",
+      "x": 460,
+      "y": 800,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 420,
+      "y": 260,
+      "owner": 0,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 420,
+      "y": 1320,
+      "owner": 0,
+      "charge": 8
+    },
+    {
+      "kind": "watchtower",
+      "x": 660,
+      "y": 520,
+      "owner": 2,
+      "charge": 8
+    },
+    {
+      "kind": "watchtower",
+      "x": 660,
+      "y": 1080,
+      "owner": 3,
+      "charge": 8
+    },
+    {
+      "kind": "foundry",
+      "x": 860,
+      "y": 320,
+      "owner": 2,
+      "charge": 8
+    },
+    {
+      "kind": "foundry",
+      "x": 840,
+      "y": 1380,
+      "owner": 3,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 880,
+      "y": 840,
+      "owner": 0,
+      "charge": 20
+    }
+  ],
+  "rocks": [
+    {
+      "x": 560,
+      "y": 640,
+      "r": 70
+    },
+    {
+      "x": 560,
+      "y": 960,
+      "r": 70
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 140,
+        "aggression": 60,
+        "pref_player": 90,
+        "patience": 25,
+        "noise": 12,
+        "reaction": 140,
+        "pref_rival": 40
+      }
+    },
+    {
+      "faction": 3,
+      "personality": {
+        "cadence": 140,
+        "aggression": 60,
+        "pref_player": 90,
+        "patience": 25,
+        "noise": 12,
+        "reaction": 140,
+        "pref_rival": 40
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 5,
+    "order": 11,
+    "teaches": "armour where towers shoot, the vault where they don't",
+    "intro": {
+      "title": "Iron and Gold",
+      "body": "Two rivals, two watchtowers, two foundries. Armour for the rings, the vault for the rest.",
+      "spotlight": null
+    },
+    "goal": "Armour the rings, flood the rest",
+    "marks": [
+      {
+        "at": 3,
+        "text": "Take this tower first",
+        "arrow": [
+          0,
+          3
+        ],
+        "until": {
+          "open": [
+            0,
+            3
+          ]
+        }
+      }
+    ],
+    "tip": "Send armour at the watchtowers; save the vault for open towers.",
+    "par": {
+      "ticks": 1108,
+      "lost": 110,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch05-11",
+      "level_hash": "35a98e40b5d52bb1",
+      "rules_hash": "0b870726dec17070",
+      "seed": 4111,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 2,
+          "dst": 7
+        },
+        {
+          "tick": 20,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 40,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 80,
+          "type": "open",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 100,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 140,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 160,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 180,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 240,
+          "type": "open",
+          "src": 3,
+          "dst": 10
+        },
+        {
+          "tick": 260,
+          "type": "cut",
+          "src": 3,
+          "dst": 10
+        },
+        {
+          "tick": 280,
+          "type": "open",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 300,
+          "type": "open",
+          "src": 3,
+          "dst": 10
+        },
+        {
+          "tick": 320,
+          "type": "open",
+          "src": 4,
+          "dst": 8
+        },
+        {
+          "tick": 340,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 360,
+          "type": "cut",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 480,
+          "type": "cut",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 500,
+          "type": "open",
+          "src": 7,
+          "dst": 10
+        },
+        {
+          "tick": 520,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 580,
+          "type": "cut",
+          "src": 7,
+          "dst": 10
+        },
+        {
+          "tick": 600,
+          "type": "open",
+          "src": 7,
+          "dst": 9
+        },
+        {
+          "tick": 620,
+          "type": "open",
+          "src": 5,
+          "dst": 9
+        },
+        {
+          "tick": 640,
+          "type": "open",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 660,
+          "type": "open",
+          "src": 3,
+          "dst": 2
+        },
+        {
+          "tick": 680,
+          "type": "open",
+          "src": 0,
+          "dst": 9
+        },
+        {
+          "tick": 700,
+          "type": "cut",
+          "src": 3,
+          "dst": 10
+        },
+        {
+          "tick": 760,
+          "type": "cut",
+          "src": 5,
+          "dst": 9
+        },
+        {
+          "tick": 780,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 840,
+          "type": "open",
+          "src": 4,
+          "dst": 0
+        },
+        {
+          "tick": 860,
+          "type": "cut",
+          "src": 0,
+          "dst": 9
+        },
+        {
+          "tick": 880,
+          "type": "open",
+          "src": 10,
+          "dst": 6
+        },
+        {
+          "tick": 900,
+          "type": "open",
+          "src": 4,
+          "dst": 6
+        },
+        {
+          "tick": 920,
+          "type": "open",
+          "src": 8,
+          "dst": 6
+        },
+        {
+          "tick": 940,
+          "type": "cut",
+          "src": 4,
+          "dst": 0
+        },
+        {
+          "tick": 960,
+          "type": "cut",
+          "src": 4,
+          "dst": 8
+        }
+      ],
+      "end_tick": 1108,
+      "final_hash": "617f9c0e3a894910"
+    },
+    "difficulty": {
+      "score": 56,
+      "tier": "Hard",
+      "think_s": 6.5,
+      "slack_s": 1.4,
+      "moves": 54,
+      "pressure": 0.33,
+      "towers": {
+        "rings": 3,
+        "cover": 0.25,
+        "lanes": 4,
+        "guarded": 1,
+        "answers": [
+          "detour",
+          "armour",
+          "pour",
+          "capture"
+        ]
+      },
+      "level_hash": "35a98e40b5d52bb1"
+    },
+    "stars": {
+      "t2": 300,
+      "t3": 215
+    }
+  }
+}

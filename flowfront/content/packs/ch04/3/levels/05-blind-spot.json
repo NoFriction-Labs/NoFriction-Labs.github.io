@@ -1,0 +1,442 @@
+{
+  "format": 1,
+  "id": "ch04-05",
+  "name": "Blind Spot",
+  "ruleset": "base@2",
+  "seed": 2505,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 165,
+      "y": 900,
+      "owner": 1,
+      "charge": 13
+    },
+    {
+      "kind": "source",
+      "x": 200,
+      "y": 1250,
+      "owner": 1,
+      "charge": 9
+    },
+    {
+      "kind": "source",
+      "x": 480,
+      "y": 1420,
+      "owner": 0,
+      "charge": 5
+    },
+    {
+      "kind": "relay",
+      "x": 550,
+      "y": 1130,
+      "owner": 0,
+      "charge": 2
+    },
+    {
+      "kind": "watchtower",
+      "x": 560,
+      "y": 640,
+      "owner": 2,
+      "charge": 8
+    },
+    {
+      "kind": "relay",
+      "x": 180,
+      "y": 450,
+      "owner": 0,
+      "charge": 2
+    },
+    {
+      "kind": "source",
+      "x": 380,
+      "y": 200,
+      "owner": 2,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 840,
+      "y": 820,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 800,
+      "y": 300,
+      "owner": 2,
+      "charge": 16
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 160,
+        "reaction": 160,
+        "aggression": 60,
+        "pref_player": 80,
+        "patience": 20,
+        "noise": 12
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 4,
+    "order": 5,
+    "teaches": "a relay's units only meet a watchtower where they land",
+    "intro": {
+      "title": "Blind Spot",
+      "body": "Units leaving a relay land in a blink, so a tower only sees them where they land."
+    },
+    "tip": "Send the relay at targets outside the tower's ring.",
+    "par": {
+      "ticks": 1496,
+      "lost": 66,
+      "source": "lookahead"
+    },
+    "difficulty": {
+      "score": 36,
+      "tier": "Easy",
+      "think_s": 10.1,
+      "slack_s": 4.2,
+      "moves": 32,
+      "pressure": 1.25,
+      "towers": {
+        "rings": 1,
+        "cover": 0.11,
+        "lanes": 6,
+        "guarded": 0,
+        "answers": [
+          "detour",
+          "capture"
+        ]
+      },
+      "level_hash": "04f46b01a0c6a8e7"
+    },
+    "stars": {
+      "t2": 170,
+      "t3": 125
+    },
+    "goal": "Strike past the tower from a relay",
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch04-05",
+      "level_hash": "04f46b01a0c6a8e7",
+      "rules_hash": "0b870726dec17070",
+      "seed": 2505,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 20,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 40,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 100,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 160,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 180,
+          "type": "open",
+          "src": 5,
+          "dst": 2
+        },
+        {
+          "tick": 200,
+          "type": "open",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 220,
+          "type": "open",
+          "src": 2,
+          "dst": 7
+        },
+        {
+          "tick": 240,
+          "type": "cut",
+          "src": 5,
+          "dst": 2
+        },
+        {
+          "tick": 300,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 320,
+          "type": "open",
+          "src": 3,
+          "dst": 7
+        },
+        {
+          "tick": 340,
+          "type": "cut",
+          "src": 2,
+          "dst": 7
+        },
+        {
+          "tick": 360,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 380,
+          "type": "cut",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 420,
+          "type": "open",
+          "src": 3,
+          "dst": 1
+        },
+        {
+          "tick": 480,
+          "type": "open",
+          "src": 5,
+          "dst": 0
+        },
+        {
+          "tick": 520,
+          "type": "open",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 540,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 560,
+          "type": "open",
+          "src": 2,
+          "dst": 5
+        },
+        {
+          "tick": 580,
+          "type": "open",
+          "src": 7,
+          "dst": 3
+        },
+        {
+          "tick": 600,
+          "type": "cut",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 640,
+          "type": "cut",
+          "src": 3,
+          "dst": 1
+        },
+        {
+          "tick": 660,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 680,
+          "type": "cut",
+          "src": 5,
+          "dst": 0
+        },
+        {
+          "tick": 780,
+          "type": "open",
+          "src": 5,
+          "dst": 8
+        },
+        {
+          "tick": 800,
+          "type": "open",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 820,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 840,
+          "type": "open",
+          "src": 2,
+          "dst": 7
+        },
+        {
+          "tick": 860,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 880,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 900,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 960,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 980,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 1000,
+          "type": "open",
+          "src": 5,
+          "dst": 4
+        },
+        {
+          "tick": 1020,
+          "type": "open",
+          "src": 7,
+          "dst": 1
+        },
+        {
+          "tick": 1040,
+          "type": "open",
+          "src": 0,
+          "dst": 6
+        },
+        {
+          "tick": 1100,
+          "type": "cut",
+          "src": 7,
+          "dst": 3
+        },
+        {
+          "tick": 1120,
+          "type": "open",
+          "src": 5,
+          "dst": 4
+        },
+        {
+          "tick": 1140,
+          "type": "cut",
+          "src": 3,
+          "dst": 7
+        },
+        {
+          "tick": 1160,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 1180,
+          "type": "cut",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 1200,
+          "type": "open",
+          "src": 7,
+          "dst": 6
+        },
+        {
+          "tick": 1220,
+          "type": "open",
+          "src": 8,
+          "dst": 6
+        },
+        {
+          "tick": 1240,
+          "type": "open",
+          "src": 5,
+          "dst": 6
+        },
+        {
+          "tick": 1260,
+          "type": "cut",
+          "src": 5,
+          "dst": 4
+        },
+        {
+          "tick": 1280,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 1300,
+          "type": "cut",
+          "src": 0,
+          "dst": 6
+        },
+        {
+          "tick": 1320,
+          "type": "open",
+          "src": 2,
+          "dst": 3
+        },
+        {
+          "tick": 1340,
+          "type": "cut",
+          "src": 8,
+          "dst": 6
+        },
+        {
+          "tick": 1360,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 1400,
+          "type": "open",
+          "src": 3,
+          "dst": 6
+        }
+      ],
+      "end_tick": 1496,
+      "final_hash": "14aa746809e97d2e"
+    }
+  }
+}

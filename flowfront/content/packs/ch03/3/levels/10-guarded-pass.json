@@ -1,0 +1,399 @@
+{
+  "format": 1,
+  "id": "ch03-10",
+  "name": "Guarded Pass",
+  "ruleset": "base@2",
+  "seed": 1110,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 500,
+      "y": 1460,
+      "owner": 1,
+      "charge": 16
+    },
+    {
+      "kind": "source",
+      "x": 220,
+      "y": 1250,
+      "owner": 0,
+      "charge": 5
+    },
+    {
+      "kind": "source",
+      "x": 780,
+      "y": 1250,
+      "owner": 0,
+      "charge": 5
+    },
+    {
+      "kind": "source",
+      "x": 500,
+      "y": 1080,
+      "owner": 0,
+      "charge": 10
+    },
+    {
+      "kind": "watchtower",
+      "x": 500,
+      "y": 760,
+      "owner": 2,
+      "charge": 14
+    },
+    {
+      "kind": "source",
+      "x": 120,
+      "y": 630,
+      "owner": 0,
+      "charge": 10
+    },
+    {
+      "kind": "source",
+      "x": 880,
+      "y": 630,
+      "owner": 0,
+      "charge": 10
+    },
+    {
+      "kind": "source",
+      "x": 250,
+      "y": 315,
+      "owner": 2,
+      "charge": 14
+    },
+    {
+      "kind": "source",
+      "x": 750,
+      "y": 315,
+      "owner": 0,
+      "charge": 10
+    }
+  ],
+  "rocks": [
+    {
+      "x": 288,
+      "y": 890,
+      "r": 90
+    },
+    {
+      "x": 712,
+      "y": 890,
+      "r": 90
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 140,
+        "reaction": 140,
+        "aggression": 60,
+        "pref_player": 90,
+        "noise": 12,
+        "patience": 20
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 3,
+    "order": 10,
+    "teaches": "a tower guards the short pass: break it or go the long way",
+    "intro": {
+      "title": "Guarded Pass",
+      "body": "Teal's tower guards the short gap. Go the long way, by the edge towers, or break the tower."
+    },
+    "tip": "The edge towers lead round the rocks, out of the tower's ring.",
+    "par": {
+      "ticks": 1826,
+      "lost": 93,
+      "source": "lookahead"
+    },
+    "difficulty": {
+      "score": 44,
+      "tier": "Medium",
+      "think_s": 9.2,
+      "slack_s": 3.9,
+      "moves": 29,
+      "pressure": 1.55,
+      "towers": {
+        "rings": 1,
+        "cover": 0.08,
+        "lanes": 7,
+        "guarded": 0,
+        "answers": [
+          "detour",
+          "capture"
+        ]
+      },
+      "level_hash": "f78f2c723d1a835b"
+    },
+    "stars": {
+      "t2": 175,
+      "t3": 125
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch03-10",
+      "level_hash": "f78f2c723d1a835b",
+      "rules_hash": "0b870726dec17070",
+      "seed": 1110,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 20,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 240,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 260,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 300,
+          "type": "open",
+          "src": 2,
+          "dst": 6
+        },
+        {
+          "tick": 420,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 460,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 480,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 500,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 620,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 660,
+          "type": "open",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 680,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 700,
+          "type": "open",
+          "src": 6,
+          "dst": 8
+        },
+        {
+          "tick": 780,
+          "type": "open",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 840,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 860,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 880,
+          "type": "open",
+          "src": 3,
+          "dst": 7
+        },
+        {
+          "tick": 900,
+          "type": "cut",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 980,
+          "type": "open",
+          "src": 6,
+          "dst": 7
+        },
+        {
+          "tick": 1000,
+          "type": "open",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 1040,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 1060,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 1080,
+          "type": "cut",
+          "src": 2,
+          "dst": 6
+        },
+        {
+          "tick": 1100,
+          "type": "open",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 1120,
+          "type": "open",
+          "src": 8,
+          "dst": 7
+        },
+        {
+          "tick": 1140,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 1160,
+          "type": "open",
+          "src": 3,
+          "dst": 8
+        },
+        {
+          "tick": 1180,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 1200,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 1260,
+          "type": "open",
+          "src": 2,
+          "dst": 6
+        },
+        {
+          "tick": 1280,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 1300,
+          "type": "cut",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 1320,
+          "type": "cut",
+          "src": 6,
+          "dst": 8
+        },
+        {
+          "tick": 1340,
+          "type": "cut",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 1360,
+          "type": "cut",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 1380,
+          "type": "open",
+          "src": 6,
+          "dst": 5
+        },
+        {
+          "tick": 1400,
+          "type": "cut",
+          "src": 6,
+          "dst": 7
+        },
+        {
+          "tick": 1420,
+          "type": "open",
+          "src": 7,
+          "dst": 5
+        },
+        {
+          "tick": 1440,
+          "type": "open",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 1460,
+          "type": "cut",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 1480,
+          "type": "open",
+          "src": 8,
+          "dst": 5
+        },
+        {
+          "tick": 1540,
+          "type": "open",
+          "src": 4,
+          "dst": 5
+        }
+      ],
+      "end_tick": 1826,
+      "final_hash": "847ec0876b6848de"
+    }
+  }
+}

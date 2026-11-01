@@ -1,0 +1,570 @@
+{
+  "format": 1,
+  "id": "ch05-05",
+  "name": "Iron Reserve",
+  "ruleset": "base@2",
+  "seed": 4105,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "foundry",
+      "x": 820,
+      "y": 1250,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 660,
+      "y": 1360,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "vault",
+      "x": 880,
+      "y": 1000,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "watchtower",
+      "x": 740,
+      "y": 600,
+      "owner": 2,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 350,
+      "y": 1230,
+      "owner": 0,
+      "charge": 8
+    },
+    {
+      "kind": "foundry",
+      "x": 200,
+      "y": 320,
+      "owner": 2,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 170,
+      "y": 820,
+      "owner": 2,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 860,
+      "y": 440,
+      "owner": 2,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 500,
+      "y": 580,
+      "owner": 0,
+      "charge": 6
+    }
+  ],
+  "rocks": [
+    {
+      "x": 540,
+      "y": 860,
+      "r": 130
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 140,
+        "aggression": 58,
+        "pref_player": 90,
+        "patience": 15,
+        "noise": 12,
+        "reaction": 140
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 5,
+    "order": 5,
+    "teaches": "armour for the guarded road, the vault for the open one",
+    "intro": {
+      "title": "Iron Reserve",
+      "body": "Foundry armour walks through watchtower fire. Send it up the guarded road; flood the open one.",
+      "spotlight": null
+    },
+    "goal": "Armour through the ring, vault outside",
+    "marks": [
+      {
+        "at": 3,
+        "text": "Armour gets past",
+        "arrow": [
+          0,
+          3
+        ],
+        "until": {
+          "open": [
+            0,
+            3
+          ]
+        }
+      },
+      {
+        "at": 4,
+        "text": "Vault this way",
+        "arrow": [
+          2,
+          4
+        ],
+        "after": 90,
+        "until": {
+          "time": 300
+        }
+      }
+    ],
+    "tip": "Armour takes the watchtower; the vault takes the open side.",
+    "par": {
+      "ticks": 1473,
+      "lost": 27,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch05-05",
+      "level_hash": "1c75d935ed3ed411",
+      "rules_hash": "0b870726dec17070",
+      "seed": 4105,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 2,
+          "dst": 3
+        },
+        {
+          "tick": 10,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 20,
+          "type": "open",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 30,
+          "type": "open",
+          "src": 0,
+          "dst": 6
+        },
+        {
+          "tick": 40,
+          "type": "open",
+          "src": 1,
+          "dst": 7
+        },
+        {
+          "tick": 150,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 160,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 190,
+          "type": "open",
+          "src": 3,
+          "dst": 8
+        },
+        {
+          "tick": 200,
+          "type": "cut",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 270,
+          "type": "cut",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 280,
+          "type": "open",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 430,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 440,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 510,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 520,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 530,
+          "type": "open",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 550,
+          "type": "cut",
+          "src": 2,
+          "dst": 3
+        },
+        {
+          "tick": 560,
+          "type": "open",
+          "src": 2,
+          "dst": 7
+        },
+        {
+          "tick": 570,
+          "type": "open",
+          "src": 4,
+          "dst": 6
+        },
+        {
+          "tick": 580,
+          "type": "cut",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 590,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 600,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 610,
+          "type": "open",
+          "src": 3,
+          "dst": 2
+        },
+        {
+          "tick": 650,
+          "type": "cut",
+          "src": 3,
+          "dst": 8
+        },
+        {
+          "tick": 660,
+          "type": "cut",
+          "src": 3,
+          "dst": 2
+        },
+        {
+          "tick": 670,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 680,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 690,
+          "type": "open",
+          "src": 4,
+          "dst": 2
+        },
+        {
+          "tick": 700,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 710,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 720,
+          "type": "cut",
+          "src": 2,
+          "dst": 7
+        },
+        {
+          "tick": 770,
+          "type": "open",
+          "src": 3,
+          "dst": 2
+        },
+        {
+          "tick": 780,
+          "type": "cut",
+          "src": 4,
+          "dst": 6
+        },
+        {
+          "tick": 790,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 800,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 810,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 820,
+          "type": "cut",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 830,
+          "type": "cut",
+          "src": 1,
+          "dst": 7
+        },
+        {
+          "tick": 840,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 870,
+          "type": "open",
+          "src": 3,
+          "dst": 1
+        },
+        {
+          "tick": 880,
+          "type": "cut",
+          "src": 3,
+          "dst": 2
+        },
+        {
+          "tick": 930,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 940,
+          "type": "cut",
+          "src": 0,
+          "dst": 6
+        },
+        {
+          "tick": 950,
+          "type": "open",
+          "src": 1,
+          "dst": 7
+        },
+        {
+          "tick": 990,
+          "type": "open",
+          "src": 7,
+          "dst": 1
+        },
+        {
+          "tick": 1000,
+          "type": "open",
+          "src": 8,
+          "dst": 7
+        },
+        {
+          "tick": 1010,
+          "type": "open",
+          "src": 7,
+          "dst": 8
+        },
+        {
+          "tick": 1020,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 1030,
+          "type": "open",
+          "src": 8,
+          "dst": 2
+        },
+        {
+          "tick": 1040,
+          "type": "open",
+          "src": 4,
+          "dst": 5
+        },
+        {
+          "tick": 1050,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 1060,
+          "type": "cut",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 1070,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 1080,
+          "type": "cut",
+          "src": 8,
+          "dst": 7
+        },
+        {
+          "tick": 1090,
+          "type": "cut",
+          "src": 4,
+          "dst": 2
+        },
+        {
+          "tick": 1100,
+          "type": "open",
+          "src": 0,
+          "dst": 6
+        },
+        {
+          "tick": 1110,
+          "type": "open",
+          "src": 6,
+          "dst": 5
+        },
+        {
+          "tick": 1120,
+          "type": "open",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 1130,
+          "type": "open",
+          "src": 8,
+          "dst": 5
+        },
+        {
+          "tick": 1140,
+          "type": "cut",
+          "src": 8,
+          "dst": 2
+        },
+        {
+          "tick": 1150,
+          "type": "open",
+          "src": 7,
+          "dst": 5
+        },
+        {
+          "tick": 1160,
+          "type": "cut",
+          "src": 7,
+          "dst": 1
+        },
+        {
+          "tick": 1170,
+          "type": "cut",
+          "src": 7,
+          "dst": 8
+        },
+        {
+          "tick": 1180,
+          "type": "open",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 1190,
+          "type": "cut",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 1200,
+          "type": "cut",
+          "src": 3,
+          "dst": 1
+        }
+      ],
+      "end_tick": 1473,
+      "final_hash": "600f75d50d6f5da2"
+    },
+    "difficulty": {
+      "score": 51,
+      "tier": "Medium",
+      "think_s": 7.2,
+      "slack_s": 2.4,
+      "moves": 36,
+      "pressure": 0.75,
+      "towers": {
+        "rings": 1,
+        "cover": 0.27,
+        "lanes": 4,
+        "guarded": 1,
+        "answers": [
+          "detour",
+          "armour",
+          "pour",
+          "capture"
+        ]
+      },
+      "level_hash": "1c75d935ed3ed411"
+    },
+    "stars": {
+      "t2": 190,
+      "t3": 135
+    }
+  }
+}

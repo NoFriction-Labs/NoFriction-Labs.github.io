@@ -1,0 +1,418 @@
+{
+  "format": 1,
+  "id": "ch03-04",
+  "name": "Narrow Pass",
+  "ruleset": "base@2",
+  "seed": 1104,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 820,
+      "y": 1390,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 540,
+      "y": 1330,
+      "owner": 0,
+      "charge": 4
+    },
+    {
+      "kind": "source",
+      "x": 820,
+      "y": 1080,
+      "owner": 0,
+      "charge": 4
+    },
+    {
+      "kind": "source",
+      "x": 270,
+      "y": 1170,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 560,
+      "y": 930,
+      "owner": 0,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 225,
+      "y": 860,
+      "owner": 0,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 500,
+      "y": 410,
+      "owner": 0,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 240,
+      "y": 220,
+      "owner": 2,
+      "charge": 10
+    },
+    {
+      "kind": "source",
+      "x": 770,
+      "y": 240,
+      "owner": 0,
+      "charge": 6
+    }
+  ],
+  "rocks": [
+    {
+      "x": 200,
+      "y": 620,
+      "r": 150
+    },
+    {
+      "x": 800,
+      "y": 620,
+      "r": 150
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 170,
+        "reaction": 170,
+        "aggression": 50,
+        "pref_player": 100,
+        "patience": 20,
+        "noise": 12
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 3,
+    "order": 4,
+    "teaches": "a rock wall funnels every line across through one gap",
+    "intro": {
+      "title": "Narrow Pass",
+      "body": "A rock wall splits the board. Every line across squeezes through the gap: send several at once to break through."
+    },
+    "tip": "One line through the gap is easy to stop. Send two or three together.",
+    "goal": "Break through the gap",
+    "marks": [
+      {
+        "at": 6,
+        "text": "A foothold past the gap",
+        "until": {
+          "own": 6
+        }
+      }
+    ],
+    "par": {
+      "ticks": 1512,
+      "lost": 0,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch03-04",
+      "level_hash": "0e4c2a84e3ddbc7f",
+      "rules_hash": "0b870726dec17070",
+      "seed": 1104,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 20,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 140,
+          "type": "open",
+          "src": 0,
+          "dst": 6
+        },
+        {
+          "tick": 160,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 220,
+          "type": "open",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 240,
+          "type": "cut",
+          "src": 0,
+          "dst": 6
+        },
+        {
+          "tick": 280,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 300,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 320,
+          "type": "open",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 340,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 400,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 420,
+          "type": "open",
+          "src": 2,
+          "dst": 1
+        },
+        {
+          "tick": 440,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 480,
+          "type": "open",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 520,
+          "type": "open",
+          "src": 4,
+          "dst": 7
+        },
+        {
+          "tick": 540,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 560,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 580,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 600,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 620,
+          "type": "cut",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 640,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 660,
+          "type": "open",
+          "src": 0,
+          "dst": 6
+        },
+        {
+          "tick": 680,
+          "type": "open",
+          "src": 3,
+          "dst": 8
+        },
+        {
+          "tick": 700,
+          "type": "open",
+          "src": 5,
+          "dst": 3
+        },
+        {
+          "tick": 720,
+          "type": "open",
+          "src": 2,
+          "dst": 7
+        },
+        {
+          "tick": 740,
+          "type": "open",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 780,
+          "type": "cut",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 800,
+          "type": "cut",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 820,
+          "type": "open",
+          "src": 5,
+          "dst": 8
+        },
+        {
+          "tick": 840,
+          "type": "cut",
+          "src": 2,
+          "dst": 1
+        },
+        {
+          "tick": 860,
+          "type": "cut",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 880,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 900,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 920,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 940,
+          "type": "cut",
+          "src": 5,
+          "dst": 3
+        },
+        {
+          "tick": 960,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 1060,
+          "type": "open",
+          "src": 4,
+          "dst": 6
+        },
+        {
+          "tick": 1080,
+          "type": "cut",
+          "src": 4,
+          "dst": 7
+        },
+        {
+          "tick": 1100,
+          "type": "open",
+          "src": 2,
+          "dst": 6
+        },
+        {
+          "tick": 1120,
+          "type": "cut",
+          "src": 2,
+          "dst": 7
+        },
+        {
+          "tick": 1140,
+          "type": "open",
+          "src": 3,
+          "dst": 6
+        },
+        {
+          "tick": 1160,
+          "type": "cut",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 1180,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 1280,
+          "type": "open",
+          "src": 7,
+          "dst": 8
+        }
+      ],
+      "end_tick": 1512,
+      "final_hash": "08554b49ee5ed24b"
+    },
+    "difficulty": {
+      "score": 24,
+      "tier": "Easy",
+      "think_s": 11.1,
+      "slack_s": 4.6,
+      "moves": 28,
+      "pressure": 0.64,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 8,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "0e4c2a84e3ddbc7f"
+    },
+    "stars": {
+      "t2": 160,
+      "t3": 115
+    }
+  }
+}

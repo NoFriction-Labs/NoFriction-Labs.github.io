@@ -1,0 +1,110 @@
+[
+  {
+    "id": "ch01-01",
+    "name": "First Line",
+    "chapter": 1,
+    "order": 1,
+    "tier": "Easy",
+    "path": "levels/01-first-line.json",
+    "chapter_name": "Basics"
+  },
+  {
+    "id": "ch01-02",
+    "name": "Beat Teal",
+    "chapter": 1,
+    "order": 2,
+    "tier": "Easy",
+    "path": "levels/02-beat-teal.json",
+    "chapter_name": "Basics"
+  },
+  {
+    "id": "ch01-03",
+    "name": "Chain",
+    "chapter": 1,
+    "order": 3,
+    "tier": "Easy",
+    "path": "levels/03-chain.json",
+    "chapter_name": "Basics"
+  },
+  {
+    "id": "ch01-04",
+    "name": "Snip",
+    "chapter": 1,
+    "order": 4,
+    "tier": "Easy",
+    "path": "levels/04-snip.json",
+    "chapter_name": "Basics"
+  },
+  {
+    "id": "ch01-05",
+    "name": "Grow First",
+    "chapter": 1,
+    "order": 5,
+    "tier": "Easy",
+    "path": "levels/05-grow-first.json",
+    "chapter_name": "Basics"
+  },
+  {
+    "id": "ch01-06",
+    "name": "Bank It",
+    "chapter": 1,
+    "order": 6,
+    "tier": "Easy",
+    "path": "levels/06-bank-it.json",
+    "chapter_name": "Basics"
+  },
+  {
+    "id": "ch01-07",
+    "name": "Three Speeds",
+    "chapter": 1,
+    "order": 7,
+    "tier": "Easy",
+    "path": "levels/07-three-speeds.json",
+    "chapter_name": "Basics"
+  },
+  {
+    "id": "ch01-08",
+    "name": "Full Tower",
+    "chapter": 1,
+    "order": 8,
+    "tier": "Easy",
+    "path": "levels/08-full-tower.json",
+    "chapter_name": "Basics"
+  },
+  {
+    "id": "ch01-09",
+    "name": "Team Up",
+    "chapter": 1,
+    "order": 9,
+    "tier": "Easy",
+    "path": "levels/09-team-up.json",
+    "chapter_name": "Basics"
+  },
+  {
+    "id": "ch01-10",
+    "name": "Teal Wakes",
+    "chapter": 1,
+    "order": 10,
+    "tier": "Easy",
+    "path": "levels/10-teal-wakes.json",
+    "chapter_name": "Basics"
+  },
+  {
+    "id": "ch01-11",
+    "name": "Race",
+    "chapter": 1,
+    "order": 11,
+    "tier": "Easy",
+    "path": "levels/11-race.json",
+    "chapter_name": "Basics"
+  },
+  {
+    "id": "ch01-12",
+    "name": "Graduation",
+    "chapter": 1,
+    "order": 12,
+    "tier": "Easy",
+    "path": "levels/12-graduation.json",
+    "chapter_name": "Basics"
+  }
+]

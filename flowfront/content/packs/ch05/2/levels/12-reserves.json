@@ -1,0 +1,733 @@
+{
+  "format": 1,
+  "id": "ch05-12",
+  "name": "Reserves",
+  "ruleset": "base@2",
+  "seed": 4112,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "foundry",
+      "x": 800,
+      "y": 200,
+      "owner": 1,
+      "charge": 10
+    },
+    {
+      "kind": "source",
+      "x": 580,
+      "y": 180,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "vault",
+      "x": 840,
+      "y": 440,
+      "owner": 0,
+      "charge": 3
+    },
+    {
+      "kind": "relay",
+      "x": 580,
+      "y": 560,
+      "owner": 0,
+      "charge": 2
+    },
+    {
+      "kind": "source",
+      "x": 380,
+      "y": 380,
+      "owner": 0,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 840,
+      "y": 900,
+      "owner": 0,
+      "charge": 8
+    },
+    {
+      "kind": "watchtower",
+      "x": 600,
+      "y": 1060,
+      "owner": 3,
+      "charge": 10
+    },
+    {
+      "kind": "source",
+      "x": 180,
+      "y": 650,
+      "owner": 2,
+      "charge": 27
+    },
+    {
+      "kind": "source",
+      "x": 860,
+      "y": 1420,
+      "owner": 3,
+      "charge": 25
+    },
+    {
+      "kind": "vault",
+      "x": 420,
+      "y": 860,
+      "owner": 0,
+      "charge": 20
+    },
+    {
+      "kind": "foundry",
+      "x": 200,
+      "y": 1100,
+      "owner": 2,
+      "charge": 10
+    },
+    {
+      "kind": "foundry",
+      "x": 430,
+      "y": 1460,
+      "owner": 3,
+      "charge": 10
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 140,
+        "aggression": 73,
+        "pref_player": 90,
+        "patience": 15,
+        "noise": 12,
+        "reaction": 140,
+        "pref_rival": 10
+      }
+    },
+    {
+      "faction": 3,
+      "personality": {
+        "cadence": 140,
+        "aggression": 73,
+        "pref_player": 90,
+        "patience": 15,
+        "noise": 12,
+        "reaction": 140,
+        "pref_rival": 10
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 5,
+    "order": 12,
+    "teaches": "everything together: bank, wait, pour",
+    "intro": {
+      "title": "Reserves",
+      "body": "Two rivals and a spare vault of 20 between them. Bank yours, let them fight, then pour at the right moment.",
+      "spotlight": null
+    },
+    "goal": "Bank, wait, then pour",
+    "marks": [
+      {
+        "at": 9,
+        "text": "Spare vault: take it late",
+        "until": {
+          "own": 9
+        }
+      }
+    ],
+    "tip": "Fill your vault early; spend it only when a rival is low.",
+    "par": {
+      "ticks": 1820,
+      "lost": 127,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch05-12",
+      "level_hash": "32661bf648be780e",
+      "rules_hash": "0b870726dec17070",
+      "seed": 4112,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 10,
+          "type": "open",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 20,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 30,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 100,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 170,
+          "type": "cut",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 180,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 240,
+          "type": "open",
+          "src": 0,
+          "dst": 6
+        },
+        {
+          "tick": 250,
+          "type": "cut",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 290,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 330,
+          "type": "open",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 340,
+          "type": "open",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 350,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 360,
+          "type": "open",
+          "src": 4,
+          "dst": 3
+        },
+        {
+          "tick": 370,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 390,
+          "type": "open",
+          "src": 1,
+          "dst": 9
+        },
+        {
+          "tick": 400,
+          "type": "cut",
+          "src": 1,
+          "dst": 9
+        },
+        {
+          "tick": 480,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 550,
+          "type": "open",
+          "src": 1,
+          "dst": 9
+        },
+        {
+          "tick": 560,
+          "type": "cut",
+          "src": 1,
+          "dst": 9
+        },
+        {
+          "tick": 600,
+          "type": "open",
+          "src": 0,
+          "dst": 7
+        },
+        {
+          "tick": 610,
+          "type": "cut",
+          "src": 0,
+          "dst": 6
+        },
+        {
+          "tick": 620,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 630,
+          "type": "open",
+          "src": 5,
+          "dst": 2
+        },
+        {
+          "tick": 640,
+          "type": "open",
+          "src": 2,
+          "dst": 5
+        },
+        {
+          "tick": 660,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 670,
+          "type": "open",
+          "src": 4,
+          "dst": 7
+        },
+        {
+          "tick": 680,
+          "type": "open",
+          "src": 5,
+          "dst": 7
+        },
+        {
+          "tick": 690,
+          "type": "cut",
+          "src": 5,
+          "dst": 2
+        },
+        {
+          "tick": 700,
+          "type": "open",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 710,
+          "type": "open",
+          "src": 5,
+          "dst": 2
+        },
+        {
+          "tick": 740,
+          "type": "open",
+          "src": 3,
+          "dst": 7
+        },
+        {
+          "tick": 750,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 810,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 870,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 880,
+          "type": "open",
+          "src": 3,
+          "dst": 8
+        },
+        {
+          "tick": 890,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 910,
+          "type": "cut",
+          "src": 5,
+          "dst": 2
+        },
+        {
+          "tick": 920,
+          "type": "cut",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 930,
+          "type": "open",
+          "src": 1,
+          "dst": 8
+        },
+        {
+          "tick": 990,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 1000,
+          "type": "open",
+          "src": 1,
+          "dst": 9
+        },
+        {
+          "tick": 1020,
+          "type": "cut",
+          "src": 1,
+          "dst": 9
+        },
+        {
+          "tick": 1030,
+          "type": "open",
+          "src": 5,
+          "dst": 9
+        },
+        {
+          "tick": 1050,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 1070,
+          "type": "open",
+          "src": 5,
+          "dst": 10
+        },
+        {
+          "tick": 1080,
+          "type": "open",
+          "src": 1,
+          "dst": 9
+        },
+        {
+          "tick": 1090,
+          "type": "cut",
+          "src": 5,
+          "dst": 7
+        },
+        {
+          "tick": 1100,
+          "type": "open",
+          "src": 4,
+          "dst": 10
+        },
+        {
+          "tick": 1110,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 1120,
+          "type": "open",
+          "src": 0,
+          "dst": 6
+        },
+        {
+          "tick": 1130,
+          "type": "cut",
+          "src": 5,
+          "dst": 10
+        },
+        {
+          "tick": 1140,
+          "type": "open",
+          "src": 5,
+          "dst": 10
+        },
+        {
+          "tick": 1150,
+          "type": "cut",
+          "src": 5,
+          "dst": 9
+        },
+        {
+          "tick": 1160,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 1170,
+          "type": "cut",
+          "src": 0,
+          "dst": 7
+        },
+        {
+          "tick": 1180,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 1190,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 1200,
+          "type": "open",
+          "src": 6,
+          "dst": 10
+        },
+        {
+          "tick": 1230,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 1240,
+          "type": "cut",
+          "src": 1,
+          "dst": 8
+        },
+        {
+          "tick": 1250,
+          "type": "open",
+          "src": 1,
+          "dst": 10
+        },
+        {
+          "tick": 1260,
+          "type": "cut",
+          "src": 1,
+          "dst": 9
+        },
+        {
+          "tick": 1290,
+          "type": "open",
+          "src": 1,
+          "dst": 9
+        },
+        {
+          "tick": 1300,
+          "type": "cut",
+          "src": 4,
+          "dst": 7
+        },
+        {
+          "tick": 1310,
+          "type": "open",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 1330,
+          "type": "open",
+          "src": 7,
+          "dst": 10
+        },
+        {
+          "tick": 1340,
+          "type": "cut",
+          "src": 7,
+          "dst": 10
+        },
+        {
+          "tick": 1350,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 1360,
+          "type": "open",
+          "src": 4,
+          "dst": 1
+        },
+        {
+          "tick": 1370,
+          "type": "open",
+          "src": 7,
+          "dst": 10
+        },
+        {
+          "tick": 1380,
+          "type": "cut",
+          "src": 1,
+          "dst": 10
+        },
+        {
+          "tick": 1390,
+          "type": "open",
+          "src": 5,
+          "dst": 3
+        },
+        {
+          "tick": 1400,
+          "type": "open",
+          "src": 3,
+          "dst": 9
+        },
+        {
+          "tick": 1420,
+          "type": "cut",
+          "src": 4,
+          "dst": 1
+        },
+        {
+          "tick": 1430,
+          "type": "open",
+          "src": 4,
+          "dst": 9
+        },
+        {
+          "tick": 1450,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 1470,
+          "type": "open",
+          "src": 5,
+          "dst": 9
+        },
+        {
+          "tick": 1510,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 1530,
+          "type": "cut",
+          "src": 3,
+          "dst": 8
+        },
+        {
+          "tick": 1540,
+          "type": "cut",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 1550,
+          "type": "open",
+          "src": 9,
+          "dst": 11
+        },
+        {
+          "tick": 1560,
+          "type": "open",
+          "src": 8,
+          "dst": 11
+        },
+        {
+          "tick": 1570,
+          "type": "open",
+          "src": 6,
+          "dst": 11
+        },
+        {
+          "tick": 1580,
+          "type": "cut",
+          "src": 6,
+          "dst": 10
+        },
+        {
+          "tick": 1590,
+          "type": "cut",
+          "src": 4,
+          "dst": 10
+        },
+        {
+          "tick": 1600,
+          "type": "open",
+          "src": 3,
+          "dst": 11
+        },
+        {
+          "tick": 1610,
+          "type": "cut",
+          "src": 3,
+          "dst": 9
+        },
+        {
+          "tick": 1620,
+          "type": "cut",
+          "src": 4,
+          "dst": 9
+        },
+        {
+          "tick": 1630,
+          "type": "open",
+          "src": 7,
+          "dst": 3
+        },
+        {
+          "tick": 1640,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 1650,
+          "type": "cut",
+          "src": 1,
+          "dst": 9
+        }
+      ],
+      "end_tick": 1820,
+      "final_hash": "f0bed49b76817c50"
+    },
+    "difficulty": {
+      "score": 56,
+      "tier": "Hard",
+      "think_s": 7.4,
+      "slack_s": 2.1,
+      "moves": 61,
+      "pressure": 1.25,
+      "towers": {
+        "rings": 1,
+        "cover": 0.03,
+        "lanes": 9,
+        "guarded": 0,
+        "answers": [
+          "detour",
+          "pour",
+          "capture"
+        ]
+      },
+      "level_hash": "32661bf648be780e"
+    },
+    "stars": {
+      "t2": 325,
+      "t3": 235
+    }
+  }
+}

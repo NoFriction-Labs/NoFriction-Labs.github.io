@@ -1,0 +1,306 @@
+{
+  "format": 1,
+  "id": "ch04-01",
+  "name": "Relay Station",
+  "ruleset": "base@2",
+  "seed": 2101,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 180,
+      "y": 1380,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 200,
+      "y": 1080,
+      "owner": 0,
+      "charge": 4
+    },
+    {
+      "kind": "source",
+      "x": 480,
+      "y": 1240,
+      "owner": 0,
+      "charge": 4
+    },
+    {
+      "kind": "relay",
+      "x": 800,
+      "y": 1380,
+      "owner": 0,
+      "charge": 2
+    },
+    {
+      "kind": "source",
+      "x": 820,
+      "y": 980,
+      "owner": 0,
+      "charge": 4
+    },
+    {
+      "kind": "source",
+      "x": 520,
+      "y": 820,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 230,
+      "y": 640,
+      "owner": 2,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 780,
+      "y": 260,
+      "owner": 2,
+      "charge": 10
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 170,
+        "reaction": 170,
+        "aggression": 50,
+        "pref_player": 90,
+        "patience": 20,
+        "noise": 12
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 4,
+    "order": 1,
+    "teaches": "a relay passes on what it receives at once, and is the way past a node in the road",
+    "intro": {
+      "title": "Relay",
+      "body": "A relay makes nothing, but what you send it leaves at once down its lines. Take it, feed it, and reach the far side fast.",
+      "spotlight": "relay"
+    },
+    "tip": "Feed the relay from your towers, then send the relay on to a target.",
+    "goal": "Take the relay, then strike from it",
+    "marks": [
+      {
+        "at": 3,
+        "text": "Relay: sends on at once",
+        "until": {
+          "own": 3
+        }
+      },
+      {
+        "at": 3,
+        "text": "Send it on from here",
+        "arrow": [
+          3,
+          6
+        ],
+        "until": {
+          "open": [
+            3,
+            6
+          ]
+        }
+      }
+    ],
+    "par": {
+      "ticks": 1178,
+      "lost": 44,
+      "source": "lookahead"
+    },
+    "difficulty": {
+      "score": 31,
+      "tier": "Easy",
+      "think_s": 10.9,
+      "slack_s": 4.3,
+      "moves": 20,
+      "pressure": 1.12,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 7,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "604721d331f12f25"
+    },
+    "stars": {
+      "t2": 115,
+      "t3": 85
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch04-01",
+      "level_hash": "604721d331f12f25",
+      "rules_hash": "0b870726dec17070",
+      "seed": 2101,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 10,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 50,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 120,
+          "type": "cut",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 130,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 210,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 220,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 230,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 390,
+          "type": "open",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 500,
+          "type": "open",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 510,
+          "type": "cut",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 520,
+          "type": "open",
+          "src": 2,
+          "dst": 6
+        },
+        {
+          "tick": 530,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 540,
+          "type": "open",
+          "src": 2,
+          "dst": 5
+        },
+        {
+          "tick": 610,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 620,
+          "type": "cut",
+          "src": 2,
+          "dst": 5
+        },
+        {
+          "tick": 630,
+          "type": "open",
+          "src": 2,
+          "dst": 7
+        },
+        {
+          "tick": 670,
+          "type": "cut",
+          "src": 2,
+          "dst": 6
+        },
+        {
+          "tick": 680,
+          "type": "open",
+          "src": 4,
+          "dst": 7
+        },
+        {
+          "tick": 690,
+          "type": "open",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 710,
+          "type": "open",
+          "src": 1,
+          "dst": 7
+        },
+        {
+          "tick": 740,
+          "type": "cut",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 750,
+          "type": "open",
+          "src": 5,
+          "dst": 7
+        },
+        {
+          "tick": 760,
+          "type": "cut",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 770,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 860,
+          "type": "open",
+          "src": 6,
+          "dst": 7
+        }
+      ],
+      "end_tick": 1178,
+      "final_hash": "beb3ecf7749b7399"
+    }
+  }
+}

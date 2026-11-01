@@ -1,0 +1,377 @@
+{
+  "format": 1,
+  "id": "ch05-06",
+  "name": "Their Vault",
+  "ruleset": "base@2",
+  "seed": 6209,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 860,
+      "y": 1440,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 570,
+      "y": 1420,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "vault",
+      "x": 800,
+      "y": 1140,
+      "owner": 1,
+      "charge": 10
+    },
+    {
+      "kind": "source",
+      "x": 560,
+      "y": 1160,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 840,
+      "y": 800,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "vault",
+      "x": 520,
+      "y": 820,
+      "owner": 2,
+      "charge": 70
+    },
+    {
+      "kind": "source",
+      "x": 190,
+      "y": 1060,
+      "owner": 2,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 220,
+      "y": 540,
+      "owner": 2,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 560,
+      "y": 330,
+      "owner": 0,
+      "charge": 6
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 140,
+        "aggression": 73,
+        "pref_player": 90,
+        "patience": 5,
+        "noise": 12,
+        "reaction": 140
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 5,
+    "order": 6,
+    "teaches": "a rival vault bursts too: be ready, then take it",
+    "intro": {
+      "title": "Their Vault",
+      "body": "Teal has a full vault, and it will pour it at you. Keep a reserve, then take it once it runs dry.",
+      "spotlight": null
+    },
+    "goal": "Hold Teal's burst, then take its vault",
+    "marks": [
+      {
+        "at": 5,
+        "text": "Teal's vault: 70",
+        "until": {
+          "time": 180
+        }
+      }
+    ],
+    "tip": "Keep your vault stocked until Teal's pour is spent, then strike.",
+    "par": {
+      "ticks": 1256,
+      "lost": 24,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch05-06",
+      "level_hash": "7d28b88d8383e222",
+      "rules_hash": "0b870726dec17070",
+      "seed": 6209,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 20,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 40,
+          "type": "open",
+          "src": 2,
+          "dst": 8
+        },
+        {
+          "tick": 60,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 80,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 120,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 140,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 180,
+          "type": "open",
+          "src": 3,
+          "dst": 2
+        },
+        {
+          "tick": 200,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 300,
+          "type": "cut",
+          "src": 2,
+          "dst": 8
+        },
+        {
+          "tick": 320,
+          "type": "open",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 340,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 360,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 420,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 440,
+          "type": "open",
+          "src": 8,
+          "dst": 5
+        },
+        {
+          "tick": 480,
+          "type": "cut",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 500,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 540,
+          "type": "open",
+          "src": 5,
+          "dst": 8
+        },
+        {
+          "tick": 560,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 580,
+          "type": "open",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 600,
+          "type": "open",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 620,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 640,
+          "type": "open",
+          "src": 3,
+          "dst": 6
+        },
+        {
+          "tick": 660,
+          "type": "cut",
+          "src": 3,
+          "dst": 2
+        },
+        {
+          "tick": 680,
+          "type": "open",
+          "src": 8,
+          "dst": 2
+        },
+        {
+          "tick": 700,
+          "type": "open",
+          "src": 5,
+          "dst": 0
+        },
+        {
+          "tick": 740,
+          "type": "cut",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 760,
+          "type": "open",
+          "src": 5,
+          "dst": 7
+        },
+        {
+          "tick": 780,
+          "type": "open",
+          "src": 8,
+          "dst": 6
+        },
+        {
+          "tick": 800,
+          "type": "open",
+          "src": 2,
+          "dst": 1
+        },
+        {
+          "tick": 820,
+          "type": "cut",
+          "src": 8,
+          "dst": 5
+        },
+        {
+          "tick": 840,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 860,
+          "type": "cut",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 880,
+          "type": "open",
+          "src": 4,
+          "dst": 6
+        },
+        {
+          "tick": 900,
+          "type": "cut",
+          "src": 8,
+          "dst": 2
+        },
+        {
+          "tick": 920,
+          "type": "open",
+          "src": 0,
+          "dst": 6
+        },
+        {
+          "tick": 940,
+          "type": "cut",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 960,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 980,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        }
+      ],
+      "end_tick": 1256,
+      "final_hash": "14e93edcf6111d1d"
+    },
+    "difficulty": {
+      "score": 47,
+      "tier": "Medium",
+      "think_s": 9.4,
+      "slack_s": 2.2,
+      "moves": 24,
+      "pressure": 1.26,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 6,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "7d28b88d8383e222"
+    },
+    "stars": {
+      "t2": 120,
+      "t3": 85
+    }
+  }
+}

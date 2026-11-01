@@ -1,0 +1,299 @@
+{
+  "format": 1,
+  "id": "ch02-04",
+  "name": "Pick Your Lines",
+  "ruleset": "base@3",
+  "seed": 1204,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 200,
+      "y": 280,
+      "owner": 1,
+      "charge": 25
+    },
+    {
+      "kind": "source",
+      "x": 580,
+      "y": 240,
+      "owner": 0,
+      "charge": 3
+    },
+    {
+      "kind": "source",
+      "x": 240,
+      "y": 720,
+      "owner": 0,
+      "charge": 3
+    },
+    {
+      "kind": "source",
+      "x": 800,
+      "y": 1300,
+      "owner": 2,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 800,
+      "y": 820,
+      "owner": 2,
+      "charge": 4
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": "gentle"
+    }
+  ],
+  "meta": {
+    "chapter": 2,
+    "order": 4,
+    "teaches": "spread onto cheap towers, focus on the big one",
+    "intro": {
+      "title": "Pick Your Lines",
+      "body": "Cheap towers fall to thin lines. A big, growing one needs your full stream."
+    },
+    "goal": "Spread on the cheap, focus on Teal",
+    "coach": [
+      {
+        "on": "stall",
+        "title": "Not enough",
+        "body": "Teal grows faster than this thin line hits it. Cut the rest, then hit Teal from more towers.",
+        "alone": "One tower alone can't beat a growing Teal. Take the cheap grays and bring them onto Teal too."
+      }
+    ],
+    "show_split": true,
+    "tip": "Thin lines on the cheap ones and small Teal, then big Teal from every tower.",
+    "par": {
+      "ticks": 1179,
+      "lost": 0,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch02-04",
+      "level_hash": "cb73aa8d57fe73c9",
+      "rules_hash": "b24b3381a6fb0747",
+      "seed": 1204,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 10,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 60,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 150,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 160,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 260,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 330,
+          "type": "open",
+          "src": 2,
+          "dst": 3
+        },
+        {
+          "tick": 340,
+          "type": "cut",
+          "src": 2,
+          "dst": 3
+        },
+        {
+          "tick": 350,
+          "type": "open",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 360,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 370,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 380,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 390,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 400,
+          "type": "cut",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 440,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 490,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 520,
+          "type": "open",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 540,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 620,
+          "type": "cut",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 630,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 640,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 700,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 720,
+          "type": "open",
+          "src": 2,
+          "dst": 1
+        },
+        {
+          "tick": 730,
+          "type": "cut",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 740,
+          "type": "open",
+          "src": 2,
+          "dst": 3
+        },
+        {
+          "tick": 750,
+          "type": "cut",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 760,
+          "type": "cut",
+          "src": 2,
+          "dst": 1
+        },
+        {
+          "tick": 790,
+          "type": "open",
+          "src": 4,
+          "dst": 3
+        }
+      ],
+      "end_tick": 1179,
+      "final_hash": "4c1c253100820ea2"
+    },
+    "difficulty": {
+      "score": 9,
+      "tier": "Easy",
+      "think_s": 16.1,
+      "slack_s": 5.9,
+      "moves": 16,
+      "pressure": 1.38,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 4,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "cb73aa8d57fe73c9"
+    },
+    "stars": {
+      "t2": 110,
+      "t3": 80
+    },
+    "marks": [
+      {
+        "at": 1,
+        "text": "Cheap: a thin line",
+        "until": {
+          "own": 1
+        }
+      },
+      {
+        "at": 4,
+        "text": "Small Teal: cheap too",
+        "until": {
+          "own": 4
+        }
+      },
+      {
+        "at": 3,
+        "text": "Big Teal: every tower here",
+        "until": {
+          "own": 3
+        },
+        "after": 30
+      }
+    ]
+  }
+}

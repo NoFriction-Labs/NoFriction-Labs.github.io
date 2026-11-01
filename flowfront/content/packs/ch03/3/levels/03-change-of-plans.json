@@ -1,0 +1,344 @@
+{
+  "format": 1,
+  "id": "ch03-03",
+  "name": "Change of Plans",
+  "ruleset": "base@2",
+  "seed": 1103,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 500,
+      "y": 800,
+      "owner": 1,
+      "charge": 16
+    },
+    {
+      "kind": "source",
+      "x": 180,
+      "y": 200,
+      "owner": 2,
+      "charge": 10
+    },
+    {
+      "kind": "source",
+      "x": 820,
+      "y": 1400,
+      "owner": 0,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 500,
+      "y": 450,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 820,
+      "y": 650,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 180,
+      "y": 950,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 500,
+      "y": 1150,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 800,
+      "y": 250,
+      "owner": 0,
+      "charge": 4
+    },
+    {
+      "kind": "source",
+      "x": 200,
+      "y": 1350,
+      "owner": 0,
+      "charge": 4
+    }
+  ],
+  "rocks": [
+    {
+      "x": 315,
+      "y": 560,
+      "r": 70
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 165,
+        "reaction": 165,
+        "aggression": 55,
+        "pref_player": 70,
+        "patience": 20,
+        "noise": 12
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 3,
+    "order": 3,
+    "teaches": "cut and redirect routes as the board changes",
+    "intro": {
+      "title": "Change of Plans",
+      "body": "Teal comes from one corner and hits where you are thin. Swipe across a line to cut it, then send help where it's needed."
+    },
+    "tip": "When a tower of yours is attacked, cut a line and send help there.",
+    "goal": "Cut a line, send help, then strike",
+    "par": {
+      "ticks": 1378,
+      "lost": 94,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch03-03",
+      "level_hash": "59f534afb3f4b7ff",
+      "rules_hash": "0b870726dec17070",
+      "seed": 1103,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 30,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 70,
+          "type": "cut",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 80,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 140,
+          "type": "cut",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 150,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 350,
+          "type": "cut",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 360,
+          "type": "open",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 370,
+          "type": "open",
+          "src": 4,
+          "dst": 6
+        },
+        {
+          "tick": 380,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 390,
+          "type": "open",
+          "src": 0,
+          "dst": 8
+        },
+        {
+          "tick": 480,
+          "type": "cut",
+          "src": 4,
+          "dst": 6
+        },
+        {
+          "tick": 490,
+          "type": "open",
+          "src": 4,
+          "dst": 7
+        },
+        {
+          "tick": 510,
+          "type": "cut",
+          "src": 0,
+          "dst": 8
+        },
+        {
+          "tick": 520,
+          "type": "open",
+          "src": 0,
+          "dst": 7
+        },
+        {
+          "tick": 540,
+          "type": "cut",
+          "src": 0,
+          "dst": 7
+        },
+        {
+          "tick": 590,
+          "type": "open",
+          "src": 0,
+          "dst": 6
+        },
+        {
+          "tick": 620,
+          "type": "cut",
+          "src": 4,
+          "dst": 7
+        },
+        {
+          "tick": 660,
+          "type": "open",
+          "src": 5,
+          "dst": 0
+        },
+        {
+          "tick": 680,
+          "type": "open",
+          "src": 6,
+          "dst": 2
+        },
+        {
+          "tick": 690,
+          "type": "cut",
+          "src": 0,
+          "dst": 6
+        },
+        {
+          "tick": 800,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 810,
+          "type": "open",
+          "src": 4,
+          "dst": 3
+        },
+        {
+          "tick": 830,
+          "type": "open",
+          "src": 4,
+          "dst": 2
+        },
+        {
+          "tick": 840,
+          "type": "cut",
+          "src": 6,
+          "dst": 2
+        },
+        {
+          "tick": 850,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 860,
+          "type": "open",
+          "src": 5,
+          "dst": 1
+        },
+        {
+          "tick": 870,
+          "type": "cut",
+          "src": 5,
+          "dst": 0
+        },
+        {
+          "tick": 880,
+          "type": "open",
+          "src": 5,
+          "dst": 6
+        },
+        {
+          "tick": 890,
+          "type": "cut",
+          "src": 5,
+          "dst": 6
+        },
+        {
+          "tick": 990,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 1000,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 1010,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 1020,
+          "type": "open",
+          "src": 3,
+          "dst": 1
+        }
+      ],
+      "end_tick": 1378,
+      "final_hash": "17a0934915198f6f"
+    },
+    "difficulty": {
+      "score": 22,
+      "tier": "Easy",
+      "think_s": 12.2,
+      "slack_s": 4.5,
+      "moves": 31,
+      "pressure": 0.92,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 8,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "59f534afb3f4b7ff"
+    },
+    "stars": {
+      "t2": 185,
+      "t3": 135
+    }
+  }
+}

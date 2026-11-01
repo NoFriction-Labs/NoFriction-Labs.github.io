@@ -1,0 +1,347 @@
+{
+  "format": 1,
+  "id": "ch03-07",
+  "name": "The Divide",
+  "ruleset": "base@2",
+  "seed": 1107,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 180,
+      "y": 1380,
+      "owner": 1,
+      "charge": 21
+    },
+    {
+      "kind": "source",
+      "x": 180,
+      "y": 1050,
+      "owner": 0,
+      "charge": 5
+    },
+    {
+      "kind": "source",
+      "x": 200,
+      "y": 700,
+      "owner": 0,
+      "charge": 14
+    },
+    {
+      "kind": "source",
+      "x": 420,
+      "y": 420,
+      "owner": 0,
+      "charge": 16
+    },
+    {
+      "kind": "source",
+      "x": 220,
+      "y": 220,
+      "owner": 2,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 520,
+      "y": 1360,
+      "owner": 0,
+      "charge": 7
+    },
+    {
+      "kind": "source",
+      "x": 820,
+      "y": 1150,
+      "owner": 0,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 820,
+      "y": 800,
+      "owner": 0,
+      "charge": 11
+    },
+    {
+      "kind": "source",
+      "x": 850,
+      "y": 220,
+      "owner": 0,
+      "charge": 9
+    }
+  ],
+  "rocks": [
+    {
+      "x": 400,
+      "y": 1060,
+      "r": 90
+    },
+    {
+      "x": 570,
+      "y": 760,
+      "r": 90
+    },
+    {
+      "x": 720,
+      "y": 480,
+      "r": 90
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 170,
+        "reaction": 170,
+        "aggression": 60,
+        "pref_player": 70,
+        "patience": 40,
+        "noise": 12
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 3,
+    "order": 7,
+    "teaches": "two fronts split by rocks: pick one, then the other",
+    "intro": {
+      "title": "The Divide",
+      "body": "Rocks run down the middle. Win one side first, then swing everything at the other."
+    },
+    "tip": "Don't split your forces: win one side, then the other.",
+    "par": {
+      "ticks": 1484,
+      "lost": 78,
+      "source": "lookahead"
+    },
+    "difficulty": {
+      "score": 31,
+      "tier": "Easy",
+      "think_s": 9.6,
+      "slack_s": 4.0,
+      "moves": 22,
+      "pressure": 0.48,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 8,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "f06a6870ceca0ef1"
+    },
+    "stars": {
+      "t2": 120,
+      "t3": 90
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch03-07",
+      "level_hash": "f06a6870ceca0ef1",
+      "rules_hash": "0b870726dec17070",
+      "seed": 1107,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 6
+        },
+        {
+          "tick": 20,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 40,
+          "type": "open",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 160,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 200,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 260,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 280,
+          "type": "cut",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 300,
+          "type": "cut",
+          "src": 0,
+          "dst": 6
+        },
+        {
+          "tick": 340,
+          "type": "open",
+          "src": 5,
+          "dst": 7
+        },
+        {
+          "tick": 360,
+          "type": "open",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 400,
+          "type": "open",
+          "src": 6,
+          "dst": 7
+        },
+        {
+          "tick": 460,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 480,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 500,
+          "type": "cut",
+          "src": 6,
+          "dst": 7
+        },
+        {
+          "tick": 520,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 640,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 660,
+          "type": "open",
+          "src": 5,
+          "dst": 1
+        },
+        {
+          "tick": 680,
+          "type": "open",
+          "src": 7,
+          "dst": 8
+        },
+        {
+          "tick": 700,
+          "type": "cut",
+          "src": 5,
+          "dst": 1
+        },
+        {
+          "tick": 720,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 760,
+          "type": "open",
+          "src": 2,
+          "dst": 3
+        },
+        {
+          "tick": 780,
+          "type": "open",
+          "src": 6,
+          "dst": 2
+        },
+        {
+          "tick": 800,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 820,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 840,
+          "type": "open",
+          "src": 5,
+          "dst": 6
+        },
+        {
+          "tick": 880,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 900,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 1060,
+          "type": "open",
+          "src": 3,
+          "dst": 8
+        },
+        {
+          "tick": 1080,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 1100,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 1120,
+          "type": "open",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 1140,
+          "type": "cut",
+          "src": 2,
+          "dst": 3
+        },
+        {
+          "tick": 1360,
+          "type": "open",
+          "src": 3,
+          "dst": 4
+        }
+      ],
+      "end_tick": 1484,
+      "final_hash": "c18a24211bd1ed8c"
+    }
+  }
+}

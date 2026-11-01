@@ -1,0 +1,423 @@
+{
+  "format": 1,
+  "id": "ch03-08",
+  "name": "Watchtower",
+  "ruleset": "base@2",
+  "seed": 1108,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 340,
+      "y": 1250,
+      "owner": 1,
+      "charge": 18
+    },
+    {
+      "kind": "source",
+      "x": 660,
+      "y": 350,
+      "owner": 2,
+      "charge": 8
+    },
+    {
+      "kind": "watchtower",
+      "x": 500,
+      "y": 800,
+      "owner": 2,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 660,
+      "y": 1250,
+      "owner": 0,
+      "charge": 3
+    },
+    {
+      "kind": "source",
+      "x": 180,
+      "y": 800,
+      "owner": 0,
+      "charge": 12
+    },
+    {
+      "kind": "source",
+      "x": 820,
+      "y": 800,
+      "owner": 0,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 340,
+      "y": 350,
+      "owner": 0,
+      "charge": 6
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 150,
+        "reaction": 150,
+        "aggression": 50,
+        "pref_player": 90,
+        "patience": 20,
+        "noise": 12
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 3,
+    "order": 8,
+    "teaches": "towers shoot units passing in range: go around, or take them",
+    "intro": {
+      "title": "Watchtower",
+      "body": "Watchtowers shoot 1 enemy unit a second inside their ring. Route around the ring, or take the tower.",
+      "spotlight": "watchtower"
+    },
+    "tip": "Go round the edge: lines across the middle pass the tower's ring.",
+    "goal": "Go round the tower's ring",
+    "marks": [
+      {
+        "at": 2,
+        "text": "Shoots inside its ring",
+        "until": {
+          "time": 150
+        }
+      },
+      {
+        "at": 4,
+        "text": "Safe line",
+        "arrow": [
+          0,
+          4
+        ],
+        "after": 30,
+        "until": {
+          "open": [
+            0,
+            4
+          ]
+        }
+      }
+    ],
+    "par": {
+      "ticks": 1400,
+      "lost": 20,
+      "source": "lookahead"
+    },
+    "difficulty": {
+      "score": 36,
+      "tier": "Easy",
+      "think_s": 9.8,
+      "slack_s": 3.9,
+      "moves": 25,
+      "pressure": 1.04,
+      "towers": {
+        "rings": 1,
+        "cover": 0.17,
+        "lanes": 5,
+        "guarded": 0,
+        "answers": [
+          "detour",
+          "capture"
+        ]
+      },
+      "level_hash": "1ae0f300fe886fd8"
+    },
+    "stars": {
+      "t2": 140,
+      "t3": 100
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch03-08",
+      "level_hash": "1ae0f300fe886fd8",
+      "rules_hash": "0b870726dec17070",
+      "seed": 1108,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 120,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 130,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 160,
+          "type": "open",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 290,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 300,
+          "type": "cut",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 310,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 400,
+          "type": "open",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 410,
+          "type": "open",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 430,
+          "type": "cut",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 440,
+          "type": "open",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 460,
+          "type": "cut",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 470,
+          "type": "open",
+          "src": 3,
+          "dst": 2
+        },
+        {
+          "tick": 480,
+          "type": "open",
+          "src": 4,
+          "dst": 2
+        },
+        {
+          "tick": 490,
+          "type": "cut",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 500,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 530,
+          "type": "open",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 630,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 640,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 650,
+          "type": "open",
+          "src": 4,
+          "dst": 1
+        },
+        {
+          "tick": 660,
+          "type": "cut",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 670,
+          "type": "cut",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 680,
+          "type": "open",
+          "src": 3,
+          "dst": 1
+        },
+        {
+          "tick": 720,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 750,
+          "type": "cut",
+          "src": 3,
+          "dst": 2
+        },
+        {
+          "tick": 760,
+          "type": "open",
+          "src": 5,
+          "dst": 1
+        },
+        {
+          "tick": 770,
+          "type": "open",
+          "src": 2,
+          "dst": 1
+        },
+        {
+          "tick": 780,
+          "type": "open",
+          "src": 3,
+          "dst": 5
+        },
+        {
+          "tick": 790,
+          "type": "cut",
+          "src": 3,
+          "dst": 1
+        },
+        {
+          "tick": 800,
+          "type": "cut",
+          "src": 4,
+          "dst": 2
+        },
+        {
+          "tick": 870,
+          "type": "open",
+          "src": 4,
+          "dst": 2
+        },
+        {
+          "tick": 880,
+          "type": "open",
+          "src": 3,
+          "dst": 2
+        },
+        {
+          "tick": 910,
+          "type": "open",
+          "src": 4,
+          "dst": 0
+        },
+        {
+          "tick": 920,
+          "type": "cut",
+          "src": 4,
+          "dst": 1
+        },
+        {
+          "tick": 940,
+          "type": "open",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 950,
+          "type": "open",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 960,
+          "type": "open",
+          "src": 4,
+          "dst": 6
+        },
+        {
+          "tick": 980,
+          "type": "cut",
+          "src": 2,
+          "dst": 1
+        },
+        {
+          "tick": 1000,
+          "type": "open",
+          "src": 5,
+          "dst": 6
+        },
+        {
+          "tick": 1010,
+          "type": "open",
+          "src": 3,
+          "dst": 1
+        },
+        {
+          "tick": 1020,
+          "type": "cut",
+          "src": 5,
+          "dst": 1
+        },
+        {
+          "tick": 1030,
+          "type": "open",
+          "src": 2,
+          "dst": 6
+        },
+        {
+          "tick": 1070,
+          "type": "open",
+          "src": 1,
+          "dst": 6
+        },
+        {
+          "tick": 1080,
+          "type": "cut",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 1090,
+          "type": "cut",
+          "src": 4,
+          "dst": 0
+        },
+        {
+          "tick": 1100,
+          "type": "cut",
+          "src": 4,
+          "dst": 2
+        }
+      ],
+      "end_tick": 1400,
+      "final_hash": "3ffa86a743bb00ec"
+    }
+  }
+}

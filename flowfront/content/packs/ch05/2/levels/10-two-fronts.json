@@ -1,0 +1,643 @@
+{
+  "format": 1,
+  "id": "ch05-10",
+  "name": "Two Fronts",
+  "ruleset": "base@2",
+  "seed": 6122,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 180,
+      "y": 1400,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 430,
+      "y": 1430,
+      "owner": 1,
+      "charge": 15
+    },
+    {
+      "kind": "vault",
+      "x": 190,
+      "y": 1080,
+      "owner": 0,
+      "charge": 3
+    },
+    {
+      "kind": "relay",
+      "x": 420,
+      "y": 1100,
+      "owner": 0,
+      "charge": 2
+    },
+    {
+      "kind": "source",
+      "x": 180,
+      "y": 820,
+      "owner": 0,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 720,
+      "y": 1200,
+      "owner": 0,
+      "charge": 8
+    },
+    {
+      "kind": "watchtower",
+      "x": 500,
+      "y": 760,
+      "owner": 2,
+      "charge": 13
+    },
+    {
+      "kind": "source",
+      "x": 240,
+      "y": 440,
+      "owner": 2,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 840,
+      "y": 860,
+      "owner": 3,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 820,
+      "y": 1440,
+      "owner": 3,
+      "charge": 10
+    },
+    {
+      "kind": "source",
+      "x": 520,
+      "y": 240,
+      "owner": 2,
+      "charge": 10
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 140,
+        "aggression": 70,
+        "pref_player": 90,
+        "patience": 15,
+        "noise": 12,
+        "reaction": 140,
+        "pref_rival": 50
+      }
+    },
+    {
+      "faction": 3,
+      "personality": {
+        "cadence": 140,
+        "aggression": 70,
+        "pref_player": 90,
+        "patience": 15,
+        "noise": 12,
+        "reaction": 140,
+        "pref_rival": 50
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 5,
+    "order": 10,
+    "teaches": "one vault, one relay, two fronts",
+    "intro": {
+      "title": "Two Fronts",
+      "body": "Teal above, Violet to the right. Pour the vault into the relay, then swing it at the weaker front.",
+      "spotlight": null
+    },
+    "goal": "Pour through the relay, front by front",
+    "marks": [
+      {
+        "at": 3,
+        "text": "Vault into the relay",
+        "arrow": [
+          2,
+          3
+        ],
+        "until": {
+          "open": [
+            2,
+            3
+          ]
+        }
+      }
+    ],
+    "tip": "Vault into relay, relay at one front. Switch when it falls.",
+    "par": {
+      "ticks": 2221,
+      "lost": 103,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch05-10",
+      "level_hash": "2cef478e3a094288",
+      "rules_hash": "0b870726dec17070",
+      "seed": 6122,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 20,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 40,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 60,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 80,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 100,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 160,
+          "type": "open",
+          "src": 3,
+          "dst": 6
+        },
+        {
+          "tick": 180,
+          "type": "cut",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 220,
+          "type": "open",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 400,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 420,
+          "type": "open",
+          "src": 0,
+          "dst": 8
+        },
+        {
+          "tick": 440,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 500,
+          "type": "open",
+          "src": 3,
+          "dst": 8
+        },
+        {
+          "tick": 520,
+          "type": "open",
+          "src": 1,
+          "dst": 8
+        },
+        {
+          "tick": 620,
+          "type": "open",
+          "src": 3,
+          "dst": 8
+        },
+        {
+          "tick": 680,
+          "type": "open",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 720,
+          "type": "open",
+          "src": 6,
+          "dst": 8
+        },
+        {
+          "tick": 740,
+          "type": "open",
+          "src": 3,
+          "dst": 8
+        },
+        {
+          "tick": 760,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 780,
+          "type": "cut",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 800,
+          "type": "open",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 820,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 840,
+          "type": "cut",
+          "src": 0,
+          "dst": 5
+        },
+        {
+          "tick": 860,
+          "type": "cut",
+          "src": 1,
+          "dst": 8
+        },
+        {
+          "tick": 880,
+          "type": "open",
+          "src": 1,
+          "dst": 9
+        },
+        {
+          "tick": 900,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 920,
+          "type": "cut",
+          "src": 0,
+          "dst": 8
+        },
+        {
+          "tick": 940,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 960,
+          "type": "open",
+          "src": 2,
+          "dst": 9
+        },
+        {
+          "tick": 980,
+          "type": "cut",
+          "src": 2,
+          "dst": 9
+        },
+        {
+          "tick": 1000,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 1060,
+          "type": "open",
+          "src": 4,
+          "dst": 7
+        },
+        {
+          "tick": 1080,
+          "type": "open",
+          "src": 3,
+          "dst": 7
+        },
+        {
+          "tick": 1100,
+          "type": "open",
+          "src": 2,
+          "dst": 9
+        },
+        {
+          "tick": 1120,
+          "type": "open",
+          "src": 5,
+          "dst": 9
+        },
+        {
+          "tick": 1140,
+          "type": "open",
+          "src": 8,
+          "dst": 9
+        },
+        {
+          "tick": 1160,
+          "type": "open",
+          "src": 5,
+          "dst": 4
+        },
+        {
+          "tick": 1180,
+          "type": "open",
+          "src": 1,
+          "dst": 8
+        },
+        {
+          "tick": 1220,
+          "type": "open",
+          "src": 8,
+          "dst": 5
+        },
+        {
+          "tick": 1240,
+          "type": "open",
+          "src": 3,
+          "dst": 4
+        },
+        {
+          "tick": 1260,
+          "type": "open",
+          "src": 0,
+          "dst": 8
+        },
+        {
+          "tick": 1280,
+          "type": "open",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 1300,
+          "type": "cut",
+          "src": 8,
+          "dst": 9
+        },
+        {
+          "tick": 1320,
+          "type": "open",
+          "src": 8,
+          "dst": 0
+        },
+        {
+          "tick": 1340,
+          "type": "cut",
+          "src": 5,
+          "dst": 9
+        },
+        {
+          "tick": 1360,
+          "type": "open",
+          "src": 5,
+          "dst": 3
+        },
+        {
+          "tick": 1380,
+          "type": "open",
+          "src": 4,
+          "dst": 1
+        },
+        {
+          "tick": 1400,
+          "type": "cut",
+          "src": 2,
+          "dst": 9
+        },
+        {
+          "tick": 1420,
+          "type": "cut",
+          "src": 5,
+          "dst": 4
+        },
+        {
+          "tick": 1440,
+          "type": "cut",
+          "src": 4,
+          "dst": 7
+        },
+        {
+          "tick": 1460,
+          "type": "cut",
+          "src": 1,
+          "dst": 9
+        },
+        {
+          "tick": 1480,
+          "type": "cut",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "tick": 1500,
+          "type": "open",
+          "src": 3,
+          "dst": 2
+        },
+        {
+          "tick": 1520,
+          "type": "open",
+          "src": 4,
+          "dst": 2
+        },
+        {
+          "tick": 1540,
+          "type": "cut",
+          "src": 4,
+          "dst": 1
+        },
+        {
+          "tick": 1560,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 1580,
+          "type": "cut",
+          "src": 0,
+          "dst": 8
+        },
+        {
+          "tick": 1600,
+          "type": "cut",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 1620,
+          "type": "cut",
+          "src": 3,
+          "dst": 7
+        },
+        {
+          "tick": 1640,
+          "type": "open",
+          "src": 2,
+          "dst": 6
+        },
+        {
+          "tick": 1660,
+          "type": "cut",
+          "src": 1,
+          "dst": 8
+        },
+        {
+          "tick": 1680,
+          "type": "open",
+          "src": 8,
+          "dst": 10
+        },
+        {
+          "tick": 1700,
+          "type": "open",
+          "src": 5,
+          "dst": 10
+        },
+        {
+          "tick": 1720,
+          "type": "open",
+          "src": 4,
+          "dst": 6
+        },
+        {
+          "tick": 1740,
+          "type": "open",
+          "src": 7,
+          "dst": 6
+        },
+        {
+          "tick": 1760,
+          "type": "open",
+          "src": 7,
+          "dst": 3
+        },
+        {
+          "tick": 1780,
+          "type": "open",
+          "src": 9,
+          "dst": 2
+        },
+        {
+          "tick": 1800,
+          "type": "open",
+          "src": 0,
+          "dst": 10
+        },
+        {
+          "tick": 1820,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 1840,
+          "type": "cut",
+          "src": 5,
+          "dst": 3
+        },
+        {
+          "tick": 1860,
+          "type": "cut",
+          "src": 7,
+          "dst": 6
+        },
+        {
+          "tick": 1880,
+          "type": "open",
+          "src": 2,
+          "dst": 10
+        },
+        {
+          "tick": 1900,
+          "type": "open",
+          "src": 7,
+          "dst": 10
+        },
+        {
+          "tick": 1920,
+          "type": "cut",
+          "src": 7,
+          "dst": 3
+        },
+        {
+          "tick": 1940,
+          "type": "open",
+          "src": 4,
+          "dst": 10
+        },
+        {
+          "tick": 1960,
+          "type": "open",
+          "src": 6,
+          "dst": 10
+        },
+        {
+          "tick": 1980,
+          "type": "cut",
+          "src": 4,
+          "dst": 6
+        }
+      ],
+      "end_tick": 2221,
+      "final_hash": "d8fe30738380674c"
+    },
+    "difficulty": {
+      "score": 55,
+      "tier": "Hard",
+      "think_s": 7.9,
+      "slack_s": 1.9,
+      "moves": 45,
+      "pressure": 1.21,
+      "towers": {
+        "rings": 1,
+        "cover": 0.05,
+        "lanes": 8,
+        "guarded": 0,
+        "answers": [
+          "detour",
+          "pour",
+          "capture"
+        ]
+      },
+      "level_hash": "2cef478e3a094288"
+    },
+    "stars": {
+      "t2": 260,
+      "t3": 190
+    }
+  }
+}

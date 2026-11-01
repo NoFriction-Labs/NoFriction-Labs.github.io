@@ -1,0 +1,467 @@
+{
+  "format": 1,
+  "id": "ch03-05",
+  "name": "The Wall",
+  "ruleset": "base@2",
+  "seed": 1105,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 180,
+      "y": 1400,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 500,
+      "y": 1415,
+      "owner": 0,
+      "charge": 4
+    },
+    {
+      "kind": "source",
+      "x": 845,
+      "y": 1250,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 845,
+      "y": 990,
+      "owner": 0,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 480,
+      "y": 960,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 180,
+      "y": 900,
+      "owner": 0,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 190,
+      "y": 510,
+      "owner": 0,
+      "charge": 10
+    },
+    {
+      "kind": "source",
+      "x": 520,
+      "y": 540,
+      "owner": 0,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 500,
+      "y": 200,
+      "owner": 2,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 820,
+      "y": 300,
+      "owner": 0,
+      "charge": 6
+    }
+  ],
+  "rocks": [
+    {
+      "x": 200,
+      "y": 1160,
+      "r": 90
+    },
+    {
+      "x": 460,
+      "y": 1200,
+      "r": 90
+    },
+    {
+      "x": 640,
+      "y": 1180,
+      "r": 80
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 150,
+        "reaction": 150,
+        "aggression": 40,
+        "pref_player": 65,
+        "noise": 12
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 3,
+    "order": 5,
+    "teaches": "find the lines that slip past a rock wall",
+    "intro": {
+      "title": "The Wall",
+      "body": "A rock wall blocks most lines across. Find the few that slip through its gaps, then push on."
+    },
+    "tip": "Chain your towers through a gap: each one feeds the next.",
+    "par": {
+      "ticks": 1649,
+      "lost": 24,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch03-05",
+      "level_hash": "3141ebb07fc12d49",
+      "rules_hash": "0b870726dec17070",
+      "seed": 1105,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 20,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 140,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 160,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 200,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 220,
+          "type": "cut",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 320,
+          "type": "open",
+          "src": 4,
+          "dst": 5
+        },
+        {
+          "tick": 340,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 380,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 400,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 420,
+          "type": "open",
+          "src": 2,
+          "dst": 3
+        },
+        {
+          "tick": 440,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 540,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 580,
+          "type": "open",
+          "src": 4,
+          "dst": 7
+        },
+        {
+          "tick": 600,
+          "type": "cut",
+          "src": 4,
+          "dst": 5
+        },
+        {
+          "tick": 620,
+          "type": "open",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 640,
+          "type": "open",
+          "src": 4,
+          "dst": 6
+        },
+        {
+          "tick": 660,
+          "type": "open",
+          "src": 3,
+          "dst": 6
+        },
+        {
+          "tick": 680,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 700,
+          "type": "cut",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 720,
+          "type": "open",
+          "src": 5,
+          "dst": 7
+        },
+        {
+          "tick": 740,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 760,
+          "type": "open",
+          "src": 4,
+          "dst": 5
+        },
+        {
+          "tick": 780,
+          "type": "cut",
+          "src": 4,
+          "dst": 6
+        },
+        {
+          "tick": 800,
+          "type": "open",
+          "src": 2,
+          "dst": 6
+        },
+        {
+          "tick": 820,
+          "type": "open",
+          "src": 5,
+          "dst": 6
+        },
+        {
+          "tick": 860,
+          "type": "open",
+          "src": 4,
+          "dst": 6
+        },
+        {
+          "tick": 880,
+          "type": "cut",
+          "src": 4,
+          "dst": 6
+        },
+        {
+          "tick": 900,
+          "type": "open",
+          "src": 3,
+          "dst": 9
+        },
+        {
+          "tick": 920,
+          "type": "open",
+          "src": 4,
+          "dst": 9
+        },
+        {
+          "tick": 940,
+          "type": "cut",
+          "src": 5,
+          "dst": 6
+        },
+        {
+          "tick": 960,
+          "type": "cut",
+          "src": 4,
+          "dst": 5
+        },
+        {
+          "tick": 980,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 1000,
+          "type": "cut",
+          "src": 3,
+          "dst": 6
+        },
+        {
+          "tick": 1020,
+          "type": "open",
+          "src": 6,
+          "dst": 7
+        },
+        {
+          "tick": 1040,
+          "type": "open",
+          "src": 5,
+          "dst": 6
+        },
+        {
+          "tick": 1060,
+          "type": "cut",
+          "src": 2,
+          "dst": 3
+        },
+        {
+          "tick": 1080,
+          "type": "cut",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 1100,
+          "type": "cut",
+          "src": 4,
+          "dst": 7
+        },
+        {
+          "tick": 1120,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 1140,
+          "type": "open",
+          "src": 5,
+          "dst": 8
+        },
+        {
+          "tick": 1160,
+          "type": "open",
+          "src": 2,
+          "dst": 8
+        },
+        {
+          "tick": 1180,
+          "type": "cut",
+          "src": 2,
+          "dst": 6
+        },
+        {
+          "tick": 1200,
+          "type": "cut",
+          "src": 5,
+          "dst": 7
+        },
+        {
+          "tick": 1220,
+          "type": "open",
+          "src": 6,
+          "dst": 3
+        },
+        {
+          "tick": 1240,
+          "type": "cut",
+          "src": 5,
+          "dst": 6
+        },
+        {
+          "tick": 1260,
+          "type": "cut",
+          "src": 6,
+          "dst": 7
+        },
+        {
+          "tick": 1280,
+          "type": "open",
+          "src": 6,
+          "dst": 9
+        },
+        {
+          "tick": 1300,
+          "type": "cut",
+          "src": 6,
+          "dst": 3
+        },
+        {
+          "tick": 1340,
+          "type": "open",
+          "src": 6,
+          "dst": 8
+        },
+        {
+          "tick": 1360,
+          "type": "open",
+          "src": 7,
+          "dst": 8
+        },
+        {
+          "tick": 1380,
+          "type": "cut",
+          "src": 6,
+          "dst": 9
+        }
+      ],
+      "end_tick": 1649,
+      "final_hash": "b5c041e161a3ae60"
+    },
+    "difficulty": {
+      "score": 28,
+      "tier": "Easy",
+      "think_s": 10.2,
+      "slack_s": 4.1,
+      "moves": 33,
+      "pressure": 0.46,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 9,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "3141ebb07fc12d49"
+    },
+    "stars": {
+      "t2": 165,
+      "t3": 120
+    }
+  }
+}

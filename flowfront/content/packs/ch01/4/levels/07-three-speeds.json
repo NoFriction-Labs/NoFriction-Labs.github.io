@@ -1,0 +1,149 @@
+{
+  "format": 1,
+  "id": "ch01-07",
+  "name": "Three Speeds",
+  "ruleset": "base@2",
+  "seed": 107,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 500,
+      "y": 900,
+      "owner": 1,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 220,
+      "y": 420,
+      "owner": 0,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 800,
+      "y": 420,
+      "owner": 0,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 500,
+      "y": 1380,
+      "owner": 0,
+      "charge": 8
+    }
+  ],
+  "rivals": [],
+  "meta": {
+    "chapter": 1,
+    "order": 7,
+    "teaches": "growth speeds at 10 and 20, and 3 lines at 20",
+    "intro": {
+      "title": "Three Speeds",
+      "body": "Towers grow faster as they get bigger: a bit faster at 10, twice as fast at 20."
+    },
+    "lesson": [
+      {
+        "title": "Three speeds",
+        "body": "Under 10: a unit every 0.67 s. From 10: every 0.5 s. From 20: every 0.33 s, and 3 lines.",
+        "demo": "speed"
+      }
+    ],
+    "goal": "Grow to 20, then open 3 lines",
+    "marks": [
+      {
+        "at": 0,
+        "text": "Growing: faster at 10",
+        "until": {
+          "time": 40
+        }
+      },
+      {
+        "at": 0,
+        "text": "At 20: fastest, 3 lines",
+        "until": {
+          "time": 150
+        }
+      },
+      {
+        "at": 0,
+        "text": "Now open all three",
+        "until": {
+          "open": [
+            0,
+            2
+          ]
+        }
+      }
+    ],
+    "tip": "Let your tower grow to 20 first, then drag to all three.",
+    "par": {
+      "ticks": 669,
+      "lost": 0,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch01-07",
+      "level_hash": "bd2bdab3958b5d9d",
+      "rules_hash": "0b870726dec17070",
+      "seed": 107,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 160,
+          "type": "cut",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 170,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 320,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 330,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        }
+      ],
+      "end_tick": 669,
+      "final_hash": "6438bdd30dd101b1"
+    },
+    "difficulty": {
+      "score": 0,
+      "tier": "Easy",
+      "think_s": 20.0,
+      "slack_s": 6.0,
+      "moves": 5,
+      "pressure": 0.0,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 3,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "bd2bdab3958b5d9d"
+    },
+    "stars": {
+      "t2": 70,
+      "t3": 55
+    }
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "format": 1,
+  "id": "ch01-03",
+  "name": "Chain",
+  "ruleset": "base@2",
+  "seed": 103,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 220,
+      "y": 1380,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 500,
+      "y": 1000,
+      "owner": 0,
+      "charge": 2
+    },
+    {
+      "kind": "source",
+      "x": 780,
+      "y": 620,
+      "owner": 0,
+      "charge": 4
+    }
+  ],
+  "rivals": [],
+  "meta": {
+    "chapter": 1,
+    "order": 3,
+    "teaches": "captured towers send too: chain through them",
+    "intro": {
+      "title": "Chain",
+      "body": "A tower you take works for you: it makes units and stretches lines too. Take the near one, then drag on from it."
+    },
+    "goal": "Take one, then drag on from it",
+    "marks": [
+      {
+        "at": 1,
+        "text": "Take this one first",
+        "arrow": [
+          0,
+          1
+        ],
+        "until": {
+          "own": 1
+        }
+      },
+      {
+        "at": 1,
+        "text": "Now drag on from it",
+        "arrow": [
+          1,
+          2
+        ],
+        "until": {
+          "open": [
+            1,
+            2
+          ]
+        }
+      }
+    ],
+    "tip": "Drag from the tower you just took to the far one.",
+    "par": {
+      "ticks": 416,
+      "lost": 0,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch01-03",
+      "level_hash": "01c9eb184935a4b4",
+      "rules_hash": "0b870726dec17070",
+      "seed": 103,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 180,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        }
+      ],
+      "end_tick": 416,
+      "final_hash": "dc4ac86be29d784b"
+    },
+    "difficulty": {
+      "score": 0,
+      "tier": "Easy",
+      "think_s": 20.0,
+      "slack_s": 6.0,
+      "moves": 2,
+      "pressure": 0.0,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 2,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "01c9eb184935a4b4"
+    },
+    "stars": {
+      "t2": 40,
+      "t3": 30
+    }
+  }
+}

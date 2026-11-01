@@ -1,0 +1,433 @@
+{
+  "format": 1,
+  "id": "ch02-05",
+  "name": "On the Way",
+  "ruleset": "base@3",
+  "seed": 1205,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 760,
+      "y": 1320,
+      "owner": 1,
+      "charge": 12
+    },
+    {
+      "kind": "source",
+      "x": 260,
+      "y": 420,
+      "owner": 0,
+      "charge": 12
+    },
+    {
+      "kind": "source",
+      "x": 460,
+      "y": 1200,
+      "owner": 0,
+      "charge": 6
+    },
+    {
+      "kind": "source",
+      "x": 760,
+      "y": 640,
+      "owner": 2,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 300,
+      "y": 900,
+      "owner": 0,
+      "charge": 4
+    },
+    {
+      "kind": "source",
+      "x": 800,
+      "y": 300,
+      "owner": 0,
+      "charge": 4
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": "gentle"
+    }
+  ],
+  "meta": {
+    "chapter": 2,
+    "order": 5,
+    "teaches": "units already on a line keep going after a cut",
+    "intro": {
+      "title": "On the Way",
+      "body": "Far towers take a while to reach. Units already on a line keep going after a cut, so cut once enough are on the way."
+    },
+    "goal": "Cut once enough are on the way",
+    "guide": [
+      {
+        "on": "start",
+        "title": "The far tower",
+        "body": "Drag to the far tower. It's a long road.",
+        "do": {
+          "open": [
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "on": "enough_in_flight",
+        "title": "Enough on the way",
+        "body": "Enough units are on that line to take it. Cut now: they still land.",
+        "do": {
+          "cut": [
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "on": "tick:150",
+        "title": "Next target",
+        "body": "Your tower is free again. Drag to the near gray tower.",
+        "do": {
+          "open": [
+            0,
+            2
+          ]
+        }
+      }
+    ],
+    "show_split": true,
+    "tip": "Cut the long line once enough units are on it, then send elsewhere.",
+    "par": {
+      "ticks": 1592,
+      "lost": 0,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch02-05",
+      "level_hash": "c65803ffeaf3dfd0",
+      "rules_hash": "b24b3381a6fb0747",
+      "seed": 1205,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 210,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 211,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 220,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 330,
+          "type": "cut",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 410,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 450,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 460,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 500,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 550,
+          "type": "cut",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 570,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 590,
+          "type": "open",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 600,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 610,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 680,
+          "type": "open",
+          "src": 2,
+          "dst": 5
+        },
+        {
+          "tick": 720,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 750,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 760,
+          "type": "open",
+          "src": 4,
+          "dst": 1
+        },
+        {
+          "tick": 850,
+          "type": "cut",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "tick": 860,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 870,
+          "type": "open",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 880,
+          "type": "open",
+          "src": 4,
+          "dst": 0
+        },
+        {
+          "tick": 930,
+          "type": "open",
+          "src": 2,
+          "dst": 1
+        },
+        {
+          "tick": 940,
+          "type": "cut",
+          "src": 4,
+          "dst": 1
+        },
+        {
+          "tick": 950,
+          "type": "open",
+          "src": 4,
+          "dst": 5
+        },
+        {
+          "tick": 960,
+          "type": "cut",
+          "src": 4,
+          "dst": 0
+        },
+        {
+          "tick": 970,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 980,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 990,
+          "type": "cut",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 1000,
+          "type": "cut",
+          "src": 2,
+          "dst": 1
+        },
+        {
+          "tick": 1030,
+          "type": "cut",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 1040,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 1070,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 1080,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 1100,
+          "type": "cut",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 1110,
+          "type": "open",
+          "src": 1,
+          "dst": 5
+        },
+        {
+          "tick": 1130,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 1140,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 1250,
+          "type": "open",
+          "src": 2,
+          "dst": 3
+        },
+        {
+          "tick": 1260,
+          "type": "open",
+          "src": 4,
+          "dst": 3
+        },
+        {
+          "tick": 1270,
+          "type": "cut",
+          "src": 2,
+          "dst": 5
+        },
+        {
+          "tick": 1280,
+          "type": "cut",
+          "src": 4,
+          "dst": 5
+        },
+        {
+          "tick": 1290,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 1300,
+          "type": "cut",
+          "src": 1,
+          "dst": 5
+        }
+      ],
+      "end_tick": 1592,
+      "final_hash": "e5e61fecb1bb8945"
+    },
+    "difficulty": {
+      "score": 11,
+      "tier": "Easy",
+      "think_s": 18.0,
+      "slack_s": 5.8,
+      "moves": 22,
+      "pressure": 1.53,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 5,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "c65803ffeaf3dfd0"
+    },
+    "stars": {
+      "t2": 115,
+      "t3": 85
+    },
+    "marks": [
+      {
+        "at": 1,
+        "until": {
+          "own": 1
+        }
+      },
+      {
+        "at": 2,
+        "until": {
+          "own": 2
+        }
+      },
+      {
+        "at": 4,
+        "text": "Cheap: this one too",
+        "until": {
+          "own": 4
+        }
+      },
+      {
+        "at": 3,
+        "text": "Teal: hit it from two",
+        "until": {
+          "own": 3
+        }
+      }
+    ]
+  }
+}

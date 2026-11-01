@@ -1,0 +1,89 @@
+{
+  "format": 1,
+  "id": "ch01-01",
+  "name": "First Line",
+  "ruleset": "base@2",
+  "seed": 101,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 700,
+      "y": 1250,
+      "owner": 1,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 350,
+      "y": 650,
+      "owner": 0,
+      "charge": 5
+    }
+  ],
+  "rivals": [],
+  "meta": {
+    "chapter": 1,
+    "order": 1,
+    "teaches": "drag to stretch a line and capture",
+    "intro": {
+      "title": "First Line",
+      "body": "This is your tower. It makes units. Drag a line to the gray tower: as many units as its number take it.",
+      "spotlight": "source"
+    },
+    "goal": "Drag to the gray tower",
+    "ghost": "drag",
+    "marks": [
+      {
+        "at": 1,
+        "text": "5 units take it",
+        "until": {
+          "own": 1
+        }
+      }
+    ],
+    "tip": "Drag from your tower to the gray one.",
+    "par": {
+      "ticks": 282,
+      "lost": 0,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch01-01",
+      "level_hash": "22d9e68496f0299f",
+      "rules_hash": "0b870726dec17070",
+      "seed": 101,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        }
+      ],
+      "end_tick": 282,
+      "final_hash": "415e7e3500ecec2f"
+    },
+    "difficulty": {
+      "score": 0,
+      "tier": "Easy",
+      "think_s": 20.0,
+      "slack_s": 6.0,
+      "moves": 1,
+      "pressure": 0.0,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 1,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "22d9e68496f0299f"
+    },
+    "stars": {
+      "t2": 30,
+      "t3": 25
+    }
+  }
+}

@@ -1,0 +1,317 @@
+{
+  "format": 1,
+  "id": "ch02-08",
+  "name": "Feed and Fight",
+  "ruleset": "base@3",
+  "seed": 1208,
+  "route_budget": null,
+  "nodes": [
+    {
+      "kind": "source",
+      "x": 570,
+      "y": 1250,
+      "owner": 1,
+      "charge": 9
+    },
+    {
+      "kind": "source",
+      "x": 660,
+      "y": 670,
+      "owner": 1,
+      "charge": 2
+    },
+    {
+      "kind": "source",
+      "x": 200,
+      "y": 1100,
+      "owner": 0,
+      "charge": 8
+    },
+    {
+      "kind": "source",
+      "x": 550,
+      "y": 360,
+      "owner": 2,
+      "charge": 20
+    },
+    {
+      "kind": "source",
+      "x": 220,
+      "y": 640,
+      "owner": 2,
+      "charge": 8
+    }
+  ],
+  "rivals": [
+    {
+      "faction": 2,
+      "personality": {
+        "cadence": 200,
+        "reaction": 200,
+        "aggression": 40,
+        "pref_player": 100,
+        "noise": 12,
+        "distance": 12
+      }
+    }
+  ],
+  "meta": {
+    "chapter": 2,
+    "order": 8,
+    "teaches": "one line feeds your own tower, one attacks",
+    "intro": {
+      "title": "Feed and Fight",
+      "body": "A line into your own tower makes it bigger. Feed your small tower, fight with the rest."
+    },
+    "goal": "Feed your small tower, then attack",
+    "coach": [
+      {
+        "on": "rival_attacks",
+        "title": "Feed it",
+        "body": "Teal hits one of your towers. A line into it from another of yours helps keep it standing."
+      }
+    ],
+    "show_split": true,
+    "tip": "Feed the small tower from the big one, then take the gray.",
+    "par": {
+      "ticks": 1396,
+      "lost": 59,
+      "source": "lookahead"
+    },
+    "solution": {
+      "kernel": "0.6.0",
+      "level_id": "ch02-08",
+      "level_hash": "8c0b0b4956ea12ea",
+      "rules_hash": "b24b3381a6fb0747",
+      "seed": 1208,
+      "inputs": [
+        {
+          "tick": 0,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 210,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 240,
+          "type": "cut",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 310,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 440,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 530,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 620,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 670,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 690,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 700,
+          "type": "open",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 810,
+          "type": "open",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 820,
+          "type": "open",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 830,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 840,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 850,
+          "type": "cut",
+          "src": 2,
+          "dst": 4
+        },
+        {
+          "tick": 860,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 900,
+          "type": "open",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 920,
+          "type": "open",
+          "src": 0,
+          "dst": 3
+        },
+        {
+          "tick": 930,
+          "type": "cut",
+          "src": 0,
+          "dst": 4
+        },
+        {
+          "tick": 940,
+          "type": "cut",
+          "src": 0,
+          "dst": 1
+        },
+        {
+          "tick": 950,
+          "type": "open",
+          "src": 2,
+          "dst": 3
+        },
+        {
+          "tick": 960,
+          "type": "open",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "tick": 970,
+          "type": "open",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 1020,
+          "type": "open",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 1070,
+          "type": "cut",
+          "src": 0,
+          "dst": 2
+        },
+        {
+          "tick": 1080,
+          "type": "cut",
+          "src": 1,
+          "dst": 4
+        },
+        {
+          "tick": 1090,
+          "type": "cut",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "tick": 1100,
+          "type": "open",
+          "src": 1,
+          "dst": 3
+        },
+        {
+          "tick": 1110,
+          "type": "open",
+          "src": 4,
+          "dst": 3
+        },
+        {
+          "tick": 1120,
+          "type": "cut",
+          "src": 1,
+          "dst": 2
+        }
+      ],
+      "end_tick": 1396,
+      "final_hash": "c98bf4736cd803de"
+    },
+    "difficulty": {
+      "score": 16,
+      "tier": "Easy",
+      "think_s": 18.1,
+      "slack_s": 4.9,
+      "moves": 15,
+      "pressure": 1.61,
+      "towers": {
+        "rings": 0,
+        "cover": 0.0,
+        "lanes": 3,
+        "guarded": 0,
+        "answers": []
+      },
+      "level_hash": "8c0b0b4956ea12ea"
+    },
+    "stars": {
+      "t2": 110,
+      "t3": 80
+    },
+    "marks": [
+      {
+        "at": 1,
+        "text": "Small: feed it",
+        "arrow": [
+          0,
+          1
+        ],
+        "until": {
+          "open": [
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "at": 2,
+        "text": "Then take the gray",
+        "until": {
+          "own": 2
+        },
+        "after": 30
+      }
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "id": "ch04-01",
+    "name": "Relay Station",
+    "chapter": 4,
+    "order": 1,
+    "tier": "Easy",
+    "path": "levels/01-relay-station.json",
+    "chapter_name": "Supply Lines"
+  },
+  {
+    "id": "ch04-02",
+    "name": "Three Ways",
+    "chapter": 4,
+    "order": 2,
+    "tier": "Easy",
+    "path": "levels/02-three-ways.json",
+    "chapter_name": "Supply Lines"
+  },
+  {
+    "id": "ch04-03",
+    "name": "Boulder Pass",
+    "chapter": 4,
+    "order": 3,
+    "tier": "Easy",
+    "path": "levels/03-boulder-pass.json",
+    "chapter_name": "Supply Lines"
+  },
+  {
+    "id": "ch04-04",
+    "name": "Express",
+    "chapter": 4,
+    "order": 4,
+    "tier": "Easy",
+    "path": "levels/04-express.json",
+    "chapter_name": "Supply Lines"
+  },
+  {
+    "id": "ch04-05",
+    "name": "Blind Spot",
+    "chapter": 4,
+    "order": 5,
+    "tier": "Easy",
+    "path": "levels/05-blind-spot.json",
+    "chapter_name": "Supply Lines"
+  },
+  {
+    "id": "ch04-06",
+    "name": "Switchyard",
+    "chapter": 4,
+    "order": 6,
+    "tier": "Easy",
+    "path": "levels/06-switchyard.json",
+    "chapter_name": "Supply Lines"
+  },
+  {
+    "id": "ch04-07",
+    "name": "Foundry",
+    "chapter": 4,
+    "order": 7,
+    "tier": "Easy",
+    "path": "levels/07-foundry.json",
+    "chapter_name": "Supply Lines"
+  },
+  {
+    "id": "ch04-08",
+    "name": "Iron Column",
+    "chapter": 4,
+    "order": 8,
+    "tier": "Easy",
+    "path": "levels/08-iron-column.json",
+    "chapter_name": "Supply Lines"
+  },
+  {
+    "id": "ch04-09",
+    "name": "Escort",
+    "chapter": 4,
+    "order": 9,
+    "tier": "Easy",
+    "path": "levels/09-escort.json",
+    "chapter_name": "Supply Lines"
+  },
+  {
+    "id": "ch04-10",
+    "name": "Two Roads",
+    "chapter": 4,
+    "order": 10,
+    "tier": "Medium",
+    "path": "levels/10-two-roads.json",
+    "chapter_name": "Supply Lines"
+  },
+  {
+    "id": "ch04-11",
+    "name": "Crossroads",
+    "chapter": 4,
+    "order": 11,
+    "tier": "Medium",
+    "path": "levels/11-crossroads.json",
+    "chapter_name": "Supply Lines"
+  },
+  {
+    "id": "ch04-12",
+    "name": "Supply Lines",
+    "chapter": 4,
+    "order": 12,
+    "tier": "Medium",
+    "path": "levels/12-supply-lines.json",
+    "chapter_name": "Supply Lines"
+  }
+]
